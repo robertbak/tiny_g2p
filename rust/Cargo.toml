@@ -1,0 +1,37 @@
+# The workspace root is also the CLI package: `cargo build --release` here
+# produces `target/release/tinyg2p`.
+#
+# Three crates, because one crate cannot be both a `bin` and a `cdylib`
+# without the linker losing symbols (the bin links against the cdylib's
+# metadata and `cargo test --release` fails with "undefined symbol" -- tried
+# `lto`, tried crate-type ordering, it is the mixing itself):
+#
+#   .        tiny-g2p        the CLI binary
+#   core     tiny-g2p-core   the model, no dependencies at all
+#   wasm     tiny-g2p-wasm   the browser surface, wasm-bindgen, cdylib
+[workspace]
+members = ["core", "wasm"]
+resolver = "2"
+
+[package]
+name = "tiny-g2p"
+version = "0.1.0"
+edition = "2021"
+description = "Tiny per-character Polish G2P: no Python, no runtime, no dependencies"
+license = "MIT"
+
+[[bin]]
+name = "tinyg2p"
+path = "src/main.rs"
+
+[dependencies]
+tiny-g2p-core = { path = "core" }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["-Oz", "--enable-mutable-globals"]

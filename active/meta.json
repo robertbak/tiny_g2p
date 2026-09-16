@@ -1,0 +1,26 @@
+{
+  "val_word_accuracy": 0.976183,
+  "val_per": 0.004882,
+  "val_acc_float": 0.976332,
+  "best_epoch": 21,
+  "best_kind": "float",
+  "guards": {
+    "all": 0.976183,
+    "nasal": 0.987288,
+    "digraph": 0.984482,
+    "palatal": 0.977513,
+    "rare": 0.652174
+  },
+  "taxonomy": {
+    "src": "0f66112d7e15",
+    "tgt": "ba9806dc9583"
+  },
+  "params": 28991,
+  "warmed": false,
+  "timestamp": "2026-09-16T09:39:00Z",
+  "provenance": {
+    "run": "/mnt/Data2/data/research/stt/tiny_g2p/runs/20260916T093607Z",
+    "promoted_at": "2026-09-16T09:39:00Z",
+    "forced": false
+  }
+}

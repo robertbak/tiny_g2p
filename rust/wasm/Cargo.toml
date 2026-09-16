@@ -1,0 +1,15 @@
+[package]
+name = "tiny-g2p-wasm"
+version = "0.1.0"
+edition = "2021"
+description = "The tiny Polish G2P model, compiled to WebAssembly"
+license = "MIT"
+
+[lib]
+name = "tiny_g2p_wasm"
+crate-type = ["cdylib", "rlib"]
+path = "src/lib.rs"
+
+[dependencies]
+tiny-g2p-core = { path = "../core" }
+wasm-bindgen = "0.2"

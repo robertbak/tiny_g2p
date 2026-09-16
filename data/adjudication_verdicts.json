@@ -1,0 +1,711 @@
+{
+  "_notes": [
+    "Adjudication verdicts: what the MFA reference gets right, word by word.",
+    "Every word here is one the evidence did not settle: the lexicons disagree",
+    "(slice 'disputed'), a model missed it (slice 'mfa-only'), it is polyphonic,",
+    "or it is spelled letter-by-letter. Verdicts are about the GOLD, not the",
+    "models -- see src/tiny_g2p/adjudicate.py for the semantics.",
+    "mfa = MFA's reading is correct (default: unlisted words are mfa)",
+    "both = MFA and the listed/CV reading are the same sound, transcribed",
+    "       differently (geminates, surface voicing, nasal place/split)",
+    "open = genuinely ambiguous spelling (loans, names): MFA's reading and",
+    "       every listed 'correct' reading are acceptable",
+    "cv = MFA is wrong, CV is right",
+    "none = neither lexicon is right; 'correct' lists the reading(s)",
+    "convention = not a fair item: acronyms, letter names, typos/respellings",
+    "              (excluded from the phonetic denominator)",
+    "'correct' optionally widens any verdict with MFA-notation readings;",
+    "'note' says why in one line. Regenerate the skeleton with --draft.",
+    "Counts: 98 disputed test words, of which 20 stay plain mfa; the rest of",
+    "the file is the mfa-only error union (CV has no entry to consult)."
+  ],
+  "verdicts": {
+    "abyei": {
+      "verdict": "both",
+      "note": "name: MFA a b ɨ ɛ i syllable-by-syllable, CV a b j ɛ i with a glide"
+    },
+    "achmeda": {
+      "verdict": "none",
+      "correct": [
+        "a x m ɛ d̪ a"
+      ],
+      "note": "MFA drops the first vowel and reads 'ch' as tʂ"
+    },
+    "act": {
+      "verdict": "both",
+      "note": "English word: MFA drops the letter reading, CV spells a-t-s-t"
+    },
+    "astrolog": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface k, CV underlying ɡ"
+    },
+    "australią": {
+      "verdict": "both",
+      "note": "u-glide devoicing: MFA w->v, CV f before the s"
+    },
+    "autentycznych": {
+      "verdict": "both",
+      "note": "u-glide devoicing: MFA w->v, CV f before the t"
+    },
+    "automatyczna": {
+      "verdict": "both",
+      "note": "u-glide devoicing: MFA w->v, CV f before the t"
+    },
+    "autorem": {
+      "verdict": "both",
+      "note": "u-glide devoicing: MFA w->v, CV f before the t"
+    },
+    "autyzmu": {
+      "verdict": "both",
+      "note": "u-glide devoicing: MFA w->v, CV f before the z"
+    },
+    "barrot": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the r, MFA simplifies"
+    },
+    "bavorova": {
+      "verdict": "none",
+      "correct": [
+        "b a v ɔ r ɔ v a"
+      ],
+      "note": "MFA reads 'a' as ɛj; the Czech name is [bavorova]"
+    },
+    "bestsellerów": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate l + word-final devoicing (MFA f, CV v)"
+    },
+    "beyer": {
+      "verdict": "none",
+      "correct": [
+        "b ɛ j ɛ r"
+      ],
+      "note": "MFA reads the y as ɨ; 'ey' is [ɛj]"
+    },
+    "biura": {
+      "verdict": "mfa",
+      "note": "MFA [bʲura] is right; CV spells post-vocalic u as v (b i v r a)"
+    },
+    "biurokratycznym": {
+      "verdict": "mfa",
+      "note": "CV spells post-vocalic u as v; MFA keeps the syllable"
+    },
+    "biurze": {
+      "verdict": "mfa",
+      "note": "CV spells post-vocalic u as v; MFA keeps the syllable"
+    },
+    "bourbona": {
+      "verdict": "mfa",
+      "note": "MFA keeps the u of 'ou'; CV writes v"
+    },
+    "bezbronne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "bezdenne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "bezinteresowne": {
+      "verdict": "both",
+      "note": "prefix-final z before i: MFA keeps it hard, CV palatalizes to ʑ"
+    },
+    "biedaków": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "blair": {
+      "verdict": "open",
+      "correct": [
+        "b l a j r",
+        "b l a i r"
+      ],
+      "note": "English name: [blɛr], [blajr] and [blair] are all heard in Polish"
+    },
+    "brudz": {
+      "verdict": "mfa",
+      "note": "MFA devoices the final affricate, the model voices it"
+    },
+    "bucików": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "ciekaw": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "codzienne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "codziennym": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "conajmniej": {
+      "verdict": "convention",
+      "note": "typo for 'co najmniej'; MFA reads the typo literally"
+    },
+    "coo": {
+      "verdict": "convention",
+      "note": "not a Polish spelling (acronym/interjection); MFA reads ɔ, CV t͡s ɔ ɔ"
+    },
+    "cross": {
+      "verdict": "none",
+      "correct": [
+        "k r ɔ s̪"
+      ],
+      "note": "MFA drops the initial k entirely"
+    },
+    "czeczenii": {
+      "verdict": "both",
+      "note": "nasal place: MFA nasal glide j̃, CV alveolar n before tʂ"
+    },
+    "demonstracja": {
+      "verdict": "both",
+      "correct": [
+        "d̪ ɛ m ɔ̃ s̪ t̪ r a t̪s̪ j a"
+      ],
+      "note": "nasal before a fricative: MFA splits ɔ n̪, the model merges ɔ̃"
+    },
+    "dopędziły": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "dotycząym": {
+      "verdict": "convention",
+      "note": "typo for 'dotyczącym' (missing c); MFA reads the typo literally"
+    },
+    "dróg": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface k, CV underlying ɡ"
+    },
+    "drżenie": {
+      "verdict": "both",
+      "note": "CV drops the r of drz-; MFA keeps it -- neither is the other's notation"
+    },
+    "drżysz": {
+      "verdict": "both",
+      "note": "CV drops the r of drz-; MFA keeps it"
+    },
+    "drżący": {
+      "verdict": "both",
+      "note": "CV drops the r of drz-; MFA keeps it"
+    },
+    "duchowieństwo": {
+      "verdict": "both",
+      "correct": [
+        "d̪ u x ɔ vʲ ɛ j̃ s̪ t̪ f ɔ"
+      ],
+      "note": "nasal place: MFA ɲ, the model nasal glide j̃ before s"
+    },
+    "dwustronne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "dziennych": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "dziewięćdziesiąt": {
+      "verdict": "cv",
+      "note": "MFA drops the tɕ of the 'ć'; CV keeps it"
+    },
+    "fantazya": {
+      "verdict": "none",
+      "correct": [
+        "f a n̪ t̪ a z̪ j a"
+      ],
+      "note": "MFA drops the final syllable of the pre-1936 spelling"
+    },
+    "franciszek": {
+      "verdict": "both",
+      "note": "nasal place: MFA nasal glide j̃, CV alveolar n before tɕ"
+    },
+    "georgia": {
+      "verdict": "open",
+      "correct": [
+        "ɡ ɛ ɔ r ɟ j a"
+      ],
+      "note": "English country name: MFA's dʐ reading (English) and the spelling reading both occur"
+    },
+    "guy": {
+      "verdict": "both",
+      "note": "name: MFA ɨ for 'y', CV j -- both spellings of the off-glide"
+    },
+    "havla": {
+      "verdict": "both",
+      "correct": [
+        "x a v l a"
+      ],
+      "note": "MFA writes the /v/ allophone w; the model writes v"
+    },
+    "illinois": {
+      "verdict": "open",
+      "correct": [
+        "i ʎ i n̪ ɔ i s̪"
+      ],
+      "note": "English name: MFA drops the s, the models pronounce it"
+    },
+    "imiennego": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "irlandzki": {
+      "verdict": "mfa",
+      "note": "CV splits the dz affricate into d+s; MFA's devoiced affricate is right"
+    },
+    "irlandzkiego": {
+      "verdict": "mfa",
+      "note": "CV splits the dz affricate into d+s"
+    },
+    "irlandzką": {
+      "verdict": "mfa",
+      "note": "CV splits the dz affricate into d+s"
+    },
+    "izaak": {
+      "verdict": "both",
+      "note": "hiatus: [izaak] and [izak] are both current"
+    },
+    "jakimsi": {
+      "verdict": "none",
+      "correct": [
+        "j a c i m ɕ i"
+      ],
+      "note": "MFA keeps 'si' hard (s̪ i); it is [ɕi]"
+    },
+    "jarovcach": {
+      "verdict": "both",
+      "correct": [
+        "j a r ɔ f t̪s̪ a x"
+      ],
+      "note": "regressive devoicing of v before t: MFA keeps v, the model devoices"
+    },
+    "jesienne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "kadrów": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "kasetce": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate before the affricate: CV writes t+t͡s, MFA one affricate"
+    },
+    "kolońską": {
+      "verdict": "both",
+      "correct": [
+        "k ɔ l ɔ j̃ s̪ k ɔ̃"
+      ],
+      "note": "nasal place: MFA ɲ, the model nasal glide j̃ before s"
+    },
+    "konflikt": {
+      "verdict": "both",
+      "note": "nasal before f: MFA merges ɔ̃, CV splits ɔ n̪"
+    },
+    "konsulem": {
+      "verdict": "both",
+      "correct": [
+        "k ɔ n̪ s̪ u l ɛ m"
+      ],
+      "note": "nasal before a fricative: MFA merges ɔ̃, the model splits"
+    },
+    "konsultacyjną": {
+      "verdict": "both",
+      "note": "nasal before s: MFA merges ɔ̃, CV splits ɔ n̪"
+    },
+    "kontrdemonstracja": {
+      "verdict": "both",
+      "correct": [
+        "k ɔ n̪ t̪ r d̪ ɛ m ɔ̃ s̪ t̪ r a t̪s̪ j a"
+      ],
+      "note": "nasal before s: MFA splits, the model merges"
+    },
+    "konwencjonalnych": {
+      "verdict": "both",
+      "correct": [
+        "k ɔ n̪ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɨ x"
+      ],
+      "note": "nasal before a fricative: MFA merges ɔ̃, the model splits"
+    },
+    "kręcił": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "krzywd": {
+      "verdict": "cv",
+      "note": "MFA inserts a vowel after d; the word ends in a devoiced cluster"
+    },
+    "liaoyangu": {
+      "verdict": "open",
+      "correct": [
+        "ʎ i a ɔ j a n̪ ɡ u",
+        "ʎ a ɔ ɨ a n̪ ɡ u"
+      ],
+      "note": "Chinese name: MFA drops syllables, the models syllabify differently"
+    },
+    "mass": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the s, MFA simplifies"
+    },
+    "menżyk": {
+      "verdict": "both",
+      "correct": [
+        "m ɛ n̪ ʐ ɨ k"
+      ],
+      "note": "nasal before a fricative: MFA merges ɛ̃, the model splits"
+    },
+    "microsoft": {
+      "verdict": "none",
+      "correct": [
+        "mʲ i k r ɔ s̪ ɔ f t̪"
+      ],
+      "note": "MFA reads 'mi' as m a j"
+    },
+    "mienszewików": {
+      "verdict": "both",
+      "correct": [
+        "mʲ ɛ n̪ ʂ ɛ vʲ i k u f"
+      ],
+      "note": "nasal before a fricative: MFA merges ɛ̃, the model splits"
+    },
+    "monsunowy": {
+      "verdict": "both",
+      "correct": [
+        "m ɔ̃ s̪ u n̪ ɔ v ɨ"
+      ],
+      "note": "nasal before s: MFA splits ɔ n̪, the model merges"
+    },
+    "mottem": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the t, MFA simplifies"
+    },
+    "najpierwej": {
+      "verdict": "both",
+      "note": "v after r: MFA devoices to f before the vowel, CV keeps v"
+    },
+    "nauczania": {
+      "verdict": "mfa",
+      "note": "MFA keeps the u of 'au'; CV writes a devoiced f"
+    },
+    "nauczy": {
+      "verdict": "mfa",
+      "note": "MFA keeps the u of 'au'; CV writes a devoiced f"
+    },
+    "nieuniknione": {
+      "verdict": "mfa",
+      "note": "MFA reads the u; CV writes v for the same letter"
+    },
+    "niezamienne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "niebiańska": {
+      "verdict": "both",
+      "correct": [
+        "ɲ ɛ bʲ a j̃ s̪ k a"
+      ],
+      "note": "nasal place: MFA ɲ, the model nasal glide j̃ before s"
+    },
+    "napoleońską": {
+      "verdict": "both",
+      "correct": [
+        "n̪ a p ɔ l ɛ ɔ j̃ s̪ k ɔ̃"
+      ],
+      "note": "nasal place: MFA ɲ, the model nasal glide j̃ before s"
+    },
+    "obustronne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "ochronnym": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "oddychając": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the d, MFA simplifies"
+    },
+    "odessie": {
+      "verdict": "cv",
+      "note": "MFA drops the palatal ɕ and the final vowel; CV's [ɔdɛsɕɛ] is right"
+    },
+    "odmienny": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "odmienną": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "odzyskałem": {
+      "verdict": "both",
+      "note": "MFA writes the dz affricate as two phones, CV as one"
+    },
+    "odzyskuje": {
+      "verdict": "both",
+      "note": "MFA writes the dz affricate as two phones, CV as one"
+    },
+    "oględzin": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "orwellowska": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the l, MFA simplifies (w/v there is notation)"
+    },
+    "pens": {
+      "verdict": "both",
+      "correct": [
+        "p ɛ n̪ s̪"
+      ],
+      "note": "nasal before s: MFA merges ɛ̃, the model splits"
+    },
+    "piorunów": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "płynności": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "poufnie": {
+      "verdict": "mfa",
+      "note": "MFA p ɔ u f is right; CV glides and devoices to p ɔ f f"
+    },
+    "przyoblekła": {
+      "verdict": "mfa",
+      "note": "MFA reads y as ɨ; CV reads it as j"
+    },
+    "podzwrotnikowe": {
+      "verdict": "both",
+      "note": "MFA writes the dz affricate as two phones, CV as one"
+    },
+    "pogaństwo": {
+      "verdict": "both",
+      "correct": [
+        "p ɔ ɡ a ɲ s̪ t̪ f ɔ"
+      ],
+      "note": "nasal place: MFA nasal glide j̃, the model ɲ before s"
+    },
+    "pogaństwie": {
+      "verdict": "both",
+      "correct": [
+        "p ɔ ɡ a j̃ s̪ t̪ fʲ ɛ"
+      ],
+      "note": "nasal place: MFA ɲ, the model nasal glide j̃ before s"
+    },
+    "pokręciła": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "pozabudżetowych": {
+      "verdict": "both",
+      "correct": [
+        "p ɔ z̪ a b u dʐ ɛ t̪ ɔ v ɨ x"
+      ],
+      "note": "MFA writes the dż affricate as two phones, the model as one"
+    },
+    "propzycję": {
+      "verdict": "convention",
+      "note": "typo for 'propozycję'; MFA reads the typo literally"
+    },
+    "przepędziłem": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "przewyższać": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the ʂ, MFA simplifies"
+    },
+    "przykucnięci": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "rewanż": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface ʂ, CV underlying ʐ"
+    },
+    "rozkazów": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "rozpoczęcie": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "rządzie": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "rządził": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "rządziła": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "senne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "skarży": {
+      "verdict": "mfa",
+      "note": "CV drops the r of rz-; MFA keeps it"
+    },
+    "skarżyć": {
+      "verdict": "mfa",
+      "note": "CV drops the r of rz-; MFA keeps it"
+    },
+    "spędzić": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "subbudżetowanie": {
+      "verdict": "both",
+      "correct": [
+        "s̪ u b u dʐ ɛ t̪ ɔ v a ɲ ɛ"
+      ],
+      "note": "MFA writes the dż affricate as two phones, the model as one"
+    },
+    "surrealizm": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the r, MFA simplifies"
+    },
+    "trance": {
+      "verdict": "both",
+      "correct": [
+        "t̪ r ɛ n̪ s̪"
+      ],
+      "note": "nasal: MFA merges ɛ̃, the split spelling is equally current"
+    },
+    "trąciła": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "tzrynastoletni": {
+      "verdict": "convention",
+      "note": "typo for 'trzynastoletni'; MFA reads the typo literally"
+    },
+    "uściśnięcie": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "ukłonów": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "via": {
+      "verdict": "both",
+      "note": "loan preposition: MFA [via] two syllables, CV [vja] one"
+    },
+    "volenti": {
+      "verdict": "none",
+      "correct": [
+        "v ɔ l ɛ n̪ tʲ i"
+      ],
+      "note": "MFA reads the o as u"
+    },
+    "warzyw": {
+      "verdict": "both",
+      "note": "word-final devoicing: MFA surface f, CV underlying v"
+    },
+    "wczesniej": {
+      "verdict": "convention",
+      "note": "ASCII respelling of 'wcześniej'; the ś is not in the spelling"
+    },
+    "widzc": {
+      "verdict": "convention",
+      "note": "truncated typo (widzę/widząc); the target is not recoverable"
+    },
+    "wielostronne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "winne": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "wstydzę": {
+      "verdict": "cv",
+      "note": "MFA palatalizes dz before ę; [d͡zɛ] is hard"
+    },
+    "wyciągnięcia": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "wyobraźmy": {
+      "verdict": "mfa",
+      "note": "MFA reads y as ɨ; CV reads it as j"
+    },
+    "wyższem": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the ʂ, MFA simplifies"
+    },
+    "zakonnice": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "zakręcił": {
+      "verdict": "both",
+      "note": "nasal place: MFA ɲdʑ, CV ndʑ -- the same cluster"
+    },
+    "zwinności": {
+      "verdict": "cv",
+      "note": "MFA drops the geminate (2157 lexicon words carry a doubled consonant letter; MFA marks 92, CV 441): geminate: CV doubles the n, MFA simplifies"
+    },
+    "agd": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter; one label per character cannot"
+    },
+    "bmw": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "cv": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "dga": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "mps": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "nszz": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "ntv": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "pzpr": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "rpo": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "rtv": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "tpn": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "wku": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    },
+    "wtw": {
+      "verdict": "convention",
+      "note": "acronym spelled letter-by-letter"
+    }
+  }
+}

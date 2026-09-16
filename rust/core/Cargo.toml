@@ -1,0 +1,17 @@
+[package]
+name = "tiny-g2p-core"
+version = "0.1.0"
+edition = "2021"
+description = "The tiny Polish G2P model: blob, forward pass, exception path"
+license = "MIT"
+
+#: The library keeps the short name for callers, the package name is namespaced.
+[lib]
+name = "tiny_g2p"
+path = "src/lib.rs"
+
+[dependencies]
+
+[dev-dependencies]
+#: Only for the parity test: it reads JSON golden vectors from the Python side.
+serde_json = "1"

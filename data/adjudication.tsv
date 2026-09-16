@@ -1,0 +1,249 @@
+word	slice	sources	mfa	cv	tiny	tiny_ok_mfa	trans	trans_ok_mfa
+abyei	disputed	disputed	a b ɨ ɛ i	a b j ɛ i	a b ɨ ɛ i	True	a b ɨ ɛ i	True
+achmeda	mfa-only	error-union	tʂ m ɛ d̪ a		a x m ɛ d̪ a	False	a x m ɛ d̪ a	False
+act	disputed	disputed+error-union	a t̪	a t͡s t	a t̪s̪ t̪	False	a t̪s̪ t̪	False
+agd	mfa-only	error-union+unalignable	a ɟ ɛ d̪ ɛ		a ɡ t̪	False	a ɡ d̪ ɛ	False
+aleuckiego	mfa-only	error-union	a l ɛ w t̪s̪ c ɛ ɡ ɔ		a l ɛ u t̪s̪ c ɛ ɡ ɔ	False	a l ɛ w t̪s̪ c ɛ ɡ ɔ	True
+astrolog	disputed	disputed	a s̪ t̪ r ɔ l ɔ k	a s t r ɔ l ɔ ɡ	a s̪ t̪ r ɔ l ɔ k	True	a s̪ t̪ r ɔ l ɔ k	True
+augustyanów	mfa-only	error-union	a w ɡ u s̪ t̪ ɨ a n̪ u f		a w ɡ u s̪ t̪ ɨ n̪ u f	False	a w ɡ u s̪ t̪ ɨ a n̪ u f	True
+australią	disputed	disputed	a w s̪ t̪ r a ʎ ɔ̃	a f s t r a l j ɔ̃	a w s̪ t̪ r a ʎ ɔ̃	True	a w s̪ t̪ r a ʎ ɔ̃	True
+autentycznych	disputed	disputed	a w t̪ ɛ n̪ t̪ ɨ tʂ n̪ ɨ x	a f t ɛ n t ɨ t ʂ n ɨ x	a w t̪ ɛ n̪ t̪ ɨ tʂ n̪ ɨ x	True	a w t̪ ɛ n̪ t̪ ɨ tʂ n̪ ɨ x	True
+authorising	mfa-only	error-union	a w t̪ ɔ rʲ i z̪ i n̪ k		a w t̪ ɔ r i ɕ i n̪ k	False	a w t̪ ɔ rʲ i ɕ i n̪ k	False
+automatyczna	disputed	disputed	a w t̪ ɔ m a t̪ ɨ tʂ n̪ a	a f t ɔ m a t ɨ t ʂ n a	a w t̪ ɔ m a t̪ ɨ tʂ n̪ a	True	a w t̪ ɔ m a t̪ ɨ tʂ n̪ a	True
+autorem	disputed	disputed	a w t̪ ɔ r ɛ m	a f t ɔ r ɛ m	a w t̪ ɔ r ɛ m	True	a w t̪ ɔ r ɛ m	True
+autyzmu	disputed	disputed	a w t̪ ɨ z̪ m u	a f t ɨ z m u	a w t̪ ɨ z̪ m u	True	a w t̪ ɨ z̪ m u	True
+barrot	disputed	disputed	b a r ɔ t̪	b a r r ɔ t	b a r ɔ t̪	True	b a r ɔ t̪	True
+bavorova	mfa-only	error-union+unalignable	b ɛ j v ɔ r ɔ v a		b a v ɔ r ɔ v a	False	b a v ɔ r ɔ v a	False
+bestsellerów	disputed	disputed	b ɛ s̪ t̪ s̪ ɛ l ɛ r u f	b ɛ s t s ɛ l l ɛ r u v	b ɛ s̪ t̪ s̪ ɛ l ɛ r u f	True	b ɛ s̪ t̪ s̪ ɛ l ɛ r u f	True
+beyer	mfa-only	error-union	b ɛ ɨ ɛ r		b j ɛ r	False	b ɛ j ɛ r	False
+bezbronne	disputed	disputed	b ɛ z̪ b r ɔ n̪ ɛ	b ɛ z b r ɔ n n ɛ	b ɛ z̪ b r ɔ n̪ ɛ	True	b ɛ z̪ b r ɔ n̪ ɛ	True
+bezdenne	disputed	disputed	b ɛ z̪ d̪ ɛ n̪ ɛ	b ɛ z d ɛ n n ɛ	b ɛ z̪ d̪ ɛ n̪ ɛ	True	b ɛ z̪ d̪ ɛ n̪ ɛ	True
+bezinteresowne	disputed	disputed	b ɛ z̪ i n̪ t̪ ɛ r ɛ s̪ ɔ v n̪ ɛ	b ɛ ʑ i n t ɛ r ɛ s ɔ v n ɛ	b ɛ z̪ i n̪ t̪ ɛ r ɛ s̪ ɔ v n̪ ɛ	True	b ɛ z̪ i n̪ t̪ ɛ r ɛ s̪ ɔ v n̪ ɛ	True
+biedaków	disputed	disputed	bʲ ɛ d̪ a k u f	b j ɛ d a k u v	bʲ ɛ d̪ a k u f	True	bʲ ɛ d̪ a k u f	True
+biura	disputed	disputed	bʲ u r a	b i v r a	bʲ u r a	True	bʲ u r a	True
+biurokratycznym	disputed	disputed	bʲ u r ɔ k r a t̪ ɨ tʂ n̪ ɨ m	b i v r ɔ k r a t ɨ t ʂ n ɨ m	bʲ u r ɔ k r a t̪ ɨ tʂ n̪ ɨ m	True	bʲ u r ɔ k r a t̪ ɨ tʂ n̪ ɨ m	True
+biurze	disputed	disputed	bʲ u ʐ ɛ	b i v ʐ ɛ	bʲ u ʐ ɛ	True	bʲ u ʐ ɛ	True
+biznesie	agreed	error-union	bʲ i z̪ n̪ ɛ ɕ ɛ	b i z n ɛ ɕ ɛ	bʲ i z̪ n̪ ɛ ɕ ɛ	True	bʲ i z̪ n̪ ɛ s̪ i	False
+blair	mfa-only	error-union	b l ɛ r		b l a j r	False	b l a i r	False
+bmw	mfa-only	error-union+unalignable	b ɛ m ɛ v u		b m f	False	b ɛ m ɛ v u	True
+bourbona	disputed	disputed	b ɔ u r b ɔ n̪ a	b ɔ v r b ɔ n a	b ɔ u r b ɔ n̪ a	True	b ɔ u r b ɔ n̪ a	True
+brudz	mfa-only	error-union	b r u t̪s̪		b r u d̪z̪	False	b r u t̪s̪	True
+bucików	disputed	disputed	b u tɕ i k u f	b u t͡ɕ i k u v	b u tɕ i k u f	True	b u tɕ i k u f	True
+cagliari	mfa-only	error-union	k a l j a rʲ i		t̪s̪ a ɡ ʎ a rʲ i	False	t̪s̪ a ɡ ʎ a rʲ i	False
+caniboł	mfa-only	error-union	t̪s̪ a ɲ i b ɔ w		t̪s̪ a ɲ i b ɔ w	True	k a ɲ i b ɔ w	False
+cappuccino	mfa-only	error-union	k a p u tʂ i n̪ ɔ		t̪s̪ a p u t̪s̪ i n̪ ɔ	False	t̪s̪ a p u t̪s̪ tɕ i n̪ ɔ	False
+carol	mfa-only	error-union	t̪s̪ a r ɔ l		t̪s̪ a r ɔ l	True	k a r ɔ l	False
+ceremonja	mfa-only	error-union	t̪s̪ ɛ r ɛ m ɔ n̪ j a		t̪s̪ ɛ r ɛ m ɔ n̪ j a	True	t̪s̪ ɛ r ɛ m ɔ ɲ j a	False
+charing	mfa-only	error-union	x a rʲ i n̪ k		x a r i n̪ k	False	x a rʲ i n̪ k	True
+cherokeego	agreed	error-union	x ɛ r ɔ k ɛ ɛ ɡ ɔ	x ɛ r ɔ k ɛ ɛ ɡ ɔ	x ɛ r ɔ k ɛ ɛ ɡ ɔ	True	x ɛ r ɔ k ɛ ɡ ɔ	False
+ciekaw	disputed	disputed	tɕ ɛ k a f	t͡ɕ ɛ k a v	tɕ ɛ k a f	True	tɕ ɛ k a f	True
+codzienne	disputed	disputed	t̪s̪ ɔ dʑ ɛ n̪ ɛ	t͡s ɔ d͡ʑ ɛ n n ɛ	t̪s̪ ɔ dʑ ɛ n̪ ɛ	True	t̪s̪ ɔ dʑ ɛ n̪ ɛ	True
+codziennym	disputed	disputed	t̪s̪ ɔ dʑ ɛ n̪ ɨ m	t͡s ɔ d͡ʑ ɛ n n ɨ m	t̪s̪ ɔ dʑ ɛ n̪ ɨ m	True	t̪s̪ ɔ dʑ ɛ n̪ ɨ m	True
+coleslaw	mfa-only	error-union+polyphonic	k ɔ l s̪ l ɔ w | k ɔ l ɛ s̪ w a f		t̪s̪ ɔ l ɛ s̪ l a f	False	k ɔ l ɛ s̪ l a f	False
+coli	agreed	error-union	t̪s̪ ɔ ʎ i	t͡s ɔ l i	t̪s̪ ɔ ʎ i	True	k ɔ ʎ i	False
+com	agreed	error-union	t̪s̪ ɔ m	t͡s ɔ m	t̪s̪ ɔ m	True	k ɔ m	False
+conajmniej	mfa-only	error-union	k ɔ n̪ a j m ɲ ɛ j		t̪s̪ ɔ n̪ a j m ɲ ɛ j	False	k ɔ n̪ a j m ɲ ɛ j	True
+coo	disputed	disputed+error-union+unalignable	ɔ	t͡s ɔ ɔ	k ɔ	False	k u	False
+coplanda	mfa-only	error-union	t̪s̪ ɔ p l a n̪ d̪ a		t̪s̪ ɔ p l a n̪ d̪ a	True	k ɔ p l a n̪ d̪ a	False
+cotygodniowych	agreed	error-union	t̪s̪ ɔ t̪ ɨ ɡ ɔ d̪ ɲ ɔ v ɨ x	t͡s ɔ t ɨ ɡ ɔ d ɲ ɔ v ɨ x	t̪s̪ ɔ t̪ ɨ ɡ ɔ d̪ ɲ ɔ v ɨ x	True	x ɔ t̪ ɨ ɡ ɔ d̪ ɲ ɔ v ɨ x	False
+cross	mfa-only	error-union	r ɔ s̪		t̪s̪ r ɔ s̪	False	k r ɔ s̪	False
+curling	mfa-only	error-union	k ɛ r ʎ i n̪ k		t̪s̪ u r ʎ i n̪ k	False	t̪s̪ u r ʎ i n̪ k	False
+curry	mfa-only	error-union+unalignable	k a r ɨ		t̪s̪ u r ɨ	False	t̪s̪ u r ɨ	False
+cv	mfa-only	error-union+unalignable	s̪ i vʲ i		t̪s̪ f	False	t̪s̪ ɛ v ɛ	False
+czeczenii	disputed	disputed+error-union	tʂ ɛ tʂ ɛ n̪ j i	t ʂ ɛ t ʂ ɛ ɲ j i	tʂ ɛ tʂ ɛ ɲ j i	False	tʂ ɛ tʂ ɛ ɲ j i	False
+dealer	mfa-only	error-union	d̪ i l ɛ r		d̪ ɛ l ɛ r	False	d̪ ɛ a l ɛ r	False
+demonstracja	mfa-only	error-union	d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j a		d̪ ɛ m ɔ̃ s̪ t̪ r a t̪s̪ j a	False	d̪ ɛ m ɔ̃ s̪ t̪ r a t̪s̪ j a	False
+dga	mfa-only	error-union+unalignable	d̪ ɛ ɡ j ɛ a		d̪ ɡ a	False	d̪ ɡ a	False
+dopędziły	disputed	disputed	d̪ ɔ p ɛ ɲ dʑ i w ɨ	d ɔ p ɛ n d͡ʑ i w ɨ	d̪ ɔ p ɛ ɲ dʑ i w ɨ	True	d̪ ɔ p ɛ ɲ dʑ i w ɨ	True
+dossier	mfa-only	error-union	d̪ ɔ s̪ i r		d̪ ɔ s̪ s̪ ɛ r	False	d̪ ɔ s̪ i r	True
+dotycząym	mfa-only	error-union	d̪ ɔ t̪ ɨ tʂ ɔ ɨ m		d̪ ɔ t̪ ɨ tʂ ɔ̃ ɨ m	False	d̪ ɔ t̪ ɨ tʂ ɔ̃ ɨ m	False
+dotykania	mfa-only	error-union	d̪ ɔ t̪ ɨ k a ɲ j a		d̪ ɔ t̪ ɨ k a ɲ a	False	d̪ ɔ t̪ ɨ k a ɲ j a	True
+dróg	disputed	disputed	d̪ r u k	d r u ɡ	d̪ r u k	True	d̪ r u k	True
+drżenie	disputed	disputed	d̪ r ʐ ɛ ɲ ɛ	d ʐ ɛ ɲ ɛ	d̪ r ʐ ɛ ɲ ɛ	True	d̪ r ʐ ɛ ɲ ɛ	True
+drżysz	disputed	disputed	d̪ r ʐ ɨ ʂ	d ʐ ɨ ʂ	d̪ r ʐ ɨ ʂ	True	d̪ r ʐ ɨ ʂ	True
+drżący	disputed	disputed	d̪ r ʐ ɔ n̪ t̪s̪ ɨ	d ʐ ɔ n t͡s ɨ	d̪ r ʐ ɔ n̪ t̪s̪ ɨ	True	d̪ r ʐ ɔ n̪ t̪s̪ ɨ	True
+dubstep	mfa-only	error-union	d̪ a p s̪ t̪ ɛ p		d̪ u p s̪ t̪ ɛ p	False	d̪ u p s̪ t̪ ɛ p	False
+duchowieństwo	mfa-only	error-union	d̪ u x ɔ vʲ ɛ ɲ s̪ t̪ f ɔ		d̪ u x ɔ vʲ ɛ j̃ s̪ t̪ f ɔ	False	d̪ u x ɔ vʲ ɛ j̃ s̪ t̪ f ɔ	False
+duńskia	mfa-only	error-union	d̪ u j̃ s̪ c j a		d̪ u j̃ s̪ c a	False	d̪ u j̃ s̪ c j a	True
+dwustronne	disputed	disputed	d̪ v u s̪ t̪ r ɔ n̪ ɛ	d v u s t r ɔ n n ɛ	d̪ v u s̪ t̪ r ɔ n̪ ɛ	True	d̪ v u s̪ t̪ r ɔ n̪ ɛ	True
+dziennych	disputed	disputed	dʑ ɛ n̪ ɨ x	d͡ʑ ɛ n n ɨ x	dʑ ɛ n̪ ɨ x	True	dʑ ɛ n̪ ɨ x	True
+dziewięćdziesiąt	disputed	disputed+error-union	dʑ ɛ vʲ ɛ ɲ dʑ ɛ ɕ ɔ n̪ t̪	d͡ʑ ɛ v j ɛ ɲ t͡ɕ d͡ʑ ɛ ɕ ɔ n t	dʑ ɛ vʲ ɛ ɲ tɕ dʑ ɛ ɕ ɔ n̪ t̪	False	dʑ ɛ vʲ ɛ ɲ tɕ dʑ ɛ ɕ ɔ n̪ t̪	False
+eliasz	mfa-only	error-union	ɛ l j a ʂ		ɛ ʎ a ʂ	False	ɛ ʎ a ʂ	False
+eliasza	mfa-only	error-union	ɛ l j a ʂ a		ɛ ʎ a ʂ a	False	ɛ ʎ a ʂ a	False
+engel	mfa-only	error-union	ɛ ŋ ɡ ɛ l		ɛ n̪ ɡ ɛ l	False	ɛ ŋ ɡ ɛ l	True
+englot	mfa-only	error-union	ɛ n̪ ɡ l ɔ t̪		ɛ ŋ ɡ l ɔ t̪	False	ɛ ŋ ɡ l ɔ t̪	False
+etui	mfa-only	error-union	ɛ t̪ u i		ɛ d̪ u i	False	ɛ t̪ u i	True
+faceci	mfa-only	error-union	f a t̪s̪ ɛ tɕ i		f a t̪s̪ ɛ tɕ i	True	f ɛ tɕ tɕ i	False
+fair	mfa-only	error-union	f ɛ r		f a r	False	f a i r	False
+fantazya	mfa-only	error-union	f a n̪ t̪ a z̪		f a n̪ t̪ a z̪ ɨ a	False	f a n̪ t̪ a z̪ ɨ a	False
+franciszek	disputed	disputed+error-union	f r a ɲ tɕ i ʂ ɛ k	f r a n t͡ɕ i ʂ ɛ k	f r a n̪ tɕ i ʂ ɛ k	False	f r a ɲ tɕ i ʂ ɛ k	True
+gdzieżby	mfa-only	error-union	ɡ dʑ ɛ ʐ b ɨ		ɡ dʑ ɛ ʐ b ɨ	True	ɡ dʑ ɛ ʂ b ɨ	False
+georgia	mfa-only	error-union+unalignable	dʐ ɔ r dʐ j a		ɡ ɛ ɔ r ɟ j a	False	ɡ ɛ ɔ r ɟ j a	False
+giąłeś	mfa-only	error-union	ɟ j ɔ w ɛ ɕ		ɟ ɔ w ɛ ɕ	False	ɟ ɔ w ɛ ɕ	False
+gronkiewicz	mfa-only	error-union	ɡ r ɔ n̪ c ɛ vʲ i tʂ		ɡ r ɔ ŋ c ɛ vʲ i tʂ	False	ɡ r ɔ n̪ c ɛ vʲ i tʂ	True
+guacamole	mfa-only	error-union	ɡ w a k a m ɔ l ɛ		ɡ u t̪s̪ a m ɔ l ɛ	False	ɡ u a t̪s̪ a m ɔ l ɛ	False
+guy	disputed	disputed	ɡ u ɨ	ɡ u j	ɡ u ɨ	True	ɡ u ɨ	True
+harmonia	mfa-only	error-union	x a r m ɔ ɲ j a		x a r m ɔ ɲ a	False	x a r m ɔ ɲ j a	True
+havla	mfa-only	error-union	x a w l a		x a v l a	False	x a v l a	False
+heritage	mfa-only	error-union	x ɛ rʲ i t̪ a ɡ ɛ		x ɛ r i t̪ a ɡ ɛ	False	x ɛ rʲ i t̪ a ɡ ɛ	True
+homofobii	mfa-only	error-union+unalignable	x ɔ m ɔ f ɔ bʲ a j i		x ɔ m ɔ f ɔ bʲ j i	False	x ɔ m ɔ f ɔ bʲ a j i	True
+illinois	mfa-only	error-union	i ʎ i n̪ ɔ i		i ʎ i n̪ ɔ i s̪	False	i ʎ i n̪ ɔ i s̪	False
+ilustracye	mfa-only	error-union	i l u s̪ t̪ r a t̪s̪ ɨ		i l u s̪ t̪ r a t̪s̪ ɨ ɛ	False	i l u s̪ t̪ r a t̪s̪ ɨ	True
+imiennego	disputed	disputed	i mʲ ɛ n̪ ɛ ɡ ɔ	i m j ɛ n n ɛ ɡ ɔ	i mʲ ɛ n̪ ɛ ɡ ɔ	True	i mʲ ɛ n̪ ɛ ɡ ɔ	True
+irlandzki	disputed	disputed	i r l a n̪ t̪s̪ c i	i r l a n d s kʲ i	i r l a n̪ t̪s̪ c i	True	i r l a n̪ t̪s̪ c i	True
+irlandzkiego	disputed	disputed	i r l a n̪ t̪s̪ c ɛ ɡ ɔ	i r l a n d s kʲ ɛ ɡ ɔ	i r l a n̪ t̪s̪ c ɛ ɡ ɔ	True	i r l a n̪ t̪s̪ c ɛ ɡ ɔ	True
+irlandzką	disputed	disputed	i r l a n̪ t̪s̪ k ɔ̃	i r l a n d s k ɔ̃	i r l a n̪ t̪s̪ k ɔ̃	True	i r l a n̪ t̪s̪ k ɔ̃	True
+izaak	disputed	disputed+error-union	i z̪ a k	i z a a k	i z̪ a a k	False	i z̪ a k	True
+jakimsi	mfa-only	error-union	j a c i m s̪ i		j a c i m ɕ i	False	j a c i m s̪ i	True
+jarovcach	mfa-only	error-union	j a r ɔ vʲ t̪s̪ a x		j a r ɔ f t̪s̪ a x	False	j a r ɔ f t̪s̪ a x	False
+jesienne	disputed	disputed	j ɛ ɕ ɛ n̪ ɛ	j ɛ ɕ ɛ n n ɛ	j ɛ ɕ ɛ n̪ ɛ	True	j ɛ ɕ ɛ n̪ ɛ	True
+jugosławii	mfa-only	error-union	j u ɡ ɔ s̪ w a vʲ j i		j u ɡ ɔ s̪ w a vʲ i	False	j u ɡ ɔ s̪ w a vʲ j i	True
+jutrzenkę	mfa-only	error-union	j u t̪ ʂ ɛ n̪ k ɛ		u t̪ ʂ ɛ n̪ k ɛ	False	j u t̪ ʂ ɛ n̪ k ɛ	True
+kadrów	disputed	disputed	k a d̪ r u f	k a d r u v	k a d̪ r u f	True	k a d̪ r u f	True
+kandzior	mfa-only	error-union	k a ɲ dʑ ɔ r		k a n̪ dʑ ɔ r	False	k a ɲ dʑ ɔ r	True
+kasetce	disputed	disputed	k a s̪ ɛ t̪s̪ ɛ	k a s ɛ t t͡s ɛ	k a s̪ ɛ t̪s̪ ɛ	True	k a s̪ ɛ t̪s̪ ɛ	True
+klebsiella	mfa-only	error-union	k l ɛ b ɕ ɛ l a		k l ɛ p ɕ ɛ l a	False	k l ɛ p ɕ ɛ l a	False
+klombie	mfa-only	error-union	k l ɔ m bʲ i		k l ɔ m bʲ ɛ	False	k l ɔ m bʲ ɛ	False
+klęczkach	agreed	error-union	k l ɛ n̪ tʂ k a x	k l ɛ n t ʂ k a x	k l ɛ tʂ k a x	False	k l ɛ n̪ tʂ k a x	True
+kolońską	mfa-only	error-union	k ɔ l ɔ ɲ s̪ k ɔ̃		k ɔ l ɔ j̃ s̪ k ɔ̃	False	k ɔ l ɔ j̃ s̪ k ɔ̃	False
+konfederacyjna	agreed	error-union	k ɔ n̪ f ɛ d̪ ɛ r a t̪s̪ ɨ j n̪ a	k ɔ n f ɛ d ɛ r a t͡s ɨ j n a	k ɔ n̪ f ɛ d̪ ɛ r a t̪s̪ ɨ j n̪ a	True	k ɔ̃ f ɛ d̪ ɛ r a t̪s̪ ɨ j n̪ a	False
+konflikt	disputed	disputed	k ɔ̃ f ʎ i k t̪	k ɔ n f l i k t	k ɔ̃ f ʎ i k t̪	True	k ɔ̃ f ʎ i k t̪	True
+konkubin	mfa-only	error-union	k ɔ ŋ k u bʲ i n̪		k ɔ n̪ k u bʲ i n̪	False	k ɔ ŋ k u bʲ i n̪	True
+konkubinat	mfa-only	error-union	k ɔ n̪ k u bʲ i n̪ a t̪		k ɔ n̪ k u bʲ i n̪ a t̪	True	k ɔ ŋ k u bʲ i n̪ a t̪	False
+konsulem	mfa-only	error-union	k ɔ̃ s̪ u l ɛ m		k ɔ n̪ s̪ u l ɛ m	False	k ɔ̃ s̪ u l ɛ m	True
+konsultacyjną	disputed	disputed+error-union	k ɔ̃ s̪ u l t̪ a t̪s̪ ɨ j n̪ ɔ̃	k ɔ n s u l t a t͡s ɨ j n ɔ̃	k ɔ s̪ u l t̪ a t̪s̪ ɨ j n̪ ɔ̃	False	k ɔ̃ s̪ u l t̪ a t̪s̪ ɨ j n̪ ɔ̃	True
+konsumentka	mfa-only	error-union	k ɔ n̪ s̪ u m ɛ n̪ t̪ k a		k ɔ s̪ u m ɛ n̪ t̪ k a	False	k ɔ n̪ s̪ u m ɛ n̪ t̪ k a	True
+kontrdemonstracja	mfa-only	error-union	k ɔ n̪ t̪ r d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j a		k ɔ n̪ t̪ r d̪ ɛ m ɔ̃ s̪ t̪ r a t̪s̪ j a	False	k ɔ n̪ t̪ r d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j a	True
+konwencjonalnych	mfa-only	error-union	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɨ x		k ɔ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɨ x	False	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɨ x	True
+krzywd	disputed	disputed+error-union+unalignable	k ʂ ɨ v d̪ ɛ	k ʂ ɨ f t	k ʂ ɨ v t̪	False	k ʂ ɨ f t̪	False
+kręcił	disputed	disputed	k r ɛ ɲ tɕ i w	k r ɛ n t͡ɕ i w	k r ɛ ɲ tɕ i w	True	k r ɛ ɲ tɕ i w	True
+lacrosse	mfa-only	error-union	l a k r ɔ s̪		l a t̪s̪ r ɔ s̪ ɛ	False	l a k r ɔ s̪	True
+lesbijki	agreed	error-union	l ɛ s̪ bʲ i j c i	l ɛ s b i j kʲ i	l ɛ s̪ bʲ i j c i	True	l ɛ z̪ bʲ i j c i	False
+lhasa	mfa-only	error-union	l a s̪ a		l x a s̪ a	False	l x a s̪ a	False
+liaoyangu	mfa-only	error-union	ʎ a n̪ ɡ u		ʎ i a ɔ j a n̪ ɡ u	False	ʎ a ɔ ɨ a n̪ ɡ u	False
+lier	mfa-only	error-union	ʎ i r		ʎ ɛ r	False	ʎ ɛ r	False
+liniowy	mfa-only	error-union	ʎ i ɲ j ɔ v ɨ		ʎ i ɲ ɔ v ɨ	False	ʎ i ɲ ɔ v ɨ	False
+makes	mfa-only	error-union+unalignable	m ɛ j k s̪		m a k ɛ s̪	False	m a k ɛ s̪	False
+mass	disputed	disputed	m a s̪	m a s s	m a s̪	True	m a s̪	True
+materyały	mfa-only	error-union	m a t̪ ɛ r ɨ a w ɨ		m a t̪ ɛ r ɨ a w ɨ	True	m a t̪ ɛ rʲ w ɨ	False
+megaaferę	mfa-only	error-union	m ɛ ɡ a f ɛ r ɛ		m ɛ ɡ f ɛ r ɛ	False	m ɛ ɡ a f ɛ r ɛ	True
+menżyk	mfa-only	error-union	m ɛ̃ ʐ ɨ k		m ɛ n̪ ʐ ɨ k	False	m ɛ̃ ʐ ɨ k	True
+miau	mfa-only	error-union	mʲ a w		mʲ a u	False	mʲ a u	False
+microsoft	mfa-only	error-union+unalignable	m a j k r ɔ s̪ ɔ f t̪		mʲ i k r ɔ s̪ ɔ f t̪	False	mʲ i k r ɔ s̪ ɔ f t̪	False
+mienszewików	mfa-only	error-union	mʲ ɛ̃ ʂ ɛ vʲ i k u f		mʲ ɛ̃ n̪ ʂ ɛ vʲ i k u f	False	mʲ ɛ̃ ʂ ɛ vʲ i k u f	True
+monsunowy	mfa-only	error-union	m ɔ n̪ s̪ u n̪ ɔ v ɨ		m ɔ̃ s̪ u n̪ ɔ v ɨ	False	m ɔ n̪ s̪ u n̪ ɔ v ɨ	True
+moseley	mfa-only	error-union	m ɔ s̪ ɛ l i		m ɔ s̪ ɛ l ɛ ɨ	False	m ɔ s̪ ɛ l ɛ j	False
+mottem	disputed	disputed	m ɔ t̪ ɛ m	m ɔ t t ɛ m	m ɔ t̪ ɛ m	True	m ɔ t̪ ɛ m	True
+mps	mfa-only	error-union+unalignable	ɛ m p ɛ ɛ s̪		m p s̪	False	ɛ m p ɛ s̪	False
+multiinstrumentalistka	mfa-only	error-union	m u l tʲ i i n̪ s̪ t̪ r u m ɛ n̪ t̪ a ʎ i s̪ t̪ k a		m u l tʲ i n̪ s̪ t̪ r u m ɛ n̪ t̪ a ʎ i s̪ t̪ k a	False	m u l tʲ i i n̪ s̪ t̪ r u m ɛ n̪ t̪ a ʎ i s̪ c i	False
+munyama	mfa-only	error-union	m u n̪ ɨ a m a		m u n̪ ɨ m a	False	m u n̪ ɨ a m a	True
+mógłby	agreed	polyphonic	m u ɡ b ɨ | m u ɡ w b ɨ	m u ɡ w b ɨ	m u ɡ w b ɨ	True	m u ɡ w b ɨ	True
+najpierwej	disputed	disputed+error-union	n̪ a j pʲ ɛ r f ɛ j	n a j p j ɛ r v ɛ j	n̪ a j pʲ ɛ r f ɛ j	True	n̪ a j pʲ ɛ r v ɛ j	False
+napoleońską	mfa-only	error-union	n̪ a p ɔ l ɛ ɔ ɲ s̪ k ɔ̃		n̪ a p ɔ l ɛ ɔ j̃ s̪ k ɔ̃	False	n̪ a p ɔ l ɛ ɔ j̃ s̪ k ɔ̃	False
+nauczania	disputed	disputed+error-union	n̪ a u tʂ a ɲ j a	n a f t ʂ a ɲ a	n̪ a u tʂ a ɲ a	False	n̪ a u tʂ a ɲ a	False
+nauczy	disputed	disputed	n̪ a u tʂ ɨ	n a f t ʂ ɨ	n̪ a u tʂ ɨ	True	n̪ a u tʂ ɨ	True
+niebiańska	mfa-only	error-union	ɲ ɛ bʲ a ɲ s̪ k a		ɲ ɛ bʲ a j̃ s̪ k a	False	ɲ ɛ bʲ a j̃ s̪ k a	False
+nieuniknione	disputed	disputed	ɲ ɛ u ɲ i k ɲ ɔ n̪ ɛ	ɲ ɛ v ɲ i k ɲ ɔ n ɛ	ɲ ɛ u ɲ i k ɲ ɔ n̪ ɛ	True	ɲ ɛ u ɲ i k ɲ ɔ n̪ ɛ	True
+niezamienne	disputed	disputed	ɲ ɛ z̪ a mʲ ɛ n̪ ɛ	ɲ ɛ z a m j ɛ n n ɛ	ɲ ɛ z̪ a mʲ ɛ n̪ ɛ	True	ɲ ɛ z̪ a mʲ ɛ n̪ ɛ	True
+nszz	mfa-only	error-union+unalignable	ɛ n̪ ɛ s̪ z̪ ɛ t̪ z̪ ɛ t̪		n̪ ʂ s̪	False	n̪ ʂ	False
+ntv	mfa-only	error-union+unalignable	ɛ n̪ t̪ ɛ v ɛ		n̪ t̪ f	False	ɛ n̪ t̪ ɛ v u	False
+obernzell	mfa-only	error-union	ɔ b ɛ r n̪ z̪ ɛ l		ɔ b ɛ r ɔ z̪ ɛ l	False	ɔ b ɛ r n̪ z̪ ɛ l	True
+obustronne	disputed	disputed	ɔ b u s̪ t̪ r ɔ n̪ ɛ	ɔ b u s t r ɔ n n ɛ	ɔ b u s̪ t̪ r ɔ n̪ ɛ	True	ɔ b u s̪ t̪ r ɔ n̪ ɛ	True
+ochronnym	disputed	disputed	ɔ x r ɔ n̪ ɨ m	ɔ x r ɔ n n ɨ m	ɔ x r ɔ n̪ ɨ m	True	ɔ x r ɔ n̪ ɨ m	True
+oddychając	disputed	disputed	ɔ d̪ ɨ x a j ɔ n̪ t̪s̪	ɔ d d ɨ x a j ɔ n t͡s	ɔ d̪ ɨ x a j ɔ n̪ t̪s̪	True	ɔ d̪ ɨ x a j ɔ n̪ t̪s̪	True
+oddźwięk	agreed	error-union	ɔ d̪ dʑ vʲ ɛ ŋ k	ɔ d d͡ʑ v j ɛ ŋ k	ɔ dʑ vʲ ɛ ŋ k	False	ɔ dʑ vʲ ɛ ŋ k	False
+odessie	disputed	disputed+error-union	ɔ d̪ ɛ s̪ i	ɔ d ɛ s ɕ ɛ	ɔ d̪ ɛ s̪ ɛ	False	ɔ d̪ ɛ s̪ i	True
+odmienny	disputed	disputed	ɔ d̪ mʲ ɛ n̪ ɨ	ɔ d m j ɛ n n ɨ	ɔ d̪ mʲ ɛ n̪ ɨ	True	ɔ d̪ mʲ ɛ n̪ ɨ	True
+odmienną	disputed	disputed	ɔ d̪ mʲ ɛ n̪ ɔ̃	ɔ d m j ɛ n n ɔ̃	ɔ d̪ mʲ ɛ n̪ ɔ̃	True	ɔ d̪ mʲ ɛ n̪ ɔ̃	True
+odzyskałem	disputed	disputed	ɔ d̪ z̪ ɨ s̪ k a w ɛ m	ɔ d͡z ɨ s k a w ɛ m	ɔ d̪ z̪ ɨ s̪ k a w ɛ m	True	ɔ d̪ z̪ ɨ s̪ k a w ɛ m	True
+odzyskiwały	mfa-only	error-union	ɔ d̪ z̪ ɨ s̪ c i v a w ɨ		ɔ d̪ ɨ s̪ c i v a w ɨ	False	ɔ d̪ z̪ ɨ s̪ c i v a w ɨ	True
+odzyskuje	disputed	disputed	ɔ d̪ z̪ ɨ s̪ k u j ɛ	ɔ d͡z ɨ s k u j ɛ	ɔ d̪ z̪ ɨ s̪ k u j ɛ	True	ɔ d̪ z̪ ɨ s̪ k u j ɛ	True
+oględzin	disputed	disputed	ɔ ɡ l ɛ ɲ dʑ i n̪	ɔ ɡ l ɛ n d͡ʑ i n	ɔ ɡ l ɛ ɲ dʑ i n̪	True	ɔ ɡ l ɛ ɲ dʑ i n̪	True
+olenkiewicz	mfa-only	error-union	ɔ l ɛ n̪ c ɛ vʲ i tʂ		ɔ l ɛ ŋ c ɛ vʲ i tʂ	False	ɔ l ɛ n̪ c ɛ vʲ i tʂ	True
+opłacenia	mfa-only	error-union	ɔ p w a t̪s̪ ɛ ɲ j a		ɔ p w a t̪s̪ ɛ ɲ a	False	ɔ p w a t̪s̪ ɛ ɲ a	False
+orwellowska	disputed	disputed+error-union	ɔ r w ɛ l ɔ f s̪ k a	ɔ r v ɛ l l ɔ f s k a	ɔ r v ɛ l ɔ f s̪ k a	False	ɔ r w ɛ l ɔ f s̪ k a	True
+partya	mfa-only	error-union	p a r t̪ ɨ a		p a r t̪ ɨ	False	p a r t̪ ɨ a	True
+pens	mfa-only	error-union	p ɛ̃ s̪		p ɛ n̪ s̪	False	p ɛ n̪ s̪	False
+peri	mfa-only	error-union	p ɛ r i		p ɛ rʲ i	False	p ɛ rʲ i	False
+piorunów	disputed	disputed	pʲ ɔ r u n̪ u f	p j ɔ r u n u v	pʲ ɔ r u n̪ u f	True	pʲ ɔ r u n̪ u f	True
+pochówków	mfa-only	error-union	p ɔ x u v k u f		p ɔ x u f k u f	False	p ɔ x u f k u f	False
+podzwrotnikowe	disputed	disputed+error-union	p ɔ d̪ z̪ v r ɔ t̪ ɲ i k ɔ v ɛ	p ɔ d͡z v r ɔ t ɲ i k ɔ v ɛ	p ɔ d̪ v r ɔ t̪ ɲ i k ɔ v ɛ	False	p ɔ d̪ z̪ v r ɔ t̪ ɲ i k ɔ v ɛ	True
+podżeganie	mfa-only	error-union	p ɔ dʐ ɛ ɡ a ɲ ɛ		p ɔ d̪ ɛ ɡ a ɲ ɛ	False	p ɔ d̪ ʐ ɛ ɡ a ɲ ɛ	False
+pogaństwie	mfa-only	error-union	p ɔ ɡ a ɲ s̪ t̪ fʲ ɛ		p ɔ ɡ a j̃ s̪ t̪ fʲ ɛ	False	p ɔ ɡ a j̃ s̪ t̪ fʲ ɛ	False
+pogaństwo	mfa-only	error-union	p ɔ ɡ a j̃ s̪ t̪ f ɔ		p ɔ ɡ a ɲ s̪ t̪ f ɔ	False	p ɔ ɡ a j̃ s̪ t̪ f ɔ	True
+pokręciła	disputed	disputed	p ɔ k r ɛ ɲ tɕ i w a	p ɔ k r ɛ n t͡ɕ i w a	p ɔ k r ɛ ɲ tɕ i w a	True	p ɔ k r ɛ ɲ tɕ i w a	True
+pomarzniemy	mfa-only	error-union	p ɔ m a r z̪ ɲ ɛ m ɨ		p ɔ m a r ɲ ɛ m ɨ	False	p ɔ m a r z̪ ɲ ɛ m ɨ	True
+pomazać	mfa-only	error-union	p ɔ m a z̪ a tɕ		p ɔ m a a tɕ	False	p ɔ m a z̪ a tɕ	True
+poufnie	disputed	disputed	p ɔ u f ɲ ɛ	p ɔ f f ɲ ɛ	p ɔ u f ɲ ɛ	True	p ɔ u f ɲ ɛ	True
+pozabudżetowych	mfa-only	error-union	p ɔ z̪ a b u d̪ ʐ ɛ t̪ ɔ v ɨ x		p ɔ z̪ a b u dʐ ɛ t̪ ɔ v ɨ x	False	p ɔ z̪ a b u dʐ ɛ t̪ ɔ v ɨ x	False
+propzycję	mfa-only	error-union	p r ɔ p ɨ t̪s̪ j ɛ		p r ɔ p ɨ t̪s̪ j ɛ	True	p r ɔ p s̪ ɨ t̪s̪ j ɛ	False
+przepędziłem	disputed	disputed	p ʂ ɛ p ɛ ɲ dʑ i w ɛ m	p ʂ ɛ p ɛ n d͡ʑ i w ɛ m	p ʂ ɛ p ɛ ɲ dʑ i w ɛ m	True	p ʂ ɛ p ɛ ɲ dʑ i w ɛ m	True
+przewyższać	disputed	disputed	p ʂ ɛ v ɨ ʂ a tɕ	p ʂ ɛ v ɨ ʂ ʂ a t͡ɕ	p ʂ ɛ v ɨ ʂ a tɕ	True	p ʂ ɛ v ɨ ʂ a tɕ	True
+przykucnięci	disputed	disputed	p ʂ ɨ k u t̪s̪ ɲ ɛ ɲ tɕ i	p ʂ ɨ k u t͡s ɲ ɛ n t͡ɕ i	p ʂ ɨ k u t̪s̪ ɲ ɛ ɲ tɕ i	True	p ʂ ɨ k u t̪s̪ ɲ ɛ ɲ tɕ i	True
+przyoblekła	disputed	disputed	p ʂ ɨ ɔ b l ɛ k w a	p ʂ j ɔ b l ɛ k w a	p ʂ ɨ ɔ b l ɛ k w a	True	p ʂ ɨ ɔ b l ɛ k w a	True
+pseudonauka	mfa-only	error-union	p s̪ ɛ w d̪ ɔ n̪ a u k a		p s̪ ɛ w d̪ ɔ n̪ a u k a	True	p s̪ ɛ w d̪ ɔ n̪ a w k a	False
+psi	agreed	polyphonic	p s̪ i | p ɕ i	p ɕ i	p ɕ i	True	p ɕ i	True
+pzpr	mfa-only	error-union+unalignable	p ɛ z̪ ɛ t̪ p ɛ ɛ r		p p r	False	p ɛ s̪ p ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ ɛ	False
+płynności	disputed	disputed	p w ɨ n̪ ɔ ɕ tɕ i	p w ɨ n n ɔ ɕ t͡ɕ i	p w ɨ n̪ ɔ ɕ tɕ i	True	p w ɨ n̪ ɔ ɕ tɕ i	True
+rewanż	disputed	disputed	r ɛ v a n̪ ʂ	r ɛ v a n ʐ	r ɛ v a n̪ ʂ	True	r ɛ v a n̪ ʂ	True
+rockowej	mfa-only	error-union	r ɔ k ɔ v ɛ j		r ɔ t̪s̪ k ɔ v ɛ j	False	r ɔ t̪s̪ k ɔ v ɛ j	False
+rozjechania	mfa-only	error-union	r ɔ z̪ j ɛ x a ɲ j a		r ɔ z̪ j ɛ x a ɲ a	False	r ɔ z̪ j ɛ x a ɲ j a	True
+rozkazów	disputed	disputed	r ɔ s̪ k a z̪ u f	r ɔ s k a z u v	r ɔ s̪ k a z̪ u f	True	r ɔ s̪ k a z̪ u f	True
+rozpoczęcie	disputed	disputed	r ɔ s̪ p ɔ tʂ ɛ ɲ tɕ ɛ	r ɔ s p ɔ t ʂ ɛ n t͡ɕ ɛ	r ɔ s̪ p ɔ tʂ ɛ ɲ tɕ ɛ	True	r ɔ s̪ p ɔ tʂ ɛ ɲ tɕ ɛ	True
+rozwarte	mfa-only	error-union	r ɔ z̪ v a r t̪ ɛ		r ɔ z̪ f a r t̪ ɛ	False	r ɔ z̪ v a r t̪ ɛ	True
+rpo	mfa-only	error-union+unalignable	ɛ r p ɛ ɔ		r p ɔ	False	r p ɔ	False
+rtv	mfa-only	error-union+unalignable	ɛ r t̪ ɛ v ɛ		r t̪ f	False	ɛ r t̪ ɛ v u	False
+rządzie	disputed	disputed	ʐ ɔ ɲ dʑ ɛ	ʐ ɔ n d͡ʑ ɛ	ʐ ɔ ɲ dʑ ɛ	True	ʐ ɔ ɲ dʑ ɛ	True
+rządził	disputed	disputed	ʐ ɔ ɲ dʑ i w	ʐ ɔ n d͡ʑ i w	ʐ ɔ ɲ dʑ i w	True	ʐ ɔ ɲ dʑ i w	True
+rządziła	disputed	disputed	ʐ ɔ ɲ dʑ i w a	ʐ ɔ n d͡ʑ i w a	ʐ ɔ ɲ dʑ i w a	True	ʐ ɔ ɲ dʑ i w a	True
+schmitta	mfa-only	error-union	s̪ x mʲ i t̪ a		s̪ x mʲ i t̪ t̪ a	False	s̪ x mʲ i t̪ a	True
+schwertbergu	mfa-only	error-union	s̪ x f ɛ r t̪ b ɛ r ɡ u		s̪ x f ɛ r b ɛ r ɡ u	False	s̪ x f ɛ r t̪ b ɛ r ɡ u	True
+sdebel	mfa-only	error-union	z̪ d̪ ɛ b ɛ l		s̪ d̪ ɛ b ɛ l	False	s̪ d̪ ɛ b ɛ l	False
+senne	disputed	disputed	s̪ ɛ n̪ ɛ	s ɛ n n ɛ	s̪ ɛ n̪ ɛ	True	s̪ ɛ n̪ ɛ	True
+severino	mfa-only	error-union	s̪ ɛ v ɛ rʲ i n̪ ɔ		s̪ ɛ v ɛ r i n̪ ɔ	False	s̪ ɛ v ɛ rʲ i n̪ ɔ	True
+sienkowiec	mfa-only	error-union	ɕ ɛ ŋ k ɔ vʲ ɛ t̪s̪		ɕ ɛ n̪ k ɔ vʲ ɛ t̪s̪	False	ɕ ɛ ŋ k ɔ vʲ ɛ t̪s̪	True
+singiel	mfa-only	error-union	s̪ i n̪ ɟ ɛ l		ɕ i n̪ ɟ ɛ l	False	s̪ i n̪ ɟ ɛ l	True
+skarży	disputed	disputed	s̪ k a r ʐ ɨ	s k a ʐ ɨ	s̪ k a r ʐ ɨ	True	s̪ k a r ʐ ɨ	True
+skarżyć	disputed	disputed	s̪ k a r ʐ ɨ tɕ	s k a ʐ ɨ t͡ɕ	s̪ k a r ʐ ɨ tɕ	True	s̪ k a r ʐ ɨ tɕ	True
+spotkania	agreed	error-union	s̪ p ɔ t̪ k a ɲ j a	s p ɔ t k a ɲ a	s̪ p ɔ t̪ k a ɲ a	False	s̪ p ɔ t̪ k a ɲ j a	True
+spędzić	disputed	disputed	s̪ p ɛ ɲ dʑ i tɕ	s p ɛ n d͡ʑ i t͡ɕ	s̪ p ɛ ɲ dʑ i tɕ	True	s̪ p ɛ ɲ dʑ i tɕ	True
+stewardesa	mfa-only	error-union	s̪ tʲ u a r d̪ ɛ s̪ a		s̪ t̪ u a r d̪ ɛ s̪ a	False	s̪ t̪ ɛ v a r d̪ ɛ s̪ a	False
+strzecha	mfa-only	polyphonic	s̪ tʂ ɛ x a | s̪ t̪ ʂ ɛ x a | ʂ tʂ ɛ x a		s̪ t̪ ʂ ɛ x a	True	s̪ t̪ ʂ ɛ x a	True
+subbudżetowanie	mfa-only	error-union	s̪ u b u d̪ ʐ ɛ t̪ ɔ v a ɲ ɛ		s̪ u b b u d̪ ɛ t̪ ɔ v a ɲ ɛ	False	s̪ u b u dʐ ɛ t̪ ɔ v a ɲ ɛ	False
+subjekci	mfa-only	error-union	s̪ u bʲ ɛ k tɕ i		s̪ u bʲ j ɛ k tɕ i	False	s̪ u bʲ ɛ k tɕ i	True
+surfing	mfa-only	error-union	s̪ ɛ r fʲ i n̪ k		s̪ u r fʲ i n̪ k	False	s̪ u r fʲ i n̪ k	False
+surrealizm	disputed	disputed	s̪ u r ɛ a ʎ i z̪ m	s u r r ɛ a l i z m	s̪ u r ɛ a ʎ i z̪ m	True	s̪ u r ɛ a ʎ i z̪ m	True
+szanghaj	mfa-only	error-union	ʂ a n̪ k x a j		ʂ a n̪ k x a j	True	ʂ a n̪ ɡ a j	False
+sześćsetnej	mfa-only	error-union	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɛ j		ʂ ɛ s̪ ɛ t̪ n̪ ɛ j	False	ʂ ɛ j s̪ ɛ t̪ n̪ ɛ j	False
+sześćsetną	mfa-only	error-union	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɔ̃		ʂ ɛ s̪ ɛ t̪ n̪ ɔ̃	False	ʂ ɛ j s̪ ɛ t̪ n̪ ɔ̃	False
+szwindli	mfa-only	error-union	ʂ fʲ i n̪ d̪ ʎ i		ʂ vʲ i n̪ d̪ ʎ i	False	ʂ fʲ i n̪ d̪ ʎ i	True
+tavannes	mfa-only	error-union	t̪ a w n̪ ɛ s̪		t̪ a a n̪ ɛ s̪	False	t̪ a w n̪ ɛ s̪	True
+toykeat	mfa-only	error-union	t̪ ɔ ɨ k ɛ a t̪		t̪ ɔ ɨ k ɛ a t̪	True	t̪ ɔ j k ɛ a t̪	False
+tpn	mfa-only	error-union+unalignable	t̪ ɛ p ɛ ɛ n̪		t̪ p n̪	False	t̪ ɛ p ɛ n̪	False
+trance	mfa-only	error-union+unalignable	t̪ r ɛ̃ s̪		t̪ r a n̪ t̪s̪ ɛ	False	t̪ r a n̪ t̪s̪ ɛ	False
+transgraniczne	mfa-only	error-union+unalignable	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɛ		t̪ r a n̪ s̪ ɡ r a ɲ i tʂ n̪ ɛ	False	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɛ	True
+trzeba	agreed	polyphonic	tʂ ɛ b a | t̪ ʂ ɛ b a	t ʂ ɛ b a	t̪ ʂ ɛ b a	True	t̪ ʂ ɛ b a	True
+trąciła	disputed	disputed	t̪ r ɔ ɲ tɕ i w a	t r ɔ n t͡ɕ i w a	t̪ r ɔ ɲ tɕ i w a	True	t̪ r ɔ ɲ tɕ i w a	True
+tzrynastoletni	mfa-only	error-union	t̪s̪ a r ɨ n̪ a s̪ t̪ ɔ l ɛ t̪ ɲ i		t̪ r ɨ n̪ a s̪ t̪ ɔ l ɛ t̪ ɲ i	False	t̪ z̪ r ɨ n̪ a s̪ t̪ ɔ l ɛ t̪ ɲ i	False
+uaktualnić	mfa-only	error-union	u a k t̪ u a l ɲ i tɕ		w a k t̪ u a l ɲ i tɕ	False	u a k t̪ u a l ɲ i tɕ	True
+ukłonów	disputed	disputed	u k w ɔ n̪ u f	u k w ɔ n u v	u k w ɔ n̪ u f	True	u k w ɔ n̪ u f	True
+uściśnięcie	disputed	disputed	u ɕ tɕ i ɕ ɲ ɛ ɲ tɕ ɛ	u ɕ t͡ɕ i ɕ ɲ ɛ n t͡ɕ ɛ	u ɕ tɕ i ɕ ɲ ɛ ɲ tɕ ɛ	True	u ɕ tɕ i ɕ ɲ ɛ ɲ tɕ ɛ	True
+via	disputed	disputed+error-union	vʲ i a	v j a	vʲ a	False	vʲ a	False
+volenti	mfa-only	error-union	v u l ɛ n̪ tʲ i		v ɔ l ɛ n̪ tʲ i	False	v ɔ l ɛ n̪ tʲ i	False
+voodoo	mfa-only	error-union	v u d̪ u		v ʔ ɔ d̪ ɔ ɔ	False	v u d̪ ɔ	False
+warzyw	disputed	disputed	v a ʐ ɨ f	v a ʐ ɨ v	v a ʐ ɨ f	True	v a ʐ ɨ f	True
+wczesniej	mfa-only	error-union+unalignable	f tʂ ɛ s̪ n̪ a j ɛ j		f tʂ ɛ s̪ ɲ ɛ j	False	f tʂ ɛ s̪ ɲ ɛ j	False
+widzc	mfa-only	error-union	vʲ i d̪z̪ t̪s̪		vʲ i t̪s̪ t̪s̪	False	vʲ i t̪s̪	False
+wielostronne	disputed	disputed	vʲ ɛ l ɔ s̪ t̪ r ɔ n̪ ɛ	v j ɛ l ɔ s t r ɔ n n ɛ	vʲ ɛ l ɔ s̪ t̪ r ɔ n̪ ɛ	True	vʲ ɛ l ɔ s̪ t̪ r ɔ n̪ ɛ	True
+winne	disputed	disputed	vʲ i n̪ ɛ	v i n n ɛ	vʲ i n̪ ɛ	True	vʲ i n̪ ɛ	True
+wjazdowej	mfa-only	error-union	vʲ j a z̪ d̪ ɔ v ɛ j		v j a z̪ d̪ ɔ v ɛ j	False	vʲ j a z̪ d̪ ɔ v ɛ j	True
+wku	mfa-only	error-union+unalignable	v u k a u		f k u	False	f k u	False
+wstydzę	disputed	disputed+error-union	f s̪ t̪ ɨ dʑ ɛ	f s t ɨ d͡z ɛ | f s t ɨ d͡z ɛ̃	f s̪ t̪ ɨ d̪z̪ ɛ	False	f s̪ t̪ ɨ dʑ ɛ	True
+wtw	mfa-only	error-union+unalignable	v u t̪ ɛ v u		f t̪ f	False	f t̪ a	False
+wyciągnięcia	disputed	disputed	v ɨ tɕ ɔ ŋ ɡ ɲ ɛ ɲ tɕ a	v ɨ t͡ɕ ɔ ŋ ɡ ɲ ɛ n t͡ɕ a	v ɨ tɕ ɔ ŋ ɡ ɲ ɛ ɲ tɕ a	True	v ɨ tɕ ɔ ŋ ɡ ɲ ɛ ɲ tɕ a	True
+wyobraźmy	disputed	disputed	v ɨ ɔ b r a ʑ m ɨ	v j ɔ b r a ʑ m ɨ	v ɨ ɔ b r a ʑ m ɨ	True	v ɨ ɔ b r a ʑ m ɨ	True
+wyżsi	agreed	error-union	v ɨ ʂ ɕ i	v ɨ ʂ ɕ i	v ɨ ɕ i	False	v ɨ ʂ ɕ i	True
+wyższem	disputed	disputed	v ɨ ʂ ɛ m	v ɨ ʂ ʂ ɛ m	v ɨ ʂ ɛ m	True	v ɨ ʂ ɛ m	True
+zakonnice	disputed	disputed	z̪ a k ɔ ɲ i t̪s̪ ɛ	z a k ɔ n ɲ i t͡s ɛ	z̪ a k ɔ ɲ i t̪s̪ ɛ	True	z̪ a k ɔ ɲ i t̪s̪ ɛ	True
+zakręcił	disputed	disputed	z̪ a k r ɛ ɲ tɕ i w	z a k r ɛ n t͡ɕ i w	z̪ a k r ɛ ɲ tɕ i w	True	z̪ a k r ɛ ɲ tɕ i w	True
+zwinności	disputed	disputed	z̪ vʲ i n̪ ɔ ɕ tɕ i	z v i n n ɔ ɕ t͡ɕ i	z̪ vʲ i n̪ ɔ ɕ tɕ i	True	z̪ vʲ i n̪ ɔ ɕ tɕ i	True
