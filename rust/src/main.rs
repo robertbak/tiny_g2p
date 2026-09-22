@@ -19,7 +19,7 @@
 //! 33-character training window are transcribed like any other, because the
 //! alternative (failing the run) is worse than extrapolating.
 
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 use std::io::{self, Read, Write};
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
@@ -330,12 +330,21 @@ fn miss_lexicon(
     // Adjudicated readings win over the lexicon's own, for the words the gold
     // covers: on 45 of its 148 curated words MFA is known to be wrong.
     let mut preferred: BTreeMap<String, Vec<String>> = BTreeMap::new();
+    // Words the gold marks wrong and records no alternative for. A dictionary
+    // entry would be a confident guess, so they get none.
+    let mut unfixable: BTreeSet<String> = BTreeSet::new();
     let mut gold_rows = Vec::new();
     if let Some(path) = gold_path {
         let text = std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
         for row in gold::parse_gold(&text) {
-            if let Some(reading) = row.candidates.first().or_else(|| row.refs.first()) {
-                preferred.insert(row.word.to_lowercase(), reading.clone());
+            let word = row.word.to_lowercase();
+            match accepted_reading(&row) {
+                Some(reading) => {
+                    preferred.insert(word, reading.clone());
+                }
+                None => {
+                    unfixable.insert(word);
+                }
             }
             gold_rows.push(row);
         }
@@ -343,6 +352,7 @@ fn miss_lexicon(
 
     let mut misses: BTreeMap<String, Vec<String>> = BTreeMap::new();
     let mut scanned = 0usize;
+    let mut unfixable_seen = 0usize;
     let source;
 
     if let Some(path) = &globals.lexicon {
@@ -357,6 +367,10 @@ fn miss_lexicon(
             scanned += 1;
             let heard = g2p.phonemize(&word);
             if !gold::notation_equal(&reading, &heard, &word) {
+                if unfixable.contains(&word) {
+                    unfixable_seen += 1;
+                    continue;
+                }
                 let emit = preferred.get(&word).cloned().unwrap_or(reading);
                 misses.insert(word, emit);
             }
@@ -372,8 +386,11 @@ fn miss_lexicon(
             scanned += 1;
             let heard = g2p.phonemize(&row.word);
             if !gold::judge(row, &heard).corrected_exact {
-                if let Some(reading) = row.candidates.first().or_else(|| row.refs.first()) {
-                    misses.insert(row.word.to_lowercase(), reading.clone());
+                match accepted_reading(row) {
+                    Some(reading) => {
+                        misses.insert(row.word.to_lowercase(), reading.clone());
+                    }
+                    None => unfixable_seen += 1,
                 }
             }
         }
@@ -385,6 +402,12 @@ fn miss_lexicon(
          disagreed with the model, with the reading the model should have given.\n",
         misses.len()
     ));
+    if unfixable_seen > 0 {
+        out.push_str(&format!(
+            "# {unfixable_seen} more disagreed where the gold marks the reference wrong and \
+             records no alternative; a dictionary entry would be a guess, so there is none.\n"
+        ));
+    }
     out.push_str("# word<TAB>phones; pass with --lexicon, and see `tinyg2p miss-lexicon --help`.\n");
     for (word, phones) in &misses {
         out.push_str(&format!("{word}\t{}\n", phones.join(" ")));
@@ -398,6 +421,19 @@ fn miss_lexicon(
         None => print!("{out}"),
     }
     Ok(())
+}
+
+/// The reading the gold would have the model give, if it has one to offer.
+///
+/// `candidates` are the accepted readings, already adjudicated; MFA's own refs
+/// count only when the verdict accepts them. A row with neither is one the gold
+/// marks *wrong* and records no alternative for — so there is nothing to emit,
+/// and emitting MFA's reading anyway would make the tool confidently repeat the
+/// error the gold just flagged.
+fn accepted_reading(row: &gold::GoldRow) -> Option<&Vec<String>> {
+    row.candidates
+        .first()
+        .or_else(|| if row.mfa_ok { row.refs.first() } else { None })
 }
 
 fn info(globals: &Globals) -> Result<(), String> {

@@ -1,0 +1,71 @@
+# tiny-g2p exception dictionary: 68 of 6699 words in data/test_gold.tsv disagreed with the model, with the reading the model should have given.
+# 2 more disagreed where the gold marks the reference wrong and records no alternative; a dictionary entry would be a guess, so there is none.
+# word<TAB>phones; pass with --lexicon, and see `tinyg2p miss-lexicon --help`.
+aleuckiego	a l ɛ w t̪s̪ c ɛ ɡ ɔ
+augustyanów	a w ɡ u s̪ t̪ ɨ a n̪ u f
+authorising	a w t̪ ɔ rʲ i z̪ i n̪ k
+beyer	b ɛ j ɛ r
+brudz	b r u t̪s̪
+cagliari	k a l j a rʲ i
+cappuccino	k a p u tʂ i n̪ ɔ
+coleslaw	k ɔ l s̪ l ɔ w
+cross	k r ɔ s̪
+curling	k ɛ r ʎ i n̪ k
+curry	k a r ɨ
+dealer	d̪ i l ɛ r
+dossier	d̪ ɔ s̪ i r
+dubstep	d̪ a p s̪ t̪ ɛ p
+engel	ɛ ŋ ɡ ɛ l
+englot	ɛ n̪ ɡ l ɔ t̪
+etui	ɛ t̪ u i
+fair	f ɛ r
+fantazya	f a n̪ t̪ a z̪ j a
+gronkiewicz	ɡ r ɔ n̪ c ɛ vʲ i tʂ
+guacamole	ɡ w a k a m ɔ l ɛ
+homofobii	x ɔ m ɔ f ɔ bʲ a j i
+ilustracye	i l u s̪ t̪ r a t̪s̪ ɨ
+inwentaryzacja	i n̪ v ɛ n̪ t̪ a r ɨ z̪ a t̪s̪ j a
+jutrzenkę	j u t̪ ʂ ɛ n̪ k ɛ
+kandzior	k a ɲ dʑ ɔ r
+klebsiella	k l ɛ b ɕ ɛ l a
+klombie	k l ɔ m bʲ i
+konkubin	k ɔ ŋ k u bʲ i n̪
+konsulem	k ɔ̃ s̪ u l ɛ m
+konsumentka	k ɔ n̪ s̪ u m ɛ n̪ t̪ k a
+kontrdemonstracja	k ɔ n̪ t̪ r d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j a
+konwencjonalnych	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɨ x
+lacrosse	l a k r ɔ s̪
+lhasa	l a s̪ a
+lier	ʎ i r
+makes	m ɛ j k s̪
+miau	mʲ a w
+mienszewików	mʲ ɛ̃ ʂ ɛ vʲ i k u f
+monstrum	m ɔ n̪ s̪ t̪ r u m
+moseley	m ɔ s̪ ɛ l i
+munyama	m u n̪ ɨ a m a
+naradzasz	n̪ a r a d̪z̪ a ʂ
+obernzell	ɔ b ɛ r n̪ z̪ ɛ l
+oddźwięk	ɔ d̪ dʑ vʲ ɛ ŋ k
+odzyskiwały	ɔ d̪ z̪ ɨ s̪ c i v a w ɨ
+olenkiewicz	ɔ l ɛ n̪ c ɛ vʲ i tʂ
+partya	p a r t̪ ɨ a
+pochówków	p ɔ x u v k u f
+podzwrotnikowe	p ɔ d̪ z̪ v r ɔ t̪ ɲ i k ɔ v ɛ
+podżeganie	p ɔ dʐ ɛ ɡ a ɲ ɛ
+rockowej	r ɔ k ɔ v ɛ j
+schmitta	s̪ x mʲ i t̪ a
+schwertbergu	s̪ x f ɛ r t̪ b ɛ r ɡ u
+sdebel	z̪ d̪ ɛ b ɛ l
+sienkowiec	ɕ ɛ ŋ k ɔ vʲ ɛ t̪s̪
+singiel	s̪ i n̪ ɟ ɛ l
+subbudżetowanie	s̪ u b u d̪ ʐ ɛ t̪ ɔ v a ɲ ɛ
+surfing	s̪ ɛ r fʲ i n̪ k
+sześćsetnej	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɛ j
+sześćsetną	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɔ̃
+szwindli	ʂ fʲ i n̪ d̪ ʎ i
+tavannes	t̪ a w n̪ ɛ s̪
+trance	t̪ r ɛ̃ s̪
+transgraniczne	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɛ
+uaktualnić	u a k t̪ u a l ɲ i tɕ
+voodoo	v u d̪ u
+wenezuelka	v ɛ n̪ ɛ z̪ u ɛ l k a

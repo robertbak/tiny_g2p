@@ -1,0 +1,1878 @@
+# tiny-g2p exception dictionary: 1875 of 134505 words in ../pl_g2p/data/lexicons/polish_mfa.dict disagreed with the model, with the reading the model should have given.
+# 10 more disagreed where the gold marks the reference wrong and records no alternative; a dictionary entry would be a guess, so there is none.
+# word<TAB>phones; pass with --lexicon, and see `tinyg2p miss-lexicon --help`.
+aaa	a a
+aalborg	ɔ l b ɔ r k
+aalborski	ɔ l b ɔ r s̪ c i
+aarhus	ɔ r x u s̪
+abbasa	a b ɛ b a s̪ a
+abc	a b ɛ t̪s̪ ɛ
+abe	a b ɛ ɛ
+abs	a b ɛ ɛ s̪
+abu	a b ɛ u
+abw	a b ɛ v u
+academy	a d̪ ɛ m ɨ
+achmed	tʂ m ɛ t̪
+achmeda	a x m ɛ d̪ a
+act	a t̪
+acta	a t̪ a
+afc	a ɛ f t̪s̪ ɛ
+afgańska	a f ɡ a j̃ s̪ k a
+afgańskie	a f ɡ a j̃ s̪ c ɛ
+afgańskiej	a f ɡ a j̃ s̪ c ɛ j
+afgańskiemu	a f ɡ a j̃ s̪ c ɛ m u
+afgańskim	a f ɡ a j̃ s̪ c i m
+afgańskimi	a f ɡ a j̃ s̪ c i mʲ i
+afgańsko	a f ɡ a j̃ s̪ k ɔ
+afgańską	a f ɡ a j̃ s̪ k ɔ̃
+afp	a v ɛ p ɛ
+aids	a j d̪ ɛ s̪
+airfastu	r f a s̪ t̪ u
+ajaccio	a j a tʂ tʂ j ɔ
+ak	a k a
+alcornoques	a l k ɔ r n̪ ɔ k w ɛ s̪
+aleksandr	a l ɛ k s̪ a n̪ d̪ r
+aleksandrii	a l ɛ k s̪ a n̪ d̪ r a j i
+aleksiewicz	a l ɛ k ɕ ɛ vʲ i tʂ
+aleuckiego	a l ɛ w t̪s̪ c ɛ ɡ ɔ
+aleuty	a l ɛ u t̪ ɨ
+alfonsowaty	a l f ɔ n̪ s̪ ɔ v a t̪ ɨ
+algarve	a l ɡ a r f
+alguazila	a l ɡ w a ʑ i l a
+allgemeine	a l ɡ ɛ m a j n̪
+almeth	a l m ɛ t̪ x
+alzheimera	a l z̪ x ɛ i m ɛ r a
+andrieja	a n̪ d̪ r a j ɛ j a
+anglistyka	a ŋ ɡ ʎ i s̪ t̪ ɨ k a
+annonciady	a n̪ ɔ ɲ tɕ a d̪ ɨ
+anyżówki	a n̪ ɨ ʂ u f c i
+apartheid	a p a r t̪ x ɛ j t̪
+apollina	a p ɔ ʎ i n̪ a
+apple	ɛ p l
+aptekarzu	a p t̪ ɛ k a ʂ u
+aquapark	a k f a p a r k
+argot	a r ɡ ɔ
+arimr	a rʲ i m a a r
+arkansas	a r k a n̪ z̪ a s̪
+asha	a ɕ a
+astoreth	a s̪ t̪ ɔ r ɛ t̪ x
+atelier	a t̪ ɛ l j ɛ
+athens	a t̪ x ɛ̃ s̪
+auckland	ɔ k l a n̪ t̪
+audiobook	a w d̪ j ɔ b u k
+augustianów	a w ɡ u s̪ tʲ i a n̪ u f
+augustyanów	a w ɡ u s̪ t̪ ɨ a n̪ u f
+auschwitz	a w s̪ x fʲ i
+austrya	a w s̪ t̪ rʲ
+austryacki	a w s̪ t̪ rʲ t̪s̪ c i
+austryakami	a w s̪ t̪ rʲ k a mʲ i
+austryaków	a w s̪ t̪ rʲ k u f
+authorising	a w t̪ ɔ rʲ i z̪ i n̪ k
+autobiografii	a w t̪ ɔ bʲ ɔ ɡ r a fʲ a j i
+avadora	v a d̪ ɔ r a
+avadoro	v a d̪ ɔ r ɔ
+avalos	a w l ɔ s̪
+avanti	a w n̪ tʲ i
+avarito	a w rʲ i t̪ ɔ
+aws	a v u ɛ s̪
+axamitu	a k s̪ a mʲ i t̪ u
+axel	a k s̪ ɛ l
+axentowicz	a k s̪ ɛ n̪ t̪ ɔ vʲ i tʂ
+ałtaj	a l t̪ a j
+b	b ɛ
+bakałarzu	b a k a w a ʂ u
+bakburta	b a ɡ b u r t̪ a
+balazs	b a l a s̪
+bank	b a ŋ k
+barbecue	b a r b ɛ k j u
+baseball	b ɛ j z̪ b ɔ l
+basry	b a s̪ rʲ i
+basrze	b ɛ j z̪ ʐ ɛ
+baterye	b a t̪ ɛ rʲ
+bavorova	b a v ɔ r ɔ v a
+bać	b a tɕ ɛ
+bbc	b ɛ b ɛ t̪s̪ ɛ
+beaumont	b ɛ a w m ɔ n̪ t̪
+bedzie	b ɛ d̪ ʑ ɛ
+bedziesz	b ɛ d̪ ʑ ɛ ʂ
+beethovenowski	b ɛ t̪ ɔ v ɛ n̪ ɔ f s̪ c i
+beidaihe	b a j d̪ ɛ j ɛ
+bejsbol	b ɛ j z̪ b ɔ l
+believre	b ɛ l j ɛ vʲ i r
+belivre	b ɛ l j fʲ i r
+bellecour	b ɛ l k ɛ r
+benben	b ɛ m b ɛ n̪
+benchmarkingu	b ɛ̃ x m a r c i n̪ ɡ u
+benfluoreksu	b ɛ n̪ f l u ɔ r ɛ k s̪ u
+bengazi	b ɛ n̪ ɡ a ʑ i
+benzen	b ɛ n̪ z̪ ɛ n̪
+bergson	b ɛ r k s̪ ɔ n̪
+berlusconi	b ɛ r l u s̪ k ɔ ɲ i
+bernouilly	b ɛ r n̪ ɔ u i l ɨ
+bethke	b ɛ t̪ x k ɛ
+beyer	b ɛ j ɛ r
+bezczelność	b ɛ ʂ tʂ ɛ l n̪ ɔ ɕ tɕ
+bezczelny	b ɛ ʂ tʂ ɛ l n̪ ɨ
+bezdzietny	b ɛ ʑ dʑ ɛ t̪ n̪ ɨ
+bezdzietnych	b ɛ z̪ dʑ ɛ t̪ n̪ ɨ x
+bezhołowie	b ɛ s̪ x ɔ w ɔ vʲ ɛ
+bezideowi	b ɛ z̪ i d̪ ɛ ɔ vʲ i
+bezimienne	b ɛ ʑ i mʲ ɛ n̪ ɛ
+beznadziejnie	b ɛ z̪ n̪ a dʑ ɛ j n̪ a j ɛ
+bezprecedensowa	b ɛ s̪ p r ɛ t̪s̪ ɛ d̪ ɛ̃ s̪ ɔ v a
+bezprecedensowe	b ɛ s̪ p r ɛ t̪s̪ ɛ d̪ ɛ̃ s̪ ɔ v ɛ
+bhattim	b tʲ i m
+bhp	b ɛ p ɛ
+biedkę	bʲ ɛ d̪ k ɛ
+bienkiewicz	bʲ ɛ n̪ c ɛ vʲ i tʂ
+bieszczadzkiego	bʲ ɛ ʂ tʂ a t̪s̪ c ɛ ɡ ɔ
+biodiesel	bʲ ɔ d̪ i z̪ ɛ l
+biodiesla	bʲ ɔ d̪ i s̪ l a
+biografii	bʲ ɔ ɡ r a fʲ a j i
+birmingham	bʲ i r mʲ i n̪ ɡ a m
+bischofshofen	bʲ i s̪ x ɔ f ʂ ɔ f ɛ n̪
+bismarck	bʲ i s̪ m a r k
+bizneswoman	bʲ i z̪ n̪ ɛ s̪ w u m ɛ n̪
+blair	b l ɛ r
+blanco	b l ɛ n̪ k ɔ
+blix	b ʎ i k s̪
+blizkich	b ʎ i z̪ c i x
+blizkim	b ʎ i z̪ c i m
+bluesa	b l u ɛ s̪ a
+bluetooth	b l u ɛ t̪ ɔ ʔ ɔ
+bogoojczyźniany	b ɔ ɡ ɔ ʔ ɔ j tʂ ɨ ʑ ɲ a n̪ ɨ
+boisselier	b ɔ i z̪ ɛ l j ɛ
+bondziul	b ɔ ɲ dʑ u l
+bonk	b ɔ ŋ k
+bonkowski	b ɔ ŋ k ɔ f s̪ c i
+bonsai	b ɔ̃ s̪ a j
+bonzowie	b ɔ ŋ z̪ ɔ vʲ ɛ
+bonzów	b ɔ ŋ z̪ u f
+books	b u k a ɛ s̪
+boombox	b u m b ɔ k s̪
+boomie	b u mʲ ɛ
+botfortach	b ɔ t̪ f ɔ r t̪ a x
+botswana	b ɔ t̪s̪ f a n̪ a
+braghetto	b r a ɡ ɛ t̪ ɔ
+breakdance	b r ɛ j k d̪ ɛ n̪ s̪
+brescia	b r ɛ ʂ j a
+brexit	b r ɛ s̪ i t̪
+bridgetown	b rʲ i tʂ t̪ a w n̪
+briefing	b rʲ i fʲ i n̪ k
+briefingu	b rʲ i fʲ i n̪ ɡ u
+brongiel	b r ɔ ŋ ɟ ɛ l
+bronkiewicz	b r ɔ n̪ c ɛ vʲ i tʂ
+bronz	b r ɔ n̪ s̪
+brooks	b r ɔ ʔ ɔ k s̪
+brothers	b r ɔ t̪ ɛ r s̪
+brr	b ɛ r ɛ r
+brrr	b ɛ r ɛ r ɛ r
+brudz	b r u t̪s̪
+brydż	b r ɨ tʂ
+bryzg	b r ɨ s̪ k
+brzenk	b ʐ ɛ ŋ k
+budowli	b u d̪ ɔ v l a j
+budżecie	b u d̪ ʐ ɛ tɕ ɛ
+budżet	b u d̪ ʐ ɛ t̪
+budżetem	b u d̪ ʐ ɛ t̪ ɛ m
+budżetu	b u d̪ ʐ ɛ t̪ u
+budżety	b u d̪ ʐ ɛ t̪ ɨ
+budżetów	b u d̪ ʐ ɛ t̪ u f
+budżetówka	b u d̪ ʐ ɛ t̪ u f k a
+buen	b u ɛ n̪
+bureau	b u r ɔ
+burquerosbusqueros	b u r k w ɛ r ɔ z̪ b u s̪ k w ɛ r ɔ s̪
+bush	b u ɕ
+busha	b u ɕ a
+bushem	b u ɕ ɛ m
+bushido	b u ɕ i d̪ ɔ
+business	b u ɕ i n̪ ɛ s̪
+busqucros	b u s̪ k f k r ɔ s̪
+byliśmy	b ɨ w i ɕ m ɨ
+byly	b ɨ i
+bystrooki	b ɨ s̪ t̪ r ɔ ʔ ɔ c i
+bóbr	b u b r
+bździkot	b ʑ dʑ i k ɔ t̪
+bździon	b ʑ dʑ ɔ n̪
+bździuch	b ʑ dʑ u x
+bździć	b ʑ dʑ i tɕ
+c	t̪s̪ ɛ
+caf	k a f
+cafe	k a f ɛ
+cagliari	k a l j a rʲ i
+cahagneta	k a x a ɡ n̪ ɛ t̪ a
+cahalu	k a x a l u
+cakir	k a c i r
+calatravy	t̪s̪ a l a t̪ r a vʲ i
+camembert	k a m ɛ m b ɛ r
+cameron	k a m ɛ r ɔ n̪
+campylobacter	k a m p ɨ l ɔ b a t̪s̪ t̪ ɛ r
+canberra	k a n̪ b ɛ r a
+canfina	k a n̪ fʲ i n̪ a
+cappuccino	k a p u tʂ i n̪ ɔ
+carla	k a r l a
+cartridge	t̪s̪ a r t̪ rʲ i dʐ
+case	k a s̪ ɛ
+castelli	k a s̪ t̪ ɛ l ʎ i
+castera	k a s̪ t̪ ɛ r a
+castilla	k a s̪ tʲ i j a
+casting	k a s̪ tʲ i n̪ k
+castingowy	k a s̪ tʲ i n̪ ɡ ɔ v ɨ
+castries	k a s̪ t̪ rʲ i s̪
+catering	k a t̪ ɛ rʲ i n̪ k
+cateringowy	k a t̪ ɛ rʲ i n̪ ɡ ɔ v ɨ
+cbos	t̪s̪ ɛ b ɛ ɛ s̪
+cchinwali	t̪s̪ ç i n̪ v a ʎ i
+cdu	t̪s̪ ɛ d̪ ɛ u
+celine	t̪s̪ ɛ l a j n̪
+cennik	t̪s̪ ɛ ɲ i k
+cheerleaderka	tʂ i r ʎ i d̪ ɛ r k a
+cheeseburger	tʂ i s̪ b u r ɡ ɛ r
+cherokee	x ɛ r ɔ k i
+chicago	ç i a ɡ ɔ
+chicagowskich	ç i k a ɡ ɔ f s̪ c i x
+chihuahua	tʂ i w a w a
+chile	tʂ i l ɛ
+chili	tʂ i ʎ i
+chilijczyk	tʂ i ʎ i j tʂ ɨ k
+chilijka	tʂ i ʎ i j k a
+chilijski	tʂ i ʎ i j s̪ c i
+chilli	tʂ i ʎ i
+chip	tʂ i p
+chips	tʂ i p s̪
+chińskiej	ç i j̃ s̪ c ɛ j
+chonsu	x ɔ n̪ s̪ u
+christoffersena	tʂ rʲ i s̪ t̪ ɔ f ɛ r s̪ ɛ n̪ a
+chrzonszcz	x ʂ ɔ̃ ʂ tʂ
+churchila	x u r ç i a
+cietrzew	tɕ ɛ tʂ ɛ f
+cimienga	tɕ i mʲ ɛ ŋ ɡ a
+cis	t̪s̪ i s̪
+citroena	tɕ i t̪ r ɛ n̪ a
+ck	t̪s̪ ɛ k a
+claude	k l ɔ j d̪ ɛ
+clay	t̪s̪ l ɛ j
+clonaid	k l ɔ̃ ɛ j t̪
+clooney	k l ɔ n̪ i
+clooneya	k l ɔ n̪ i
+clown	k l a w n̪
+club	k l u p
+clubu	k l u b u
+cnn	t̪s̪ ɛ ɛ n̪ ɛ n̪
+coach	k ɔ w tʂ
+codziennie	t̪s̪ ɔ dʑ ɛ ɲ ɛ
+coitus	k ɔ i t̪ u s̪
+cokilka	k ɔ c i l k a
+coleslaw	k ɔ l s̪ l ɔ w
+colesław	k ɔ l ɛ s̪ w a f
+collegium	k ɔ l ɛ ɟ j u m
+collie	k ɔ l j ɛ
+colę	k ɔ l ɛ
+comadez	t̪s̪ ɔ m ɛ s̪
+conajwyżej	k ɔ n̪ a j v ɨ ʐ ɛ j
+concacaf	k ɔ n̪ k a k a f
+condoleezza	k ɔ n̪ d̪ ɔ l ɛ ɛ z̪ a
+connecticut	k ɔ n̪ ɛ k tʲ i k a t̪
+consultants	ɔ̃ s̪ u l t̪ a n̪ t̪ s̪
+contadora	k ɔ n̪ t̪ a d̪ ɔ r a
+cooke	k u k ɛ
+cool	k u l
+coombe	k u m b ɛ
+copywriter	k ɔ pʲ i r a j t̪ ɛ r
+corrie	k ɔ rʲ i
+corriere	k ɔ rʲ i r
+cosi	k ɔ s̪ i
+cosinus	k ɔ s̪ i n̪ u s̪
+cottereau	k ɔ t̪ r ɔ
+coubertina	u b ɛ r tʲ i n̪ a
+country	k a n̪ t̪ r ɨ
+courage	a w r a ɡ ɛ
+coventry	k ɔ v ɛ n̪ t̪ rʲ i
+cover	k a v ɛ r
+coz	k ɔ s̪
+coż	k ɔ ʂ
+cpn	t̪s̪ ɛ p ɛ ɛ n̪
+cratchit	k r ɔ t̪ ç i t̪
+crawford	k r ɔ f ɔ r t̪
+crescenda	k r ɛ s̪ t̪s̪ ɛ n̪ d̪ a
+crh	t̪s̪ ɛ ɛ r x a
+cross	k r ɔ s̪
+curling	k ɛ r ʎ i n̪ k
+curry	k a r ɨ
+cyberpunk	t̪s̪ ɨ b ɛ r p a n̪ k
+cysteina	t̪s̪ ɨ s̪ t̪ ɛ i n̪ a
+czarnoksiężniczkiem	tʂ a r n̪ ɔ k ɕ ɛ ŋ ʐ ɲ i tʂ c ɛ m
+czarnoksiężnik	tʂ a r n̪ ɔ k ɕ ɛ ŋ ʐ ɲ i k
+czarnoksiężnika	tʂ a r n̪ ɔ k ɕ ɛ ŋ ʐ ɲ i k a
+czarnoksiężnikiem	tʂ a r n̪ ɔ k ɕ ɛ ŋ ʐ ɲ i c ɛ m
+czarnoksiężniku	tʂ a r n̪ ɔ k ɕ ɛ ŋ ʐ ɲ i k u
+czarnoksiężników	tʂ a r n̪ ɔ k ɕ ɛ ŋ ʐ ɲ i k u f
+czeczenii	tʂ ɛ tʂ ɛ n̪ j i
+czerniachowicz	tʂ ɛ r ɲ a x ɔ vʲ i tʂ
+czesi	tʂ ɛ s̪ i
+cóżby	t̪s̪ u ʂ b ɨ
+cóżbym	t̪s̪ u ʂ b ɨ m
+cóżbyś	t̪s̪ u ʂ b ɨ ɕ
+cęściej	ɛ̃ ɕ tɕ ɛ j
+d	d̪ ɛ
+daphne	d̪ a p x n̪ ɛ
+dartmouth	d̪ a r t̪ m a w t̪
+dat	d̪ ɛ a t̪ ɛ
+davaloz	d̪ ɛ j v a l ɔ s̪
+dc	d̪ ɛ t̪s̪ ɛ
+deadline	d̪ ɛ d̪ l a j n̪
+dealer	d̪ i l ɛ r
+dealera	d̪ i l ɛ r a
+dealerzy	d̪ i l ɛ ʐ ɨ
+deczin	d̪ ɛ t̪s̪ ʑ i n̪
+defendens	d̪ ɛ f ɛ n̪ d̪ ɛ̃ s̪
+dei	d̪ ɛ ɛ i
+delaware	d̪ ɛ l a w ɛ r
+delikatesie	d̪ ɛ ʎ i k a t̪ ɛ ɕ ɛ
+delliusa	d̪ ɛ l j u s̪ a
+delliuszu	d̪ ɛ l j u ʂ u
+delphi	d̪ ɛ l fʲ i
+demografii	d̪ ɛ m ɔ ɡ r a fʲ a j i
+demonstracja	d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j a
+demonstracje	d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j ɛ
+demonstracji	d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j i
+demonstracyjny	d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ ɨ j n̪ ɨ
+demonstranci	d̪ ɛ m ɔ̃ s̪ t̪ r a n̪ tɕ i
+demonstrują	d̪ ɛ m ɔ n̪ s̪ t̪ r u j ɔ̃
+deng	d̪ ɛ n̪ k
+denkiewicz	d̪ ɛ ŋ c ɛ vʲ i tʂ
+deulen	d̪ ɛ w u l ɛ n̪
+devon	d̪ ɛ v ɔ n̪
+di	d̪ ɛ i
+diabelny	d̪ i a b ɛ l n̪ ɨ
+diagnozujące	d̪ i a ɡ n̪ ɔ z̪ u j ɔ n̪ t̪s̪ ɛ
+dick	d̪ i k
+diecie	d̪ i ɛ tɕ ɛ
+diega	d̪ i ɛ ɡ a
+diego	d̪ i ɛ ɡ ɔ
+dies	d̪ i s̪
+diesel	d̪ i z̪ ɛ l
+dietetyczny	d̪ j ɛ t̪ ɛ t̪ ɨ tʂ n̪ ɨ
+diety	d̪ i ɛ t̪ ɨ
+disco	d̪ i s̪ k ɔ
+dj	d̪ i dʐ ɛ j
+dlaczegożby	d̪ l a tʂ ɛ ɡ ɔ ʂ b ɨ
+dna	d̪ ɛ ɛ n̪ a
+dobrze	d̪ ɔ p ʂ
+dominique	d̪ ɔ mʲ i ɲ j k j u
+dossier	d̪ ɔ s̪ i r
+dostrzegą	d̪ ɔ s̪ t̪ ʂ ɛ ɡ ɔ̃
+dpa	d̪ ɛ p ɛ a
+drachm	d̪ r a x a ɛ m
+drenthe	d̪ r ɛ n̪ t̪ ɛ
+drozdz	d̪ r ɔ s̪ t̪s̪
+drożdż	d̪ r ɔ ʂ tʂ
+drożsi	d̪ r ɔ ɕ i
+drużdż	d̪ r u ʂ tʂ
+dubstep	d̪ a p s̪ t̪ ɛ p
+durry	d̪ k a r ɨ
+dvorzisztie	d̪ v ɔ ʂ i ʂ tʲ ɛ
+dwadziescia	d̪ v a dʑ ɛ ʂ j a
+dwudziestoosobowej	d̪ v u dʑ ɛ s̪ t̪ ɔ ʔ ɔ s̪ ɔ b ɔ v ɛ j
+dysgrafia	d̪ ɨ s̪ a ɡ r a fʲ a
+dyspepsia	d̪ ɨ s̪ p ɛ p s̪ i a
+dzband̪z̪	b a n̪
+dziendzioł	dʑ ɛ ɲ dʑ ɔ w
+dziengiel	dʑ ɛ ŋ ɟ ɛ l
+dziennie	dʑ ɛ ɲ ɛ
+dziennik	dʑ ɛ ɲ i k
+dziewiętnastoletnią	dʑ ɛ vʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɔ l ɛ t̪ ɲ ɔ̃
+dziewiętnasty	dʑ ɛ vʲ ɛ t̪ n̪ a s̪ t̪ ɨ
+dziewiętnaście	dʑ ɛ vʲ ɛ t̪ n̪ a ɕ tɕ ɛ
+dziewiętnaścioro	dʑ ɛ vʲ ɛ n̪ t̪ n̪ a ɕ tɕ ɔ r ɔ
+dziewięćdziesiąty	dʑ ɛ vʲ ɛ ɲ dʑ ɛ ɕ ɔ n̪ t̪ ɨ
+dzionk	dʑ ɔ ŋ k
+dzong	d̪z̪ ɔ n̪ k
+dzw	d̪z̪ v u
+długookresowej	d̪ w u ɡ ɔ ʔ ɔ k r ɛ s̪ ɔ v ɛ j
+dżersej	dʐ ɛ r s̪ ɛ j
+ebooki	ɛ b ɔ ʔ ɔ c i
+edi	ɛ d̪ ɛ i
+ee	i
+eee	ɛ i
+eiacuiatio	a j a tʲ ɔ
+einstein	a j n̪ ʂ t̪ a j n̪
+einsteina	a j n̪ ʂ t̪ a j n̪ a
+eksżona	ɛ ɡ z̪ ʐ ɔ n̪ a
+ekwipaże	ɛ k fʲ i p a ʂ ɛ
+elektrolux	ɛ l ɛ k t̪ r ɔ l u k s̪
+elipsie	ɛ ʎ i p s̪ i
+elisabeth	ɛ ʎ i s̪ a b ɛ t̪ x
+elizabeth	ɛ ʎ i z̪ a b ɛ t̪ x
+eltcrac	ɛ l t̪ k r a t̪s̪
+emmanuelli	ɛ m a n̪ u ɛ l ʎ i
+energizer	ɛ n̪ ɛ r dʐ a j z̪ ɛ r
+energizera	ɛ n̪ ɛ r dʐ a j z̪ ɛ r a
+energizerach	ɛ n̪ ɛ r dʐ a j z̪ ɛ r a x
+energizerami	ɛ n̪ ɛ r dʐ a j z̪ ɛ r a mʲ i
+energizerem	ɛ n̪ ɛ r dʐ a j z̪ ɛ r ɛ m
+energizerom	ɛ n̪ ɛ r dʐ a j z̪ ɛ r ɔ m
+energizerowi	ɛ n̪ ɛ r dʐ a j z̪ ɛ r ɔ vʲ i
+energizery	ɛ n̪ ɛ r dʐ a j z̪ ɛ r ɨ
+energizerze	ɛ n̪ ɛ r dʐ a j z̪ ɛ ʐ ɛ
+energizerów	ɛ n̪ ɛ r dʐ a j z̪ ɛ r u f
+energja	ɛ n̪ ɛ r dʐ ɛ j a
+energji	ɛ n̪ ɛ r dʐ ɛ j i
+energją	ɛ n̪ ɛ r dʐ ɛ j ɔ̃
+energję	ɛ n̪ ɛ r dʐ ɛ j ɛ
+energy	ɛ n̪ ɛ r dʐ a ɨ
+engel	ɛ ŋ ɡ ɛ l
+englot	ɛ n̪ ɡ l ɔ t̪
+enriquez	ɛ n̪ r i k w ɛ s̪
+enzym	ɛ n̪ z̪ ɨ m
+epopei	ɛ p ɔ p ɛ i
+eric	ɛ r ɛ k
+ernst	ɛ r n̪ ʂ t̪
+erytrea	ɛ r ɨ t̪ r ɛ j a
+esbjerg	ɛ z̪ bʲ ɛ r
+escabeau	ɛ s̪ bʲ ɔ
+eseldowski	ɛ s̪ ɛ l d̪ ɔ f s̪ c i
+eseldowskich	ɛ s̪ ɛ l d̪ ɔ f s̪ c i x
+et	ɛ t̪ ɛ
+etc	ɛ t̪ ɛ t̪s̪ ɛ
+etiologia	ɛ tʲ i ɔ l ɔ ɟ j a
+etui	ɛ t̪ u i
+eu	ɛ u
+eurodance	ɛ w r ɔ d̪ ɛ̃ s̪
+euroentuzjastom	ɛ w r ɛ n̪ t̪ u z̪ j a s̪ t̪ ɔ m
+euroobligacje	ɛ w r ɔ ʔ ɔ b ʎ i ɡ a t̪s̪ j ɛ
+euroobligacji	ɛ w r ɔ ʔ ɔ b ʎ i ɡ a t̪s̪ j i
+ewg	ɛ v ɛ d̪ w u k
+ex	ɛ k s̪
+excellence	ɛ k s̪ ɛ l ɛ n̪ t̪s̪ ɛ
+exemplarzy	ɛ k s̪ ɛ m p l a ʐ ɨ
+exodu	ɛ k s̪ ɔ d̪ u
+exodus	ɛ k s̪ ɔ d̪ u s̪
+expander	ɛ k s̪ p a n̪ d̪ ɛ r
+expandera	ɛ k s̪ p a n̪ d̪ ɛ r a
+expo	ɛ k s̪ p ɔ
+expressie	ɛ k s̪ p r ɛ s̪ i
+ezt	ɛ z̪ ɛ t̪ ɛ
+f	ɛ f
+facebook	f ɛ j s̪ b u k
+facebooka	f ɛ j s̪ b u k a
+facebooku	f ɛ j s̪ b u u k a u
+facecye	f ɛ t̪s̪ ɨ
+facto	f a k a t̪ ɔ
+fair	f ɛ r
+famenut	f a m ɛ ɲ ɔ
+fantastycznonaukowy	f a n̪ t̪ a s̪ t̪ ɨ tʂ n̪ ɔ n̪ a u k ɔ v ɨ
+fantasy	f a n̪ t̪ a z̪ ɨ
+fantazya	f a n̪ t̪ a z̪ j a
+fastfoodowy	f a s̪ t̪ f u d̪ ɔ v ɨ
+fatah	f a t̪ a
+faunie	f a w n̪ a j ɛ
+fax	f a k s̪
+fayyadem	f a j ɨ a d̪ ɛ m
+fdi	ɛ f d̪ ɛ i
+fiemme	fʲ i m ɛ
+firefox	fʲ i r ɛ f ɔ k s̪
+fiszbin	fʲ i ʐ bʲ i n̪
+fiszbinowiec	fʲ i ʐ bʲ i n̪ ɔ vʲ ɛ t̪s̪
+fiszbinowy	fʲ i ʐ bʲ i n̪ ɔ v ɨ
+fixe	fʲ i k s̪ ɛ
+flachgau	f l a x a ɡ a w
+flamenco	f l a m ɛ n̪ k ɔ
+flevoland	f l ɛ j v ɔ l a n̪ t̪
+foie	f ɔ i
+folencour	f ɔ l ɛ̃ k ɛ r
+fondue	f ɔ̃ d̪ i
+fons	f ɔ n̪ s̪
+formularzami	f ɔ r m u l a ʂ a mʲ i
+fotografii	f ɔ t̪ ɔ ɡ r a fʲ a j i
+foulqua	f a w l k w a
+foulque	f a w l k j u
+foyer	f w a j ɛ
+francisco	f r a ɲ tɕ i s̪ k ɔ
+franciszek	f r a ɲ tɕ i ʂ ɛ k
+franciszka	f r a ɲ tɕ i ʂ k a
+freelancer	f rʲ i l ɛ n̪ s̪ ɛ r
+freudowska	f r ɔ j d̪ ɔ f s̪ k a
+frisbee	f rʲ i z̪ bʲ i
+fsb	ɛ f ɛ s̪ p ɛ
+full	f u l
+furyą	f u rʲ ɔ̃
+fzekł	f ɛ k w
+g	ɡ j ɛ
+galerye	ɡ a l ɛ rʲ
+gamepad	ɡ ɛ j m p a t̪
+gansiniec	ɡ a j̃ ɕ i ɲ ɛ t̪s̪
+gastroenterologii	ɡ a s̪ t̪ r ɛ n̪ t̪ ɛ r ɔ l ɔ ɟ j i
+gddkia	ɡ ɛ d̪ ɛ d̪ ɛ k a i a
+gdzieżbym	ɡ dʑ ɛ ʂ b ɨ m
+gebhr	ɡ ɛ b x r
+geldria	x ɛ l d̪ rʲ j a
+geldryjski	x ɛ l d̪ r ɨ j s̪ c i
+gender	dʐ ɛ n̪ d̪ ɛ r
+genueński	ɡ ɛ n̪ u ɛ j̃ s̪ c i
+geografii	ɡ ɛ ɔ ɡ r a fʲ a j i
+georadaru	dʐ ɔ r a d̪ a r u
+george	dʐ ɔ r dʐ
+georgia	dʐ ɔ r dʐ j a
+georgii	dʐ ɔ r dʐ j i
+georgim	dʐ ɔ r dʐ j m
+gethan	ɡ ɛ t̪ x a n̪
+ghana	ɡ a n̪ a
+ghaną	ɡ a n̪ ɔ̃
+giełdzie	ɟ ɛ w d̪ ʑ ɛ
+gipsie	ɟ i p s̪ i
+gięli	ɟ ɛ ʎ i
+globtroter	ɡ l ɔ b a t̪ r ɔ t̪ ɛ r
+gnocchi	ɲ ɔ c i
+godzinnik	ɡ ɔ dʑ i n̪ ɲ i k
+goldcygier	ɡ ɔ l d̪ t̪s̪ ɨ ɟ ɛ r
+golfsztrom	ɡ ɔ l f ʂ t̪ r ɔ m
+gonciarz	ɡ ɔ ɲ tɕ a ʂ
+gonzalw	ɡ ɔ ŋ z̪ ɔ w
+good	ɡ u t̪
+google	ɡ u ɡ l
+gospodzie	ɡ ɔ s̪ p ɔ d̪ ʑ ɛ
+gościnni	ɡ ɔ ɕ tɕ i n̪ ɲ i
+gościnnie	ɡ ɔ ɕ tɕ i n̪ ɲ ɛ
+gościnniej	ɡ ɔ ɕ tɕ i n̪ ɲ ɛ j
+gościnność	ɡ ɔ ɕ tɕ i n̪ ɔ ɕ tɕ
+grabarzów	ɡ r a b a ʂ u f
+grejpfrut	ɡ r ɛ j f r u t̪
+groningen	x r ɔ w ɲ i ŋ ɡ ɛ n̪
+groningski	x r ɔ ɲ i j̃ s̪ c i
+gronkiewicz	ɡ r ɔ n̪ c ɛ vʲ i tʂ
+groom	ɡ r ɔ ʔ ɔ m
+grooma	ɡ r ɔ ʔ ɔ m a
+grosse	ɡ r ɔ s̪
+grossmutter	ɡ r ɔ s̪ m t̪ ɛ r
+groźby	ɡ r ɔ ʑ bʲ i
+grzenkowicz	ɡ ʐ ɛ ŋ k ɔ vʲ i tʂ
+grzondziel	ɡ ʐ ɔ ɲ dʑ ɛ l
+gróźb	ɡ r u ɕ p
+guacamole	ɡ w a k a m ɔ l ɛ
+guardian	ɡ u a r d̪ j a n̪
+gwinea	ɡ vʲ i n̪ ɛ j a
+gwiżdż	ɡ vʲ i ʂ tʂ
+gziut	ɡ ʑ u t̪
+gąszczach	ɡ ɔ̃ ʂ tʂ a a x
+głupsi	ɡ w u p s̪ i
+h	x a
+habsburgowie	x a p s̪ b u r ɡ ɔ vʲ ɛ
+haggis	x a ɡ ɟ i s̪
+hainaut	ɛ n̪ ɔ
+haircut	x a i r k a t̪
+hangul	x a n̪ ɡ ɨ l
+hawk	x a k
+headshot	x ɛ t̪ ʂ ɔ t̪
+heidegger	x ɛ i d̪ ɛ ɡ ɛ r
+helix	x ɛ ʎ i k s̪
+herzla	x ɛ r z̪ l a
+hintze	ç i n̪
+hirschfelda	ç i r ʂ f ɛ l d̪ a
+historya	ç i s̪ t̪ ɔ rʲ
+historyami	ç i s̪ t̪ ɔ rʲ mʲ i
+hobby	x ɔ bʲ i
+homofobii	x ɔ m ɔ f ɔ bʲ a j i
+hongkoński	x ɔ ŋ k ɔ j̃ s̪ c i
+hoooo	x u u
+hortensya	x ɔ r t̪ ɛ̃ ɕ
+house	x a w s̪
+htel	x t̪ ɛ l
+hungarystyka	x u ŋ ɡ a r ɨ s̪ t̪ ɨ k a
+hyksosi	x ɨ k s̪ ɔ s̪ i
+hymenu	x ɨ m ɛ ɲ i
+ia	a j a
+iacs	a j a s̪
+ian	a j a n̪
+iana	a j a n̪ a
+iał	a j a w
+ibook	a j b u k
+idaho	a j d̪ ɛ x ɔ w
+idee	i d̪ i
+ie	a j ɛ
+iede	a j ɛ d̪ ɛ
+iek	a j ɛ k
+igloo	i ɡ l ɔ
+iguana	i ɡ u w a n̪ a
+ii	a j i
+iii	i j i
+ila	i ɛ l a
+illinois	i ʎ i n̪ ɔ i
+ilustracye	i l u s̪ t̪ r a t̪s̪ ɨ
+imac	a j m a k
+imaginacya	i m a ɟ i n̪ a
+impeachment	i m pʲ i tʂ m ɛ n̪ t̪
+imperyałów	i m p ɛ rʲ w u f
+inezilli	i n̪ ɛ z̪ i ʎ i
+inni	i ɲ i
+inniga	i ɲ i ɡ a
+innigo	i ɲ i ɡ ɔ
+insi	i n̪ s̪ i
+intensy	i n̪ t̪ ɛ n̪ s̪ ɨ
+interfax	i n̪ t̪ ɛ r f a k s̪
+intex	i n̪ t̪ k s̪
+inwentaryzacja	i n̪ v ɛ n̪ t̪ a r ɨ z̪ a t̪s̪ j a
+inwentaryzację	i n̪ v ɛ n̪ t̪ a r ɨ z̪ a t̪s̪ j ɛ
+io	a j ɔ
+iowa	a j ɔ w a
+ipa	i p ɛ a
+iphone	a j f ɔ n̪
+iphonie	a j f ɔ ɲ ɛ
+ipod	a j p ɔ t̪
+iq	a j k j u
+iro	i ɛ r ɔ
+ironja	i r ɔ ɲ j a
+ispa	i ɛ s̪ p ɛ a
+itd	i ɛ t̪ ɛ d̪ ɛ
+itp	i ɛ t̪ ɛ p ɛ
+iv	i v ɛ
+ixm	i ɛ k s̪ ɛ m
+izaak	i z̪ a k
+izaaka	i z̪ a k a
+izb	i z̪ b
+j	j ɔ t̪
+jabłka	j a p k a
+jabłkami	j a p k a mʲ i
+jabłko	j a p k ɔ
+jabłkowy	j a p k ɔ v ɨ
+jacques	j a k w ɛ s̪
+jacquesa	j a k w ɛ s̪ a
+jacquiere	j a k w i r
+jacquire	j a k w i r ɛ
+jacuzzi	dʐ a k u z̪ i
+jakgdyby	j a k ɡ d̪ ɨ b ɨ
+jakgdybym	j a k ɡ d̪ ɨ b ɨ m
+jakimsi	j a c i m ɕ i
+jakze	j a k
+jarovcach	j a r ɔ vʲ t̪s̪ a x
+jaunde	j a u n̪ d̪ ɛ
+jaworzniccy	j a v ɔ ʐ ɲ i t̪s̪ t̪s̪ ɨ
+jazz	dʐ ɛ s̪
+jednoosiowy	j ɛ d̪ n̪ ɔ ʔ ɔ ɕ ɔ v ɨ
+jeep	dʐ i p
+jeepem	dʐ i p ɛ m
+jelonkiewicz	j ɛ l ɔ n̪ c ɛ vʲ i tʂ
+jemenu	j ɛ m ɛ ɲ i
+jensen	j ɛ n̪ s̪ ɛ n̪
+jesaes	j ɛ s̪
+jessie	j ɛ s̪ i
+jestescie	j ɛ s̪ t̪ ɛ ʂ j ɛ
+jiang	dʐ a n̪ k
+jianga	dʐ a n̪ ɡ a
+jkmości	j ɔ k m ɔ ɕ tɕ i
+jkmość	j ɔ k m ɔ ɕ tɕ
+jogging	dʐ ɔ ɟ i n̪ k
+johannesburgu	j ɔ x n̪ ɛ z̪ b u r ɡ u
+john	j ɔ n̪
+joint	dʐ ɔ j n̪ t̪
+joker	dʐ ɔ k ɛ r
+jonesie	j ɔ n̪ ɛ s̪ i
+jonga	j ɔ n̪ ɡ a
+joyce	dʐ ɔ j t̪s̪ ɛ
+joypad	dʐ ɔ j p ɛ t̪
+jozue	j ɔ z̪ u
+juanie	a ɲ ɛ
+juanita	a ɲ i t̪ a
+junta	x u n̪ t̪ a
+juntę	x u n̪ t̪ ɛ
+jury	ʐ ɨ rʲ i
+jutlandia	j u t̪ l a n̪ d̪ i a
+jutrzenkę	j u t̪ ʂ ɛ n̪ k ɛ
+jwpana	j ɔ t̪ v u p a n̪ a
+józi	j u z̪ i
+józia	j u z̪ j a
+józio	j u z̪ j ɔ
+józię	j u z̪ j ɛ
+józsi	j u z̪ ɕ i
+k	k a
+kadyksie	k a d̪ ɨ k s̪ i
+kadyxie	k a d̪ ɨ k s̪ j ɛ
+kairuanie	k a i r a ɲ ɛ
+kaligrafii	k a ʎ i ɡ r a fʲ a j i
+kalkstein	k a l k ʂ t̪ a j n̪
+kandzia	k a ɲ dʑ a
+kandzioch	k a ɲ dʑ ɔ x
+kandzior	k a ɲ dʑ ɔ r
+kandziora	k a ɲ dʑ ɔ r a
+kanji	k a n̪ dʑ i
+kansas	k a n̪ z̪ a s̪
+kartridż	k a r t̪ rʲ i tʂ
+kastylji	k a s̪ t̪ ɨ ʎ a j i
+kastylskim	k a s̪ t̪ ɨ ʎ a s̪ c i m
+katharine	k a t̪ x a rʲ j n̪
+kathreen	k a t̪ rʲ i ɛ n̪
+katzu	k a t̪ z̪ u
+kazimierzu	k a ʑ i mʲ ɛ ʂ u
+kałamarza	k a w a m a r z̪ a
+kc	k a t̪s̪ ɛ
+kendzia	k ɛ ɲ dʑ a
+kendziera	k ɛ ɲ dʑ ɛ r a
+kentucky	k ɛ n̪ t̪ a c i
+ketchup	k ɛ tʂ u p
+kijowem	c i j ɔ f ɛ m
+kilkunastoosobowego	c i l k u n̪ a s̪ t̪ ɔ ʔ ɔ s̪ ɔ b ɔ v ɛ ɡ ɔ
+kimichiro	c i m a j ç i r ɔ
+kinematografii	c i n̪ ɛ m a t̪ ɔ ɡ r a fʲ a j i
+kingstown	c i n̪ k s̪ t̪ a w n̪
+klebsiella	k l ɛ b ɕ ɛ l a
+klemensiewicza	k l ɛ m ɛ n̪ ɕ ɛ vʲ i tʂ a
+klienci	k ʎ i j ɛ n̪ tɕ i
+klient	k ʎ i j ɛ n̪ t̪
+klienta	k ʎ i j ɛ n̪ t̪ a
+klientami	k ʎ i j ɛ n̪ t̪ a mʲ i
+klientelizmem	k ʎ i j ɛ n̪ t̪ ɛ ʎ i z̪ m ɛ m
+klientelę	k ʎ i j ɛ n̪ t̪ ɛ l ɛ
+klientem	k ʎ i j ɛ n̪ t̪ ɛ m
+klientki	k ʎ i j ɛ n̪ t̪ c i
+klientom	k ʎ i j ɛ n̪ t̪ ɔ m
+klientowi	k ʎ i j ɛ n̪ t̪ ɔ vʲ i
+klientów	k ʎ i j ɛ n̪ t̪ u f
+klombie	k l ɔ m bʲ i
+klown	k l a w n̪
+klęczała	k l ɛ n̪ tʂ a w a
+klęczeć	k l ɛ n̪ tʂ ɛ tɕ
+klęczy	k l ɛ n̪ tʂ ɨ
+klęcząc	k l ɛ n̪ tʂ ɔ n̪ t̪s̪
+klęczącego	k l ɛ n̪ tʂ ɔ n̪ t̪s̪ ɛ ɡ ɔ
+klęczący	k l ɛ n̪ tʂ ɔ n̪ t̪s̪ ɨ
+klęczących	k l ɛ n̪ tʂ ɔ n̪ t̪s̪ ɨ x
+kodeksie	k ɔ d̪ ɛ k s̪ i
+kokaina	k ɔ k a j i n̪ a
+kokieterya	k ɔ c ɛ t̪ ɛ rʲ
+koledzy	k ɔ l ɛ d̪z̪ ɨ
+kolumbii	k ɔ l u m bʲ a j i
+komensal	k ɔ m ɛ n̪ s̪ a l
+komensalizm	k ɔ m ɛ̃ s̪ a ʎ i z̪ m
+kompleksie	k ɔ m p l ɛ k ɕ ɛ
+konfederacki	k ɔ n̪ f ɛ d̪ ɛ r a t̪s̪ c i
+konfederat	k ɔ n̪ f ɛ d̪ ɛ r a t̪
+konfekcji	k ɔ n̪ f ɛ k t̪s̪ j i
+konfekta	k ɔ n̪ f ɛ k t̪ a
+konferencyjna	k ɔ̃ f ɛ r ɛ n̪ t̪s̪ ɨ j n̪ a
+konferencyjnych	k ɔ̃ f ɛ r ɛ n̪ t̪s̪ ɨ j n̪ ɨ x
+konfessyonale	k ɔ n̪ f ɛ s̪ ɨ ɔ n̪ a l ɛ
+konfessyonału	k ɔ n̪ f ɛ s̪ ɨ ɔ n̪ a w u
+konfesyonału	k ɔ n̪ f ɛ s̪ ɨ ɔ n̪ a w u
+konfident	k ɔ n̪ fʲ i d̪ ɛ n̪ t̪
+konfidentów	k ɔ̃ fʲ i d̪ ɛ n̪ t̪ u f
+konfiguracja	k ɔ̃ fʲ i ɡ u r a t̪s̪ j a
+konfiskaty	k ɔ̃ fʲ i s̪ k a t̪ ɨ
+konfitura	k ɔ̃ fʲ i t̪ u r a
+konfitury	k ɔ̃ fʲ i t̪ u r ɨ
+konfiturą	k ɔ̃ fʲ i t̪ u r ɔ̃
+konflikcie	k ɔ̃ f ʎ i k tɕ ɛ
+konfliktach	k ɔ̃ f ʎ i k t̪ a x
+konfrontowane	k ɔ n̪ f r ɔ n̪ t̪ ɔ v a n̪ ɛ
+konfrontowany	k ɔ n̪ f r ɔ n̪ t̪ ɔ v a n̪ ɨ
+konfucjanizm	k ɔ̃ f u t̪s̪ j a ɲ i z̪ m
+kongijka	k ɔ n̪ ɟ i j k a
+kongo	k ɔ n̪ ɡ ɔ
+konkretnych	k ɔ ŋ k r ɛ t̪ n̪ ɨ x
+konkubent	k ɔ ŋ k u b ɛ n̪ t̪
+konkubin	k ɔ ŋ k u bʲ i n̪
+konkubina	k ɔ ŋ k u bʲ i n̪ a
+konkurs	k ɔ ŋ k u r s̪
+konnicy	k ɔ n̪ ɲ i t̪s̪ ɨ
+konsens	k ɔ̃ s̪ ɛ̃ s̪
+konsensus	k ɔ̃ s̪ ɛ̃ s̪ u s̪
+konsensusie	k ɔ̃ s̪ ɛ̃ s̪ u ɕ ɛ
+konsensusu	k ɔ̃ s̪ ɛ̃ s̪ u s̪ u
+konserwatorium	k ɔ n̪ s̪ ɛ r v a t̪ ɔ rʲ j u m
+konserwować	k ɔ̃ s̪ ɛ r v ɔ v a tɕ
+konsjerż	k ɔ n̪ s̪ j ɛ r ʂ
+konsola	k ɔ n̪ s̪ ɔ l a
+konsolacja	k ɔ n̪ s̪ ɔ l a t̪s̪ j a
+konsolówka	k ɔ n̪ s̪ ɔ l u f k a
+konsolę	k ɔ n̪ s̪ ɔ l ɛ
+konsorcjum	k ɔ n̪ s̪ ɔ r t̪s̪ j u m
+konspekt	k ɔ n̪ s̪ p ɛ k t̪
+konstanty	k ɔ̃ s̪ t̪ a n̪ t̪ ɨ
+konstatuje	k ɔ̃ s̪ t̪ a t̪ u j ɛ
+konstelacyi	k ɔ̃ s̪ t̪ ɛ l a t̪s̪ ɨ i
+konsternacja	k ɔ̃ s̪ t̪ ɛ r n̪ a t̪s̪ j a
+konstruktywna	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v n̪ a
+konstruktywne	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v n̪ ɛ
+konstruktywnego	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v n̪ ɛ ɡ ɔ
+konstruktywnej	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v n̪ ɛ j
+konstruktywnie	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v ɲ ɛ
+konstruktywny	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v n̪ ɨ
+konstruktywnych	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v n̪ ɨ x
+konstruktywną	k ɔ n̪ s̪ t̪ r u k t̪ ɨ v n̪ ɔ̃
+konstytucja	k ɔ̃ s̪ t̪ ɨ t̪ u t̪s̪ j a
+konstytucjach	k ɔ n̪ s̪ t̪ ɨ t̪ u t̪s̪ j a x
+konstytucjonalizm	k ɔ̃ s̪ t̪ ɨ t̪ u t̪s̪ j ɔ n̪ a ʎ i z̪ m
+konsulem	k ɔ̃ s̪ u l ɛ m
+konsultować	k ɔ̃ s̪ u l t̪ ɔ v a tɕ
+konsumentka	k ɔ n̪ s̪ u m ɛ n̪ t̪ k a
+konsumować	k ɔ n̪ s̪ u m ɔ v a tɕ
+konsylium	k ɔ n̪ s̪ ɨ ʎ u m
+konsystencja	k ɔ n̪ s̪ ɨ s̪ t̪ ɛ n̪ t̪s̪ j a
+kontrdemonstracja	k ɔ n̪ t̪ r d̪ ɛ m ɔ n̪ s̪ t̪ r a t̪s̪ j a
+konwalia	k ɔ̃ v a ʎ a
+konwalijka	k ɔ̃ v a ʎ i j k a
+konwencja	k ɔ̃ v ɛ n̪ t̪s̪ j a
+konwencje	k ɔ̃ v ɛ n̪ t̪s̪ j ɛ
+konwencji	k ɔ̃ v ɛ n̪ t̪s̪ j i
+konwencjonalne	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɛ
+konwencjonalnej	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɛ j
+konwencjonalnie	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l ɲ ɛ
+konwencjonalny	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɨ
+konwencjonalnych	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ n̪ a l n̪ ɨ x
+konwencją	k ɔ̃ v ɛ n̪ t̪s̪ j ɔ̃
+konwencję	k ɔ̃ v ɛ n̪ t̪s̪ j ɛ
+koordynacja	k ɔ ʔ ɔ r d̪ ɨ n̪ a t̪s̪ j a
+koordynacji	k ɔ ʔ ɔ r d̪ ɨ n̪ a t̪s̪ j i
+koordynację	k ɔ ʔ ɔ r d̪ ɨ n̪ a t̪s̪ j ɛ
+koordynowana	k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a n̪ a
+koordynowania	k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a ɲ a
+koordynować	k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a tɕ
+koordynowała	k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a w a
+korea	k ɔ r ɛ j a
+koreą	k ɔ r ɛ a ɔ̃
+korpusie	k ɔ r p u s̪ i
+kourou	k ɔ u r ɔ u
+kramarza	k r a m a r z̪ a
+kredens	k r ɛ d̪ ɛ̃ s̪
+kredensie	k r ɛ d̪ ɛ̃ s̪ i
+kredensu	k r ɛ d̪ ɛ̃ s̪ u
+kreującymi	k r ɛ u j ɔ n̪ t̪s̪ ɨ mʲ i
+krritv	k a ɛ r ɛ r i t̪ ɛ v ɛ
+krucyfix	k r u t̪s̪ ɨ fʲ i k s̪
+kruppa	k r u p a
+kruszcu	k r u ʂ tʂ a u
+krzyczaia	k ʂ ɨ tʂ a i a
+ksenofobii	k s̪ ɛ n̪ ɔ f ɔ bʲ a j i
+kuloodporne	k u l ɔ ʔ ɔ t̪ p ɔ r n̪ ɛ
+kuloodporną	k u l ɔ ʔ ɔ t̪ p ɔ r n̪ ɔ̃
+kupaże	k u p a ʂ ɛ
+kustodia	k u s̪ t̪ ɔ d̪ i a
+l	ɛ l
+la	ɛ l a
+label	l ɛ j b ɛ l
+lacrosse	l a k r ɔ s̪
+laeken	l a k ɛ n̪
+larry	l a r ɨ
+laweciarzami	l a v ɛ ʐ a mʲ i
+lci	ɛ l tɕ ɛ i
+lead	ʎ i t̪
+leasing	ʎ i z̪ i n̪ k
+leasingowy	ʎ i z̪ i n̪ ɡ ɔ v ɨ
+legginsy	l ɛ ɟ i n̪ s̪ ɨ
+leibnitz	l ɛ i b ɲ i
+lemppa	l ɛ m p a
+lendzion	l ɛ ɲ dʑ ɔ n̪
+leonid	l ɛ ɔ n̪ a j t̪
+lepsiejszy	l ɛ p ɕ ɛ j ʂ ɨ
+lesbijka	l ɛ z̪ bʲ i j k a
+lhasa	l a s̪ a
+li	ɛ l i
+liaoyangu	ʎ a n̪ ɡ u
+libii	ʎ i bʲ a j i
+liczbie	ʎ i bʲ ɛ
+lieberman	ʎ i b ɛ r m a n̪
+liechtenstein	ʎ i x t̪ ɛ n̪ ʂ t̪ a j n̪
+liechtensteinie	ʎ i x t̪ ɛ n̪ ʂ t̪ a i ɲ ɛ
+lieglem	ʎ i ɡ l ɛ m
+lier	ʎ i r
+line	l a j n̪
+linoleum	ʎ i n̪ ɔ l ɛ u m
+linux	ʎ i n̪ u k s̪
+liszt	ʎ i s̪ t̪
+litomerzicom	ʎ i t̪ ɔ m ɛ ʐ i t̪s̪ ɔ m
+lmdc	l ɛ m ɛ d̪ ɛ t̪s̪ ɛ
+longin	l ɔ ŋ n̪
+lonzeto	l ɔ ŋ z̪ ɛ t̪ ɔ
+lonzetowi	l ɔ ŋ z̪ ɛ t̪ ɔ vʲ i
+lorens	l ɔ r ɛ̃ s̪
+lorgnon	l ɔ r ɲ j ɔ̃
+loseya	l ɔ s̪ i
+lothara	l ɔ t̪ x a r a
+louis	l ɔ u i s̪
+loussiera	l ɔ u s̪ ɕ ɛ r a
+louvre	l ɔ u vʲ i r
+ludford	l u d̪ ɛ ɛ f ɔ r t̪
+lunch	l u n̪ t̪s̪ a x
+lyons	l ɨ ɔ̃ s̪
+m	ɛ m
+maastricht	m a s̪ t̪ rʲ i x t̪
+macao	m a k a ɔ
+macbook	m a ɡ b u k
+macgurry	m a k a r ɨ
+machay	m a x a ɨ
+machin	m a ç i n̪
+macho	m a tʂ ɔ
+macintosh	m a c i n̪ t̪ ɔ ʂ
+macintyre	m a c i n̪ t̪ ɨ r ɛ
+madeleine	m a d̪ ɛ l a j n̪
+maf	ɛ m a ɛ f
+mafii	m a fʲ a j i
+maghrebski	m a ɡ r ɛ p s̪ c i
+mahdi	m ɛ x a ɛ d̪ ɛ i
+mail	m ɛ j l
+maila	m ɛ j l a
+maine	m ɛ j n̪
+mainstreaming	m ɛ j n̪ ʂ t̪ rʲ i w mʲ i n̪ k
+majkong	m a j k ɔ n̪ k
+makes	m ɛ j k s̪
+maksimum	m a k s̪ i m u m
+malarzami	m a l a ʐ a mʲ i
+malenga	m a l ɛ ŋ ɡ a
+manchester	m ɛ n̪ tʂ ɛ s̪ t̪ ɛ r
+manicure	m a ɲ i c j u r
+mare	m ɛ r
+mariapfarr	m a rʲ j a p f ɛ r ɛ r
+marleya	m a r l i
+marshalla	m a r s̪ x a l a
+marsylji	m a r s̪ ɨ ʎ a j i
+martens	m a r t̪ ɛ̃ s̪
+marya	m a rʲ
+maryland	m ɛ r ɨ l ɛ n̪ t̪
+marylę	m ɛ r ɨ l ɛ
+mascarpone	m a s̪ k a r p ɔ n̪ ɛ
+mass	m a s̪
+massachusetts	m a s̪ a tʂ j u s̪ ɛ t̪ s̪
+masterfoods	m a s̪ t̪ ɛ r f u d̪ ɛ s̪
+materya	m a t̪ ɛ rʲ
+materyalny	m a t̪ ɛ rʲ l n̪ ɨ
+mateuszczyk	m a t̪ ɛ u ʂ tʂ ɨ k
+matk	m ɛ t̪ ɛ k a
+matrix	m a t̪ rʲ i k s̪
+maxym	m a k s̪ ɨ m
+maya	m ɛ j
+mba	ɛ m b ɛ a
+mcelhone	m t̪s̪ ɛ l ɔ n̪
+medicare	m ɛ d̪ j ɛ r
+medżenuna	m ɛ d̪ ʐ ɛ n̪ u n̪ a
+medżnuna	m ɛ d̪ ʐ n̪ u n̪ a
+meine	m a j n̪
+meitner	m a j t̪ n̪ ɛ r
+melbourne	m ɛ l b ɛ r n̪
+memfisie	m ɛ m fʲ i ɕ ɛ
+menadżera	m ɛ n̪ a d̪ ʐ ɛ r a
+menfi	m ɛ n̪ fʲ i
+menhir	m ɛ n̪ ç i r
+menkal	m ɛ ŋ k a l
+mensię	m ɛ̃ ɕ ɛ
+menu	m ɛ ɲ i
+menueta	m ɛ ɲ a ɛ t̪ a
+menuf	m ɛ ɲ k a f
+menzaleh	m ɛ n̪ z̪ a l ɛ x
+menżyk	m ɛ̃ ʐ ɨ k
+metodzie	m ɛ t̪ ɔ d̪ ʑ ɛ
+mexicano	m ɛ s̪ i t̪s̪ a n̪ ɔ
+meyera	m ɛ ɨ ɛ r a
+miau	mʲ a w
+miauczeć	mʲ a w tʂ ɛ tɕ
+michigan	mʲ i ʂ i ɡ a n̪
+microsoft	mʲ i k r ɔ s̪ ɔ f t̪
+miedwiediew	mʲ ɛ d̪ vʲ ɛ ɛ f
+mienciel	mʲ ɛ ɲ tɕ ɛ l
+mienkus	mʲ ɛ ŋ k u s̪
+miensok	mʲ ɛ̃ s̪ ɔ k
+miensopust	mʲ ɛ̃ s̪ ɔ p u s̪ t̪
+mienszewicy	mʲ ɛ̃ ʂ ɛ vʲ i t̪s̪ ɨ
+mienszewikami	mʲ ɛ̃ ʂ ɛ vʲ i k a mʲ i
+mienszewików	mʲ ɛ̃ ʂ ɛ vʲ i k u f
+mierzić	mʲ ɛ r ʑ i tɕ
+mierź	mʲ ɛ r ɕ
+mikroorganizm	mʲ i k r ɔ ʔ ɔ r ɡ a ɲ i z̪ m
+minecrafta	mʲ i n̪ ɛ k r a f t̪ a
+missisipi	mʲ i s̪ i s̪ i pʲ i
+missouri	mʲ i z̪ u rʲ i
+mitrenga	mʲ i t̪ r ɛ ŋ ɡ a
+miąższ	mʲ ɔ̃ ʂ
+mkną	ɛ m k a ɛ n̪ ɔ̃
+ml	mʲ i ʎ i ʎ i t̪ r
+mnodzy	m n̪ ɔ d̪z̪ ɨ
+mojito	m ɔ ç i t̪ ɔ
+monaldi	m ɔ n̪ a l d̪ ɛ i
+monaldiego	m ɔ n̪ a l d̪ i ɛ ɡ ɔ
+mongolia	m ɔ ŋ ɡ ɔ ʎ a
+mongolski	m ɔ ŋ ɡ ɔ l s̪ c i
+mongolsku	m ɔ ŋ ɡ ɔ l s̪ k u
+monka	m ɔ ŋ k a
+monkiewicz	m ɔ ŋ c ɛ vʲ i tʂ
+monografii	m ɔ n̪ ɔ ɡ r a fʲ a j i
+monroe	m ɔ ŋ r ɛ
+monsieur	m ɔ n̪ s̪ i ɛ r
+monsignora	m ɔ n̪ s̪ i ɡ n̪ ɔ r a
+monsior	m ɔ̃ ɕ ɔ r
+monstrancja	m ɔ n̪ s̪ t̪ r a n̪ t̪s̪ j a
+monstrum	m ɔ n̪ s̪ t̪ r u m
+monsun	m ɔ n̪ s̪ u n̪
+monsunowy	m ɔ n̪ s̪ u n̪ ɔ v ɨ
+moody	m ɔ ʔ ɔ d̪ ɨ
+moseley	m ɔ s̪ ɛ l i
+mozart	m ɔ t̪s̪ a r t̪
+mozarta	m ɔ t̪s̪ a r t̪ a
+moze	m ɔ
+mozes	m ɔ s̪
+mozilla	m ɔ z̪ i l a
+mozzarella	m ɔ t̪s̪ a r ɛ l a
+mrkch	m r k tɕ a x
+msw	ɛ m ɛ s̪ ɛ v u
+mswia	m ʂ vʲ a
+muhammedzie	m u x a m ɛ d̪ ʑ ɛ
+munyama	m u n̪ ɨ a m a
+murzasichlu	m u r z̪ a ɕ i x l u
+murzasihlu	m u r z̪ a ɕ i x l u
+murzać	m u r z̪ a tɕ
+musical	mʲ u z̪ i k a l
+muzeum	m u z̪ ɛ w u m
+mw	ɛ m ɛ v u
+mógł	m u k w
+mógłby	m u ɡ b ɨ
+mógłbym	m u ɡ b ɨ m
+mógłbyś	m u ɡ b ɨ ɕ
+mógłżebym	m u k w ʐ ɛ b ɨ m
+mędrsi	m ɛ n̪ t̪ r ɕ i
+męskoosobowy	m ɛ̃ s̪ k ɔ ʔ ɔ s̪ ɔ b ɔ v ɨ
+n	ɛ n̪
+nabaioth	n̪ a b a j ɔ
+nadwrażliwe	n̪ a d̪ v r a ʐ ʎ i v ɛ
+nadwrażliwości	n̪ a d̪ v r a ʐ ʎ i v ɔ ɕ tɕ i
+nadzorca	n̪ a d̪ z̪ ɔ r t̪s̪ a
+nadzorowanie	n̪ a d̪ z̪ ɔ r ɔ v a ɲ ɛ
+nadzorować	n̪ a d̪z̪ ɔ r ɔ v a tɕ
+nadzorował	n̪ a d̪ z̪ ɔ r ɔ v a w
+nadzorowała	n̪ a d̪ z̪ ɔ r ɔ v a w a
+nadzorowi	n̪ a d̪z̪ ɔ r ɔ vʲ i
+nadzór	n̪ a d̪ z̪ u r
+nadżafu	n̪ a dʐ f u
+nagłówków	n̪ a ɡ w u v k u f
+najgościnniej	n̪ a j ɡ ɔ ɕ tɕ i n̪ ɲ ɛ j
+najmłodzszym	n̪ a j m w ɔ t̪ s̪ ʂ ɨ m
+najniższych	n̪ a j ɲ i ʂ ɨ x
+najwredniejszy	n̪ a j v r ɛ d̪ ɲ ɛ j ʂ ɨ
+naradzasz	n̪ a r a d̪z̪ a ʂ
+narkomanii	n̪ a r k ɔ m a n̪ j i
+nasberga	n̪ a s̪ b ɛ r ɡ a
+nauk	n̪ a w u k
+nauka	n̪ a w u k a
+naukach	n̪ a u k a x
+naukami	n̪ a u k a mʲ i
+naukowa	n̪ a u k ɔ v a
+naukowiec	n̪ a w u k ɔ vʲ ɛ t̪s̪
+naukowo	n̪ a u k ɔ v ɔ
+naukowość	n̪ a u k ɔ v ɔ ɕ tɕ
+naukowy	n̪ a w k ɔ v ɨ
+naypyidaw	n̪ ɛ j pʲ i d̪ ɔ
+nazw	n̪ a s̪ f
+naówczas	n̪ a w u f tʂ a s̪
+nba	ɛ n̪ b ɛ a
+netflix	n̪ ɛ t̪ f ʎ i k s̪
+netflixa	n̪ ɛ t̪ f ʎ i k s̪
+netflixie	n̪ ɛ t̪ f ʎ i k s̪ j ɛ
+neutrino	n̪ ɛ w t̪ rʲ i n̪ ɔ
+neutron	n̪ ɛ w t̪ r ɔ n̪
+newcastle	ɲ u k a s̪ l
+news	ɲ u s̪
+newsowy	ɲ u s̪ ɔ v ɨ
+newsweek	ɲ u s̪ w i k
+newton	ɲ t̪ ɔ n̪
+newtona	ɲ t̪ ɔ n̪ a
+neya	n̪ i
+nicby	ɲ b ɨ
+nick	ɲ i k
+nieautoryzowaną	ɲ ɛ a w t̪ ɔ r ɨ z̪ ɔ v a n̪ ɔ̃
+niebieskooki	ɲ ɛ bʲ ɛ s̪ k ɔ ʔ ɔ c i
+niechze	ɲ ɛ x
+niegościnnie	ɲ ɛ ɡ ɔ ɕ tɕ i n̪ ɲ ɛ
+niekonkretne	ɲ ɛ k ɔ ŋ k r ɛ t̪ n̪ ɛ
+niekonsekwentne	ɲ ɛ k ɔ n̪ s̪ ɛ k f ɛ n̪ t̪ n̪ ɛ
+niemęskoosobowy	ɲ ɛ m ɛ̃ s̪ k ɔ ʔ ɔ s̪ ɔ b ɔ v ɨ
+nieskoordynowanych	ɲ ɛ s̪ k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a n̪ ɨ x
+nieuctwo	ɲ ɛ w u t̪s̪ t̪ f ɔ
+nieudacznik	ɲ ɛ u d̪ a tʂ ɲ i k
+nieuk	ɲ ɛ w u k
+nieukończona	ɲ ɛ w u k ɔ ɲ tʂ ɔ n̪ a
+nieumundurowani	ɲ ɛ u m u n̪ d̪ u r ɔ v a ɲ i
+nikaragua	ɲ i k a r a ɡ u a
+nikaraguańskiego	ɲ i k a r a ɡ u a j̃ s̪ c ɛ ɡ ɔ
+nike	n̪ a j k i
+nizinny	ɲ i ʑ i n̪ ɨ
+nizkiego	ɲ i ʑ c ɛ ɡ ɔ
+niżby	ɲ i ʐ b ɨ
+niżnej	ɲ i ʐ n̪ ɛ j
+niżnik	ɲ i ʐ ɲ i k
+niżsi	ɲ i ʂ ɕ i
+nkwd	ɛ n̪ k a ɛ f t̪ ɛ
+nonsens	n̪ ɔ̃ s̪ ɛ̃ s̪
+nonsensem	n̪ ɔ̃ s̪ ɛ̃ s̪ ɛ m
+nonsensownego	n̪ ɔ̃ s̪ ɛ̃ s̪ ɔ v n̪ ɛ ɡ ɔ
+noruńa	n̪ ɔ r u ɲ
+nowoorleański	n̪ ɔ v ɔ ʔ ɔ r l ɛ a j̃ s̪ c i
+nowoorleańskiego	n̪ ɔ v ɔ ʔ ɔ r l ɛ a j̃ s̪ c ɛ ɡ ɔ
+nox	n̪ ɔ k s̪
+np	ɛ n̪ ɛ p ɛ
+nsa	ɛ n̪ ɛ s̪ a
+nubii	n̪ u bʲ a j i
+oaz	ɔ a z̪ ɛ t̪
+obernzell	ɔ b ɛ r n̪ z̪ ɛ l
+obmierzić	ɔ b mʲ ɛ r ʑ i tɕ
+obmierzłego	ɔ b mʲ ɛ r z̪ w ɛ ɡ ɔ
+obmierzłej	ɔ b mʲ ɛ r z̪ w ɛ j
+obrzydzenie	ɔ b ʐ ɨ dʑ ɛ ɲ ɛ
+obrzydzeniem	ɔ b ʐ ɨ dʑ ɛ ɲ ɛ m
+obvia	ɔ p vʲ i a
+oddźwięk	ɔ d̪ dʑ vʲ ɛ ŋ k
+odfiltrowywać	ɔ t̪ fʲ i l t̪ r ɔ v ɨ v a tɕ
+odpowiedzialnosci	ɔ t̪ p ɔ vʲ ɛ dʑ a l n̪ ɔ tɕ i
+odzew	ɔ d̪ z̪ ɛ f
+odziarniania	ɔ d̪ ʑ a r ɲ a ɲ a
+odziarniarka	ɔ d̪ ʑ a r ɲ a r k a
+odzysk	ɔ d̪z̪ ɨ s̪ k
+odzyskawszy	ɔ d̪ z̪ ɨ s̪ k a f ʂ ɨ
+odzyskała	ɔ d̪z̪ ɨ s̪ k a w a
+odzyskiwały	ɔ d̪ z̪ ɨ s̪ c i v a w ɨ
+odzywać	ɔ d̪ z̪ ɨ v a tɕ
+odśnieżać	ɔ tɕ ɲ ɛ ʐ a tɕ
+odżywać	ɔ d̪ ʐ ɨ v a tɕ
+odżywianie	ɔ d̪ ʐ ɨ vʲ a ɲ ɛ
+odżywiać	ɔ d̪ ʐ ɨ vʲ a tɕ
+odżywić	ɔ d̪ ʐ ɨ vʲ i tɕ
+odżyć	ɔ d̪ ʐ ɨ tɕ
+oeamtc	ɔ ɛ a m t̪ ɛ t̪s̪ ɛ
+oenzetowski	ɔ ɛ̃ z̪ ɛ t̪ ɔ f s̪ c i
+oenzetowskim	ɔ ɛ̃ z̪ ɛ t̪ ɔ f s̪ c i m
+offline	ɔ f l a j n̪
+ognioodporny	ɔ ɡ ɲ ɔ ɔ t̪ p ɔ r n̪ ɨ
+oh	ɔ x a
+ohio	ɔ x a j ɔ
+okazya	ɔ k a z̪
+okroy	ɔ k r ɔ j
+oleksiej	ɔ l ɛ k ɕ ɛ j
+oleksiewicz	ɔ l ɛ k ɕ ɛ vʲ i tʂ
+olenkiewicz	ɔ l ɛ n̪ c ɛ vʲ i tʂ
+online	ɔ n̪ l a j n̪
+oo	ɔ ʔ ɔ
+ooo	u
+oprzytomniawszy	ɔ p ʂ ɨ t̪ ɔ m ɲ a a f ʂ ɨ
+opzz	ɔ p ɛ s̪
+orkiestry	ɔ r c i ɛ s̪ t̪ r ɨ
+orkiestrą	ɔ r c i ɛ s̪ t̪ r ɔ̃
+orkiestrę	ɔ r c i ɛ s̪ t̪ r ɛ
+orwella	ɔ r w ɛ j a
+osp	ɔ ʔ ɛ s̪ p ɛ
+otchłań	ɔ t̪ x w a ɲ
+otwórzmy	ɔ t̪ f u ʂ m ɨ
+outsidera	u tʲ ɕ i d̪ ɛ r a
+outsourcing	a w t̪ s̪ ɔ r s̪ i n̪ k
+outsourcingiem	a w t̪ s̪ ɔ r s̪ i n̪ ɟ ɛ m
+overijssel	ɔ v ɛ r ɛ j s̪ ɛ l
+owinąwszy	ɔ vʲ i ɲ ɔ̃ f ʂ ɨ
+owp	ɔ v u p ɛ
+oxford	ɔ k s̪ f ɔ r t̪
+oxfordu	ɔ k s̪ f ɔ r d̪ u
+ozpl	ɔ z̪ ɛ t̪ p ɛ ɛ l
+p	p ɛ
+pacierzu	p a tɕ ɛ ʂ u
+paella	p a ɛ j a
+paintball	p ɛ j n̪ t̪ b ɔ l
+pajonk	p a j ɔ ŋ k
+palenga	p a l ɛ ŋ ɡ a
+paliwooszczędny	p a ʎ i v ɔ ʔ ɔ ʂ tʂ ɛ n̪ d̪ n̪ ɨ
+panpsychizm	p a m p s̪ ɨ ç i z̪ m
+parafii	p a r a fʲ a j i
+partya	p a r t̪ ɨ a
+pas	p a
+passus	p a s̪ u s̪
+paulina	p a u ʎ i n̪ a
+pauzie	p a u ʑ ɛ
+peeling	pʲ i ʎ i n̪ k
+pendrive	p ɛ n̪ d̪ r a j f
+pendzich	p ɛ ɲ dʑ i x
+peng	p ɛ n̪ k
+pengiel	p ɛ ŋ ɟ ɛ l
+penk	p ɛ ŋ k
+penkala	p ɛ ŋ k a l a
+penkała	p ɛ ŋ k a w a
+pens	p ɛ̃ s̪
+pensja	p ɛ̃ s̪ j a
+pentuer	p ɛ n̪ t̪ ɛ r
+pentuera	p ɛ n̪ t̪ ɛ r a
+pentuerem	p ɛ n̪ t̪ ɛ r ɛ m
+pentuerowi	p ɛ n̪ t̪ a ɛ r ɔ vʲ i
+pentuerze	p ɛ n̪ t̪ ɛ ʐ ɛ
+penzioł	p ɛ̃ ʑ ɔ w
+pepsi	p ɛ p s̪ i
+perygeum	p ɛ r ɨ ɡ ɛ u m
+petersburg	p ɛ t̪ ɛ r z̪ b u r k
+petersburga	p ɛ t̪ ɛ r z̪ b u r ɡ a
+petersburskich	p ɛ t̪ ɛ r z̪ b u r s̪ c i x
+pfeifer	p ɛ ɛ f ɛ i f ɛ r
+pfuu	p ɛ ɛ f u u
+phare	p x ɛ r
+phenian	f ɛ ɲ j a n̪
+phenianem	f ɛ ɲ a n̪ ɛ m
+phi	fʲ i
+philosophique	fʲ i l ɔ s̪ ɔ p x a j k j u
+philosophy	fʲ i l ɔ s̪ ɔ p x ɨ
+phta	p x t̪ a
+phut	p x u t̪
+phuta	f u t̪ a
+pidgin	pʲ i dʐ ɨ n̪
+piebalgsa	pʲ i b ɔ t̪ ɡ j ɛ s̪ a
+pieniądze	pʲ i ɲ ɔ n̪ d̪z̪ ɛ
+piercing	pʲ i r s̪ i n̪ k
+pierwsza	pʲ ɛ r ʂ a
+pierwsze	pʲ ɛ r ʂ ɛ
+pierwszy	pʲ ɛ r ʂ ɨ
+pion	pʲ i j ɔ n̪
+pizarrów	pʲ i a r u f
+pizza	pʲ i t̪s̪ t̪s̪ a
+pizzeria	pʲ i t̪s̪ t̪s̪ ɛ rʲ j a
+pizzerii	pʲ i t̪s̪ t̪s̪ ɛ rʲ j i
+piętnasta	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ a
+piętnaste	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɛ
+piętnastego	pʲ ɛ t̪ n̪ a s̪ t̪ ɛ ɡ ɔ
+piętnastej	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɛ j
+piętnastemu	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɛ m u
+piętnasty	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɨ
+piętnastym	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɨ m
+piętnastymi	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɨ mʲ i
+piętnastą	pʲ ɛ n̪ t̪ n̪ a s̪ t̪ ɔ̃
+piętnatego	pʲ ɛ t̪ n̪ a t̪ ɛ ɡ ɔ
+piętnaście	pʲ ɛ t̪ n̪ a ɕ tɕ ɛ
+piętnaścioro	pʲ ɛ n̪ t̪ n̪ a ɕ tɕ ɔ r ɔ
+piętnować	pʲ ɛ t̪ n̪ ɔ v a tɕ
+piętnuje	pʲ ɛ t̪ n̪ u j ɛ
+piętnując	pʲ ɛ t̪ n̪ u j ɔ n̪ t̪s̪
+pięćdziesict	pʲ ɛ ɲ dʑ ɛ ɕ i t̪s̪ t̪
+pięćdziesiąt	pʲ ɛ ɲ dʑ ɛ ɕ ɔ n̪ t̪
+pięćdziesiąty	pʲ ɛ ɲ dʑ ɛ ɕ ɔ n̪ t̪ ɨ
+pięćdziesięcioprocentowąprowizję	pʲ ɛ ɲ tɕ dʑ ɛ ɕ ɛ ɲ tɕ ɔ p r ɔ t̪s̪ ɛ n̪ t̪ ɔ v ɔ̃ p r ɔ vʲ i z̪ j ɛ
+pięćdziesięsiąt	pʲ ɛ ɲ tɕ dʑ ɛ ɕ ɛ j̃ ɕ ɔ n̪ t̪
+pięćset	pʲ ɛ ɲ t̪s̪ ɛ t̪
+pięćsetny	pʲ ɛ ɲ t̪s̪ ɛ t̪ n̪ ɨ
+pięću	pʲ ɛ ɲ t̪s̪ u
+plavszić	p l a w ʂ i tɕ
+play	p l ɛ j
+plonka	p l ɔ ŋ k a
+po	p ɛ ɔ
+pochówków	p ɔ x u v k u f
+pocóżeś	p ɔ t̪s̪ u ʐ ɛ ɕ
+podwinąwszy	p ɔ d̪ vʲ i ɲ ɔ̃ f ʂ ɨ
+podzespół	p ɔ d̪ z̪ ɛ s̪ p u w
+podzieleni	p ɔ d̪ ʑ ɛ l ɛ ɲ i
+podzielona	p ɔ d̪ ʑ ɛ l ɔ n̪ a
+podzielone	p ɔ d̪ ʑ ɛ l ɔ n̪ ɛ
+podzielonego	p ɔ d̪ ʑ ɛ l ɔ n̪ ɛ ɡ ɔ
+podzielonej	p ɔ d̪ ʑ ɛ l ɔ n̪ ɛ j
+podzielony	p ɔ d̪ ʑ ɛ l ɔ n̪ ɨ
+podzielonych	p ɔ d̪ ʑ ɛ l ɔ n̪ ɨ x
+podziemi	p ɔ d̪ ʑ ɛ mʲ i
+podziemia	p ɔ d̪ ʑ ɛ mʲ a
+podziemiach	p ɔ d̪ ʑ ɛ mʲ a x
+podziemiami	p ɔ d̪ ʑ ɛ mʲ a mʲ i
+podziemie	p ɔ d̪ ʑ ɛ mʲ ɛ
+podziemiu	p ɔ d̪ ʑ ɛ mʲ u
+podziemiów	p ɔ d̪ ʑ ɛ mʲ u f
+podziemna	p ɔ d̪ ʑ ɛ m n̪ a
+podziemne	p ɔ d̪ ʑ ɛ m n̪ ɛ
+podziemnego	p ɔ d̪ ʑ ɛ m n̪ ɛ ɡ ɔ
+podziemnej	p ɔ d̪ ʑ ɛ m n̪ ɛ j
+podziemny	p ɔ d̪ ʑ ɛ m n̪ ɨ
+podziemnych	p ɔ d̪ ʑ ɛ m n̪ ɨ x
+podzwrotnikowe	p ɔ d̪ z̪ v r ɔ t̪ ɲ i k ɔ v ɛ
+podzwrotnikowy	p ɔ d̪ z̪ v r ɔ t̪ ɲ i k ɔ v ɨ
+podzwrotnikowych	p ɔ d̪ z̪ v r ɔ t̪ ɲ i k ɔ v ɨ x
+podżeganie	p ɔ dʐ ɛ ɡ a ɲ ɛ
+point	p w ɛ n̪ t̪
+pointo	p w ɛ n̪ t̪ ɔ
+pojedz	p ɔ j ɛ t̪s̪
+poliester	p ɔ ʎ i ʔ ɛ s̪ t̪ ɛ r
+poliestrowy	p ɔ ʎ i ɛ s̪ t̪ r ɔ v ɨ
+politics	p ɔ ʎ i tʲ i k a s̪
+poliuretanową	p ɔ ʎ i ʔ w r ɛ t̪ a n̪ ɔ v ɔ̃
+pollacos	p ɔ l a ɔ s̪
+polonicum	p ɔ l ɔ ɲ i c j u m
+pomóżmy	p ɔ m u ʂ m ɨ
+ponaddźwiękowy	p ɔ n̪ a d̪ dʑ vʲ ɛ k ɔ v ɨ
+ponadprzeciętny	p ɔ n̪ a t̪ p ʂ ɛ tɕ ɛ t̪ n̪ ɨ
+poncho	p ɔ n̪ tʂ ɔ
+poobiedniego	p ɔ ʔ ɔ bʲ ɛ d̪ ɲ ɛ ɡ ɔ
+pooddawać	p ɔ ʔ ɔ d̪ a v a tɕ
+poprzedzi	p ɔ p ʂ ɛ d̪ ʑ i
+pornografii	p ɔ r n̪ ɔ ɡ r a fʲ a j i
+poula	p a w l a
+pourazowy	p ɔ u r a z̪ ɔ v ɨ
+powell	p a w ɛ l
+powellem	p a w ɛ l ɛ m
+pozabudżetowych	p ɔ z̪ a b u d̪ ʐ ɛ t̪ ɔ v ɨ x
+południowoosetyjski	p ɔ w u d̪ ɲ ɔ v ɔ ʔ ɔ s̪ ɛ t̪ ɨ j s̪ c i
+pr	pʲ i a r
+praecox	p r a ɛ t̪s̪ ɔ k s̪
+prawd	p r a v d̪ ɛ
+prawdziwków	p r a v dʑ i v k u f
+precedens	p r ɛ t̪s̪ ɛ d̪ ɛ n̪ s̪
+precedensowe	p r ɛ t̪s̪ ɛ d̪ ɛ̃ s̪ ɔ v ɛ
+precedensu	p r ɛ t̪s̪ ɛ d̪ ɛ̃ s̪ u
+prepaid	p rʲ i p ɛ j t̪
+prequel	p rʲ i k w ɛ l
+pretensyami	p r ɛ t̪ ɛ n̪ s̪ ɨ a mʲ i
+prezesi	p r ɛ z̪ ɛ s̪ i
+prezesie	p r ɛ z̪ ɛ s̪ i
+pricewaterhousecoopers	p rʲ i t̪s̪ ɛ v a t̪ ɛ r x a w s̪ ɔ p ɛ r s̪
+primaaprilisowy	p r ɨ m a a p rʲ i ʎ i s̪ ɔ v ɨ
+princetown	p r ɛ n̪ tʂ t̪ a w n̪
+prix	p rʲ i k s̪
+proteinazy	p r ɔ t̪ ɛ i n̪ a z̪ ɨ
+przeciwprostokątna	p ʂ ɛ tɕ i f p r ɔ s̪ t̪ ɔ k ɔ n̪ t̪ n̪ a
+przeciwśrodek	p ʂ ɛ tɕ i f ɕ r ɔ d̪ ɛ k
+przedostatniego	p ʂ ɛ d̪ ɔ s̪ t̪ a t̪ ɲ ɛ ɡ ɔ
+przedzimie	p ʂ ɛ d̪ ʑ i mʲ ɛ
+przerznąć	p ʂ ɛ r z̪ n̪ ɔ ɲ tɕ
+przodzie	p ʂ ɔ d̪ ʑ ɛ
+przypomniawszy	p ʂ ɨ p ɔ m ɲ a a f ʂ ɨ
+psi	p s̪ i
+psiego	p ɕ ɛ ɡ ɔ
+psiemu	p ɕ ɛ m u
+ptah	p t̪ a
+purdue	p u r d̪ i
+pvc	p ɛ v ɛ t̪s̪ ɛ
+pwsm	p ɛ ɛ f ɛ s̪ ɛ m
+pzu	p ɛ z̪ ɛ t̪ u
+półimperyałów	p u w i m p ɛ rʲ w u f
+płaskorzeźby	p w a s̪ k ɔ ʐ ɛ ʑ bʲ i
+quad	k w ɔ t̪
+que	k j u
+quemadaventa	k w ɛ m a d̪ ɛ j v ɛ n̪ t̪ a
+quorum	k f ɔ r u m
+r	ɛ r
+rabbi	r a bʲ i
+ramzesie	r a m z̪ ɛ s̪ i
+rancho	r a n̪ tʂ ɔ
+rating	r ɛ j tʲ i n̪ k
+ratingowe	r ɛ j tʲ i n̪ ɡ ɔ v ɛ
+ratingowych	r ɛ j tʲ i n̪ ɡ ɔ v ɨ x
+ratingowymi	r ɛ j tʲ i n̪ ɡ ɔ v ɨ mʲ i
+ratingów	r ɛ j tʲ i n̪ ɡ u f
+re	ɛ r ɛ
+readymix	r ɛ a d̪ ɨ mʲ i k s̪
+reakcje	r ɛ a k t̪s̪ j ɛ
+reggae	r ɛ ɡ ɛ
+reggio	r ɛ ɟ j ɔ
+remake	rʲ i m ɛ j k
+renkas	r ɛ ŋ k a s̪
+reuter	r ɛ u t̪ ɛ r
+reutera	r ɛ u t̪ ɛ r a
+rewanżyzmu	r ɛ v a n̪ ʂ ɨ z̪ m u
+ricardego	rʲ i k a r d̪ ɛ ɡ ɔ
+ricardi	rʲ j ɛ r d̪ ɛ i
+ricotta	rʲ i k ɔ t̪ a
+rif	ɛ r i f ɛ
+risotto	rʲ i z̪ ɔ t̪ ɔ
+ritzaus	rʲ i a w s̪
+roaming	r ɔ w mʲ i n̪ k
+roamingu	r ɔ w mʲ i n̪ ɡ u
+rocca	r ɔ t̪s̪ a
+rock	r ɔ k
+rockowej	r ɔ k ɔ v ɛ j
+rockowy	r ɔ k ɔ v ɨ
+rodzynki	r ɔ d̪z̪ ɨ n̪ c i
+roky	r ɔ c i
+romainville	r ɔ m ɛ j n̪ vʲ i l ɛ
+ropenga	r ɔ p ɛ ŋ ɡ a
+roque	r ɔ k j u
+roseau	r ɔ z̪ ɔ
+rossiego	r ɔ s̪ i ɛ ɡ ɔ
+rossiemu	r ɔ s̪ i m u
+rousseau	r a w s̪ ɔ
+router	r u t̪ ɛ r
+rowellas	r a w ɛ l a s̪
+rowellasa	r a w ɛ l a s̪ a
+rozdział	r ɔ ʑ dʑ a w
+rozdziela	r ɔ ʑ dʑ ɛ l a
+rozdzielając	r ɔ ʑ dʑ ɛ l a j ɔ n̪ t̪s̪
+rozdzielającą	r ɔ ʑ dʑ ɛ l a j ɔ n̪ t̪s̪ ɔ̃
+rozdzielanie	r ɔ ʑ dʑ ɛ l a ɲ ɛ
+rozdzielać	r ɔ ʑ dʑ ɛ l a tɕ
+rozdzielczej	r ɔ ʑ dʑ ɛ l tʂ ɛ j
+rozdzieliliśmy	r ɔ ʑ dʑ ɛ ʎ i ʎ i ɕ m ɨ
+rozdzielić	r ɔ ʑ dʑ ɛ ʎ i tɕ
+rozdzielił	r ɔ ʑ dʑ ɛ ʎ i w
+rozdzieliła	r ɔ ʑ dʑ ɛ ʎ i w a
+rozdzieliłem	r ɔ ʑ dʑ ɛ ʎ i w ɛ m
+rozdzielona	r ɔ ʑ dʑ ɛ l ɔ n̪ a
+rozdzielono	r ɔ ʑ dʑ ɛ l ɔ n̪ ɔ
+rozsypywały	r ɔ s̪ ɨ p ɨ v a w ɨ
+rozwścieczonego	r ɔ s̪ f ɕ tɕ ɛ tʂ ɔ n̪ ɛ ɡ ɔ
+rozwścieczony	r ɔ s̪ f ɕ tɕ ɛ tʂ ɔ n̪ ɨ
+rozwścieczonych	r ɔ s̪ f ɕ tɕ ɛ tʂ ɔ n̪ ɨ x
+roślinne	r ɔ ɕ ʎ i n̪ ɛ
+roślinny	r ɔ ɕ ʎ i n̪ ɨ
+rpa	ɛ r p ɛ a
+ruanda	r w a n̪ d̪ a
+ruchable	r u x ɛ j b l
+rugby	r a ɡ b ɨ
+rundschau	r u n̪ t̪ ʂ a w
+rutherford	r u t̪ ɛ r f ɔ r t̪
+rwanda	r u a n̪ d̪ a
+rzeczywści	ʐ ɛ tʂ ɨ vʲ ɕ tɕ i
+rzeźb	ʐ ɛ ʑ bʲ i
+rzeźby	ʐ ɛ ʑ bʲ i
+rzeźki	ʐ ɛ ʑ c i
+rzonsa	ʐ ɔ̃ s̪ a
+s	ɛ s̪
+sa	ɛ s̪ a
+saalach	s̪ a l a x
+sacrum	s̪ a k r u m
+sadzarka	s̪ a d̪z̪ a r k a
+saidzie	s̪ a a i dʑ ɛ
+sancho	s̪ a n̪ tʂ ɔ
+sapiens	s̪ a pʲ ɛ̃ s̪
+saraye	s̪ a r a ɨ
+sashimi	s̪ a ɕ i mʲ i
+scenografii	s̪ t̪s̪ ɛ n̪ ɔ ɡ r a fʲ a j i
+schadenfreude	ʂ a d̪ ɛ n̪ f r ɔ j d̪ ɛ
+schadzek	s̪ x a t̪s̪ ɛ k
+scherzu	s̪ x ɛ ʂ u
+schmitta	s̪ x mʲ i t̪ a
+schwertbergu	s̪ x f ɛ r t̪ b ɛ r ɡ u
+science	ʂ j ɛ n̪ t̪s̪ ɛ
+scienceburgiem	ʂ j ɛ n̪ t̪s̪ ɛ b u r ɟ ɛ m
+scoring	s̪ k ɔ rʲ i n̪ k
+scriptum	s̪ k r u i p t̪ u m
+sdebel	z̪ d̪ ɛ b ɛ l
+sdiełano	z̪ d̪ j ɛ w a n̪ ɔ
+sdrp	ɛ s̪ ɛ d̪ ɛ r p ɛ
+sdun	z̪ d̪ u n̪
+seaborg	s̪ ɨ b ɔ r k
+sebastiana	s̪ ɛ b a s̪ tʲ i a n̪ a
+seemann	s̪ ɛ ʔ ɛ m a n̪
+selenocysteina	s̪ ɛ l ɛ n̪ ɔ t̪s̪ ɨ s̪ t̪ ɛ i n̪ a
+selfie	s̪ ɛ l fʲ i
+senk	s̪ ɛ ŋ k
+sequel	s̪ i k w ɛ l
+serwisie	s̪ ɛ r vʲ i s̪ i
+sesya	s̪ ɛ s̪ ɨ a
+seul	s̪ ɛ w u l
+sewilla	s̪ ɛ vʲ i j a
+sherlock	ʂ ɛ l ɔ t̪s̪ k
+sherlocka	ʂ ɛ l ɔ t̪s̪ k a
+shmita	s̪ x mʲ i t̪ a
+shogun	ʂ ɔ ɡ u n̪
+shopping	ʂ ɔ pʲ i n̪ k
+show	ʂ ɔ f
+siemens	s̪ i m ɛ̃ s̪
+siemienkiewicz	ɕ ɛ mʲ ɛ ŋ c ɛ vʲ i tʂ
+sienkowiec	ɕ ɛ ŋ k ɔ vʲ ɛ t̪s̪
+sieradzu	ɕ ɛ r a t̪s̪ u
+sierocińce	ɕ ɛ r ɔ t̪s̪ i ɲ t̪s̪ ɛ
+silos	s̪ i l ɔ s̪
+simens	s̪ i m ɛ̃ s̪
+sinciang	s̪ i n̪ dʐ a n̪ k
+singapur	s̪ i ŋ ɡ a p u r
+singapurczyk	s̪ i n̪ ɡ a p u r tʂ ɨ k
+singapurka	s̪ i n̪ ɡ a p u r k a
+singapurski	s̪ i n̪ ɡ a p u r s̪ c i
+singel	s̪ i n̪ ɡ ɛ l
+singiel	s̪ i n̪ ɟ ɛ l
+singularis	s̪ i n̪ ɡ u l a rʲ i s̪
+sinologia	s̪ i n̪ ɔ l ɔ ɟ j a
+sinus	s̪ i n̪ u s̪
+siwert	s̪ i v ɛ r t̪
+sko	ɛ s̪ k a ɔ
+skonkretyzowania	s̪ k ɔ ŋ k r ɛ t̪ ɨ z̪ ɔ v a ɲ a
+skonstatował	s̪ k ɔ̃ s̪ t̪ a t̪ ɔ v a w
+skonsultowane	s̪ k ɔ̃ s̪ u l t̪ ɔ v a n̪ ɛ
+skonsultowanie	s̪ k ɔ̃ s̪ u l t̪ ɔ v a ɲ ɛ
+skonsumować	s̪ k ɔ n̪ s̪ u m ɔ v a tɕ
+skoordynowana	s̪ k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a n̪ a
+skoordynowane	s̪ k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a n̪ ɛ
+skoordynowanej	s̪ k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a n̪ ɛ j
+skoordynowanych	s̪ k ɔ ʔ ɔ r d̪ ɨ n̪ ɔ v a n̪ ɨ x
+skorowidz	s̪ k ɔ r ɔ vʲ i t̪s̪
+skytte	s̪ c i t̪ ɛ
+skądże	s̪ k ɔ n̪ d̪ ʐ ɛ
+skądżeby	s̪ k ɔ n̪ d̪ ʐ ɛ b ɨ
+slums	s̪ l a m s̪
+slumsach	s̪ l a m s̪ a x
+smain	s̪ m ɛ j n̪
+smaina	s̪ m a j i n̪ a
+smg	ɛ s̪ ɛ m k a
+smorongiewicz	s̪ m ɔ r ɔ ŋ ɟ ɛ vʲ i tʂ
+snooker	s̪ n̪ u k ɛ r
+socweryfikacja	s̪ ɔ t̪s̪ v ɛ r ɨ fʲ i k a t̪s̪ j a
+sommering	s̪ ɔ m ɛ rʲ i n̪ k
+sonsala	s̪ ɔ̃ s̪ a l a
+sonsała	s̪ ɔ̃ s̪ a w a
+sowizdrzał	s̪ ɔ vʲ i z̪ d̪ ʐ a w
+spinnrade	s̪ pʲ i n̪ r ɛ j t̪
+spox	s̪ p ɔ k s̪
+sprawdź	s̪ p r a f tɕ
+sprawdźcie	s̪ p r a f tɕ tɕ ɛ
+sprawiedliwosc	s̪ p r a vʲ ɛ d̪ ʎ i v ɔ ʔ ɛ s̪ ɛ t̪s̪ ɛ
+spray	s̪ p r ɛ j
+spójrzmy	s̪ p u j ʂ m ɨ
+spójrzy	s̪ p u j ʂ ɨ
+squash	s̪ k w ɔ ʂ
+squat	s̪ k w ɔ t̪
+sródziemnego	s̪ r u d̪ ʑ ɛ m n̪ ɛ ɡ ɔ
+ssie	s̪ i
+ssij	s̪ ɕ i j
+staccato	s̪ t̪ a k a t̪ ɔ
+stanleya	s̪ t̪ a n̪ l i
+stanąwszy	s̪ t̪ a n̪ ɔ f ʂ ɨ
+staroindyjski	s̪ t̪ a r ɔ i n̪ d̪ ɨ j s̪ c i
+staroobrzędowiec	s̪ t̪ a r ɔ ʔ ɔ b ʐ ɛ n̪ d̪ ɔ vʲ ɛ t̪s̪
+steampunk	s̪ tʲ i m p a n̪ k
+stenzel	s̪ t̪ ɛ n̪ z̪ ɛ l
+stephan	s̪ t̪ ɛ p x a n̪
+steward	s̪ tʲ u a r t̪
+stonesi	s̪ t̪ ɔ n̪ ɛ s̪ i
+stracciatella	s̪ t̪ r a tʂ tʂ j a t̪ ɛ l a
+strassburg	s̪ t̪ r a s̪ b u r k
+strenk	s̪ t̪ r ɛ ŋ k
+strongowski	s̪ t̪ r ɔ n̪ ɡ ɔ f s̪ c i
+stronk	s̪ t̪ r ɔ ŋ k
+strzecha	s̪ tʂ ɛ x a
+strzegli	ʂ tʂ ɛ ɡ ʎ i
+strzegą	s̪ t̪ ʂ ɛ ɡ ɔ̃
+strzegąc	ʂ tʂ ɛ ɡ ɔ n̪ t̪s̪
+strzegące	ʂ tʂ ɛ ɡ ɔ n̪ t̪s̪ ɛ
+strzek	ʂ tʂ ɛ k
+strzelać	ʂ tʂ ɛ l a tɕ
+strzelę	s̪ tʂ ɛ l ɛ
+strzeż	ʂ tʂ ɛ ʂ
+strzeżcie	ʂ tʂ ɛ ʂ tɕ ɛ
+studiu	s̪ t̪ u d̪ i u
+studiujący	s̪ t̪ u d̪ j u j ɔ n̪ t̪s̪ ɨ
+studya	s̪ t̪ u d̪
+suazi	s̪ u a z̪ i
+subbudżetowanie	s̪ u b u d̪ ʐ ɛ t̪ ɔ v a ɲ ɛ
+sudanczyków	s̪ u d̪ ɛ n̪ tʂ ɨ k u f
+sukiennik	s̪ u c ɛ ɲ i k
+sukmanę	s̪ u k m ɛ n̪ ɛ
+sunnu	s̪ u n̪ ɲ i
+superexpressie	s̪ u p ɛ r ɛ s̪ p r ɛ s̪ i
+surfing	s̪ ɛ r fʲ i n̪ k
+sushi	s̪ u ʂ i
+suspensorium	s̪ u s̪ p ɛ̃ s̪ ɔ rʲ j u m
+swansea	s̪ w ɔ n̪ z̪ i
+sydney	s̪ ɨ d̪ n̪ i
+systemik	s̪ ɨ s̪ t̪ ɛ mʲ k
+sytuacya	s̪ ɨ t̪ u a t̪s̪
+szczwany	ʂ tʂ f a n̪ ɨ
+szedł	ʂ ɛ t̪ w
+szejch	ʂ ɛ j t̪s̪ a x
+szewardnadze	ʂ ɛ f a r d̪ n̪ a d̪z̪ ɛ
+szezlong	ʂ ɛ z̪ l ɔ n̪ k
+sześcuset	ʂ ɛ t̪s̪ u s̪ ɛ t̪
+sześćdziesiąt	ʂ ɛ ʑ dʑ ɛ ɕ ɔ n̪ t̪
+sześćdziesiąty	ʂ ɛ ʑ dʑ ɛ ɕ ɔ n̪ t̪ ɨ
+sześćkroć	ʂ ɛ j k r ɔ tɕ
+sześćset	ʂ ɛ ɕ s̪ ɛ t̪
+sześćsetna	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ a
+sześćsetne	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɛ
+sześćsetnej	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɛ j
+sześćsetny	ʂ ɛ ɕ s̪ ɛ t̪ n̪ ɨ
+sześćsetnym	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɨ m
+sześćsetną	ʂ ɛ ɕ tɕ s̪ ɛ t̪ n̪ ɔ̃
+szlangbaumowi	ʂ l a ŋ ɡ b a w m ɔ vʲ i
+szmaragdami	ʂ m a r a k t̪ a mʲ i
+szmaragdy	ʂ m a r a k t̪ i
+szmaragdów	ʂ m a r a k t̪ u f
+sztućce	ʂ t̪ u tɕ t̪s̪ ɛ
+szwagrów	ʂ f a ɡ r u f
+szwedzi	ʂ f ɛ t̪s̪ i
+szwie	ʂ fʲ ɛ
+szwiec	ʂ fʲ ɛ t̪s̪
+szwindli	ʂ fʲ i n̪ d̪ ʎ i
+służb	s̪ w u ʐ b
+t	t̪ ɛ
+taher	t̪ ɛ r
+tahitanka	t̪ a i t̪ a n̪ k a
+takens	t̪ a k ɛ̃ s̪
+talerze	t̪ a l ɛ ʂ
+tandeciarzu	t̪ a n̪ d̪ ɛ tɕ a ʂ u
+tangens	t̪ a ŋ ɡ ɛ̃ s̪
+tantza	t̪ a n̪
+taseera	t̪ a z̪ i r a
+tavannes	t̪ a w n̪ ɛ s̪
+taxi	t̪ a k s̪ j
+taylerand	t̪ a j l ɛ r a n̪ t̪
+tbilisi	t̪ bʲ i ʎ i s̪ i
+tc	t̪ ɛ t̪s̪ ɛ
+telenga	t̪ ɛ l ɛ n̪ ɡ a
+temerina	t̪ ɛ m ɛ rʲ i n̪ a
+tenże	t̪ ɛ̃ ʐ ɛ
+teorya	t̪ ɛ ɔ rʲ
+tequila	t̪ ɛ c i l a
+tequili	t̪ ɛ c i ʎ i
+thalberga	t̪ ɔ l b ɛ r ɡ a
+thalgau	t̪ a l ɡ a w
+thatcher	t̪ a tɕ ɛ r
+thorshavn	t̪ ɔ r s̪ x a w n̪
+thorz	t̪ x ɔ ʂ
+tj	t̪ ɛ j
+tkwi	t̪ ɛ k a f ɛ i
+toaleta	t̪ ɔ a l ɛ t̪ a
+toaletowych	t̪ ɔ a l ɛ t̪ ɔ v ɨ x
+toccata	t̪ ɔ k a t̪ a
+tonga	t̪ ɔ n̪ ɡ a
+tortilla	t̪ ɔ r tʲ i j a
+townsend	t̪ a w n̪ s̪ ɛ n̪ t̪
+trance	t̪ r ɛ̃ s̪
+transgraniczna	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ a
+transgraniczne	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɛ
+transgranicznej	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɛ j
+transgraniczny	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɨ
+transgranicznych	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɨ x
+transgranicznym	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɨ m
+transgraniczną	t̪ r a n̪ s̪ a ɡ r a ɲ i tʂ n̪ ɔ̃
+transgredujące	t̪ r a n̪ s̪ a ɡ r ɛ d̪ u j ɔ n̪ t̪s̪ ɛ
+transgresji	t̪ r a n̪ s̪ a ɡ r ɛ s̪ j i
+transgresją	t̪ r a n̪ s̪ a ɡ r ɛ s̪ j ɔ̃
+traunstein	t̪ r a w n̪ ʂ t̪ a j n̪
+travancore	t̪ r a vʲ ɛ̃ k ɔ r ɛ
+trofeum	t̪ r ɔ f ɛ u m
+trondheim	t̪ r ɔ n̪ t̪ x ɛ i m
+trostiego	t̪ r ɔ s̪ tʲ i ɛ ɡ ɔ
+trr	t̪ ɛ r ɛ r
+trzeba	tʂ ɛ b a
+trzechsetny	tʂ ɛ x s̪ ɛ t̪ n̪ ɨ
+trzeci	tʂ ɛ tɕ i
+trzeźwo	t̪ ʂ ɛ ʑ v ɔ
+trzydziestymmmm	t̪ ʂ ɨ dʑ ɛ s̪ t̪ ɨ m ɛ m ɛ m ɛ m ɛ
+tullnu	t̪ u l n̪ u
+turbin	t̪ u r bʲ n̪
+turnau	t̪ u r n̪ a w
+twaina	t̪ w ɛ n̪ a
+tweet	t̪ w i t̪
+tweetować	t̪ w i t̪ ɔ v a tɕ
+twitter	t̪ w i t̪ ɛ r
+twittera	t̪ w i t̪ ɛ r a
+twitterze	t̪ w i t̪ ɛ ʐ ɛ
+tymcasem	t̪ ɨ m a s̪ ɛ m
+tzatziki	t̪s̪ a t̪s̪ i c i
+tzn	t̪s̪ a ɛ n̪
+tzrynaście	t̪s̪ a r ɨ n̪ a ɕ tɕ ɛ
+tłamsi	t̪ w a m s̪ i
+uaktualniać	u a k t̪ u a l ɲ a tɕ
+uaktualnić	u a k t̪ u a l ɲ i tɕ
+uaz	u a z̪ ɛ t̪
+ubóstwiamy	u b u s̪ t̪ fʲ a a m ɨ
+udf	u d̪ ɛ ɛ f
+ue	j u
+uefa	u w ɛ f a
+ukraina	u k r a j i n̪ a
+ulisses	u ʎ i z̪ s̪
+um	u ɛ m
+up	u p ɛ
+upgrade	a p ɡ r ɛ j t̪
+uprzedzi	u p ʂ ɛ d̪ ʑ i
+us	u ɛ s̪
+usa	u ɛ s̪ a
+uscaritz	u s̪ rʲ i
+uscaritza	u s̪ rʲ i
+uscariz	u s̪ k a r i s̪
+utah	j u t̪ a
+utensylia	u t̪ ɛ n̪ s̪ ɨ ʎ a
+uw	u v u
+v	v ɛ
+vacatio	v a k a tʲ ɔ
+vaclava	v a t̪s̪ l a w
+vandeleur	v a n̪ d̪ ɛ l ɛ u r
+venture	v ɛ n̪ t̪ a c i r
+veracruz	v ɛ r k r u s̪
+verheugen	v ɛ r x ɛ w ɡ ɛ n̪
+verhofstadt	v ɛ r x ɔ f ʂ t̪ a t̪
+verhofstadtem	v ɛ r x ɔ f ʂ t̪ a t̪ ɛ m
+via	vʲ i a
+viadrina	vʲ i d̪ rʲ i n̪ a
+villa	vʲ i j a
+villaca	vʲ i t̪s̪ a
+vodnian	v u d̪ ɲ a n̪
+vogel	v ɔ ɡ ɛ l
+volenti	v ɔ l ɛ n̪ tʲ i
+von	v ɔ̃
+voodoo	v u d̪ u
+vorilhon	v u rʲ i l x ɔ n̪
+vous	v a w s̪
+w	v u
+wachlarzami	v a x l a ʂ a mʲ i
+waldorff	v a l d̪ ɔ r f
+walkman	w ɔ k m ɛ n̪
+wandzioch	v a n̪ dʑ ɔ x
+wannsee	v a n̪ z̪ i
+wardenga	v a r d̪ ɛ ŋ ɡ a
+washington	v a ɕ i n̪ k t̪ ɔ n̪
+waterpolo	w ɔ t̪ ɛ r p ɔ l ɔ
+wawrzkiewicz	v a f ʂ c ɛ vʲ i tʂ
+wawrzkowicz	v a f ʂ k ɔ vʲ i tʂ
+wc	v u t̪s̪ ɛ
+weedon	w i d̪ ɔ n̪
+weedona	w i d̪ ɔ n̪ a
+weedson	w i t̪ s̪ ɔ n̪
+week	w i k
+weekend	w i k ɛ n̪ t̪
+weekendowo	w i k ɛ n̪ d̪ ɔ v ɔ
+weekendowy	w i k ɛ n̪ d̪ ɔ v ɨ
+weekendu	w i k ɛ n̪ d̪ u
+weekendy	w i k ɛ n̪ d̪ ɨ
+wejdź	v ɛ j tɕ
+wenezuelka	v ɛ n̪ ɛ z̪ u ɛ l k a
+wenzel	v ɛ̃ z̪ ɛ l
+weselsi	v ɛ s̪ ɛ l ɕ i
+wewnątrzrynkowych	v ɛ v n̪ ɔ n̪ t̪ ʂ a r ɨ n̪ k ɔ v ɨ x
+wg	v ɛ d̪ w u k
+whisky	w ɨ s̪ c i
+whitaker	w i t̪ a k ɛ r
+wiatroodporny	vʲ a t̪ r ɔ ʔ ɔ t̪ p ɔ r n̪ ɨ
+wicekonsul	vʲ i t̪s̪ ɛ k ɔ̃ s̪ u l
+widz	vʲ i t̪s̪
+wielkoobszarowych	vʲ ɛ l k ɔ ʔ ɔ p ʂ a r ɔ v ɨ x
+wielosilnikowy	vʲ ɛ l ɔ ɕ i l ɲ i k ɔ v ɨ
+wiench	vʲ ɛ̃ x
+wierzb	vʲ ɛ ʂ p
+wiesel	vʲ i z̪ ɛ l
+wildhardt	vʲ i l d̪z̪ x a r t̪
+wimbledon	w i m b ɛ l d̪ ɔ n̪
+windsurfing	w i n̪ t̪ s̪ ɛ r fʲ i n̪ k
+wirtuozowsku	vʲ i r t̪ u ɔ s̪ ɔ f s̪ k u
+wonsik	v ɔ̃ ɕ i k
+wow	w a w
+woytowicz	v ɔ j t̪ ɔ vʲ i tʂ
+wołonciej	v ɔ w ɔ ɲ tɕ ɛ j
+wołonkiewicz	v ɔ w ɔ ŋ c ɛ vʲ i tʂ
+wołonsewicz	v ɔ w ɔ̃ s̪ ɛ vʲ i tʂ
+wpiszcie	f pʲ i s̪ tɕ ɛ
+wrestling	r ɛ s̪ t̪ ʎ i n̪ k
+wspomniawszy	f s̪ p ɔ m ɲ a a f ʂ ɨ
+wstydźcie	f s̪ t̪ ɨ d̪ ɕ tɕ ɛ
+wszakże	f ʂ a ɡ ʐ ɛ
+wszechwładnie	f ʂ ɛ x v w a d̪ ɲ ɛ
+wszechwładny	f ʂ ɛ x v w a d̪ n̪ ɨ
+wtc	v u t̪ ɛ t̪s̪ ɛ
+wto	v u t̪ ɛ ɔ
+wwiercanie	vʲ ɛ r t̪s̪ a ɲ ɛ
+wwiercenie	vʲ ɛ r t̪s̪ ɛ ɲ ɛ
+wwieźć	vʲ ɛ ɕ tɕ
+wwizja	vʲ i z̪ j a
+wwożony	v ɔ ʐ ɔ n̪ ɨ
+wwóz	v u s̪
+wydzwaniała	v ɨ d̪ z̪ v a ɲ a w a
+wygooglować	v ɨ ɡ u ɡ l ɔ v a tɕ
+wygłupialiśmy	v ɨ ɡ w u pʲ a a ʎ i ɕ m ɨ
+wyoming	w a j ɔ mʲ i n̪ k
+wyzipie	v ɨ z̪ i pʲ ɛ
+wzwód	v z̪ v u t̪
+x	ɛ k s̪
+xbox	ɛ k s̪ b ɔ k s̪
+xiaobo	ɛ k s̪ j a ɔ b ɔ
+xiaopinga	ɛ k s̪ j a ɔ pʲ i n̪ ɡ a
+xii	ɛ k s̪ j i
+xiii	ɛ k s̪ j j i
+xiv	ɛ k s̪ j f
+xiądz	ɛ k s̪ ɔ n̪ t̪s̪
+xiąg	ɛ k s̪ j ɔ ŋ k
+xiążek	ɛ k s̪ ɔ̃ ʐ ɛ k
+xiążki	ɛ k s̪ j ɔ̃ ʂ c i
+xiążę	ɛ k s̪ j ɔ̃ ʐ ɛ
+xięgach	ɛ k s̪ j ɛ ŋ ɡ a x
+xięgi	ɛ k s̪ j ɛ ŋ ɟ i
+xiężniczka	ɛ k s̪ ɛ̃ ʐ ɲ i tʂ k a
+xiężniczki	ɛ k s̪ ɛ̃ ʐ ɲ i tʂ c i
+xoaz	ɛ k s̪ ɔ a s̪
+y	i ɡ r ɛ k
+yamba	j m b a
+yannickowi	n̪ ɲ i t̪s̪ k ɔ vʲ i
+yardów	j r d̪ u f
+yeti	j ɛ tʲ i
+yorkshire	j r k s̪ ç i r ɛ
+yorkshirskim	j r k s̪ ç i r s̪ c i m
+young	j u n̪ k
+youtube	j u tʲ u p
+ytong	j t̪ ɔ ŋ k
+ytonga	j t̪ ɔ ŋ ɡ a
+yung	j u n̪ k
+yyy	j ɨ i
+z	z̪ ɛ t̪
+zademonstrowanie	z̪ a d̪ ɛ m ɔ̃ s̪ t̪ r ɔ v a ɲ ɛ
+zagził	z̪ a ɡ ʑ i w
+zakens	z̪ a k ɛ̃ s̪
+zakonnice	z̪ a k ɔ ɲ i t̪s̪ ɛ
+zakonserwowano	z̪ a k ɔ n̪ s̪ ɛ r v ɔ v a n̪ ɔ
+zalękniona	z̪ a l ɛ̃ k ɲ ɔ n̪ a
+zalęknionego	z̪ a l ɛ̃ k ɲ ɔ n̪ ɛ ɡ ɔ
+zalękniony	z̪ a l ɛ̃ k ɲ ɔ n̪ ɨ
+zamarza	z̪ a m a r z̪ a
+zamarzać	z̪ a m a r z̪ a tɕ
+zamarzałby	z̪ a m a r z̪ a w b ɨ
+zanussi	z̪ a n̪ u s̪ ɕ i
+zaolzie	z̪ a ɔ l ʑ ɛ
+zapomniawszy	z̪ a p ɔ m ɲ a a f ʂ ɨ
+zasadzce	z̪ a s̪ a d̪z̪ t̪s̪ ɛ
+zaucha	z̪ a u x a
+zaufana	z̪ a u f a n̪ a
+zaufasz	z̪ a u f a ʂ
+zaułkach	z̪ a u w k a x
+zawstydzeni	z̪ a f s̪ t̪ ɨ dʑ ɛ ɲ i
+zawstydzony	z̪ a f s̪ t̪ ɨ d̪ z̪ ɔ n̪ ɨ
+zchn	z̪ ɛ ɛ s̪ x a ɛ n̪
+zczasem	z̪ tʂ a s̪ ɛ m
+zdiagnozowane	z̪ d̪ i a ɡ n̪ ɔ z̪ ɔ v a n̪ ɛ
+zdiagnozowany	z̪ d̪ i a ɡ n̪ ɔ z̪ ɔ v a n̪ ɨ
+zdiagnozować	z̪ d̪ i a ɡ n̪ ɔ z̪ ɔ v a tɕ
+zdiagnozujecie	z̪ d̪ i a ɡ n̪ ɔ z̪ u j ɛ tɕ ɛ
+zejdź	z̪ ɛ j tɕ
+zeus	z̪ ɛ w s̪
+zeusa	z̪ ɛ w s̪ a
+zidentyfikowanie	z̪ i d̪ ɛ n̪ t̪ ɨ fʲ i k ɔ v a ɲ ɛ
+zidentyfikowany	z̪ i d̪ ɛ n̪ t̪ ɨ fʲ i k ɔ v a n̪ ɨ
+zidentyfikować	z̪ i d̪ ɛ n̪ t̪ ɨ fʲ i k ɔ v a tɕ
+zieleninka	ʑ ɛ l ɛ ɲ i n̪ k a
+zielenkiewicz	ʑ ɛ l ɛ n̪ c ɛ vʲ i tʂ
+zielonooki	ʑ ɛ l ɔ n̪ ɔ ʔ ɔ c i
+zienkowicz	ʑ ɛ ŋ k ɔ vʲ i tʂ
+zienć	ʑ ɛ ɲ tɕ
+zimbabwe	z̪ i m b a b v ɛ
+zirytować	z̪ i r ɨ t̪ ɔ v a tɕ
+ziszczać	z̪ i ʂ tʂ a tɕ
+ziszczeniem	z̪ i ʂ tʂ ɛ ɲ ɛ m
+ziyanga	z̪ i ɨ a n̪ ɡ a
+zkądże	s̪ k ɔ dʐ ɛ
+zmarzlak	z̪ m a r z̪ l a k
+zmarzlina	z̪ m a r z̪ ʎ i n̪ a
+zombie	z̪ ɔ m bʲ i
+zoomorfizm	z̪ ɔ ʔ ɔ m ɔ r fʲ i z̪ m
+zoosporangium	z̪ ɔ ʔ ɔ s̪ p ɔ r a n̪ ɟ j u m
+zowąd	z̪ ɔ f ɔ n̪ t̪
+zse	z̪ ɛ t̪ ɛ s̪ ɛ
+zsikasz	s̪ ɕ i k a ʂ
+zsiniałe	s̪ ɕ i ɲ a w ɛ
+zsumowano	s̪ u m ɔ v a n̪ ɔ
+zubayr	z̪ u b a ɨ r
+zurych	t̪s̪ u r ɨ x
+zuryski	t̪s̪ u r ɨ s̪ c i
+zw	z̪ v u
+zwitterjon	t̪s̪ fʲ i t̪ ɛ r j ɔ n̪
+zwolenkiewicz	z̪ v ɔ l ɛ n̪ c ɛ vʲ i tʂ
+zygfryd	z̪ ɨ ɡ f r ɨ t̪
+ą	ɔ ɲ
+ć	tɕ ɛ
+ćssd	tɕ ɛ s̪ ɛ s̪ ɛ d̪ ɛ
+ćwieluch	tɕ fʲ ɛ l u x
+ćwiklik	tɕ fʲ i k ʎ i k
+ćwionkała	tɕ fʲ ɔ ŋ k a w a
+ę	ɛ ɲ
+ł	ɛ w
+łopatce	w ɔ p a t̪ a t̪s̪ ɛ
+ń	ɛ ɲ
+ś	ɛ ɕ
+ślizg	ɕ ʎ i s̪ k
+śow	ɕ a w
+śpichlerzach	ɕ pʲ i x l ɛ ʂ a x
+śródziemne	ɕ r u d̪ ʑ ɛ m n̪ ɛ
+śródziemnego	ɕ r u d̪ ʑ ɛ m n̪ ɛ ɡ ɔ
+śródziemnem	ɕ r u d̪ ʑ ɛ m n̪ ɛ m
+św	ɕ fʲ a
+świerzb	ɕ fʲ ɛ ʂ p
+ź	ʑ ɛ t̪
+ż	ʐ ɛ t̪
+żołdzie	ʐ ɔ w d̪ ʑ ɛ
+żydziak	ʐ ɨ d̪ ʑ a k
+żydzie	ʐ ɨ d̪ ʑ ɛ
+żłóbkiem	ʐ w u b c ɛ m
