@@ -7,6 +7,10 @@
 SHELL := /bin/bash
 PY    := uv run
 
+# Where the Rust half is checked out. It trains here and runs there, so `export`
+# writes the weights into that checkout and nothing else crosses.
+RUST_DIR ?= ../tiny-g2p
+
 .DEFAULT_GOAL := help
 
 .PHONY: help
@@ -64,21 +68,14 @@ adjudicate: ## measured vs gold-corrected accuracy (needs make xlex)
 	$(PY) python experiments/score_adjudication.py --full --json runs/adjudication.json
 
 .PHONY: export
-export: ## package the promoted model for the Python-free runtimes
+export: ## package the promoted model into the Rust checkout (RUST_DIR)
 	$(PY) tiny-g2p export \
-		--blob rust/core/weights/tiny_g2p.bin \
+		--blob $(RUST_DIR)/core/weights/tiny_g2p.bin \
 		--gold data/test_gold.tsv \
-		--onnx rust/core/weights/tiny_g2p.onnx \
+		--onnx $(RUST_DIR)/core/weights/tiny_g2p.onnx \
 		$(foreach a,agd bmw cv dga mps nszz ntv pzpr rpo rtv tpn wku wtw,--acronym $(a))
-
-.PHONY: rust
-rust: export ## build the static binary and run its tests (bit-exact parity)
-	cd rust && cargo test --release --workspace && cargo build --release
-
-.PHONY: wasm
-wasm: export ## build the wasm package and exercise it under node
-	cd rust && wasm-pack build --release --target nodejs --out-name tiny_g2p -d ../pkg-nodejs wasm
-	cd rust && node smoke.mjs
+	@echo "wrote $(RUST_DIR)/core/weights/"; \
+	 echo "build and test it there: make -C $(RUST_DIR) test"
 
 .PHONY: test
 test: ## run the test suite
@@ -87,22 +84,6 @@ test: ## run the test suite
 .PHONY: predict
 predict: ## transcribe words: make predict W="Wrocław Szczebrzeszyn"
 	$(PY) tiny-g2p predict $(W)
-
-.PHONY: example
-example: ## what the tool does to real speech, from examples/
-	cd rust && cargo build --release
-	rust/target/release/tinyg2p predict --explain --lexicon examples/names.dict \
-		< examples/utterances.txt
-
-.PHONY: miss-lexicon
-miss-lexicon: ## regenerate data/base.dict and data/seed.dict (needs make lexicon)
-	cd rust && cargo build --release
-	rust/target/release/tinyg2p miss-lexicon --gold data/test_gold.tsv --out data/seed.dict
-	@lex=$$( [ -f data/lexicons/polish_mfa.dict ] && echo data/lexicons/polish_mfa.dict \
-		  || echo ../pl_g2p/data/lexicons/polish_mfa.dict ); \
-	  echo "scanning $$lex"; \
-	  rust/target/release/tinyg2p miss-lexicon --lexicon $$lex \
-	    --gold data/test_gold.tsv --out data/base.dict
 
 .PHONY: clean
 clean: ## remove the venv, runs, promoted state and downloaded lexicon
