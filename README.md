@@ -234,7 +234,7 @@ The model is right about 98.2% of words; the ones it misses are known, and
 56 KB `word<TAB>phones` dictionary, which the binary takes directly:
 
 ```bash
-tinyg2p eval --gold data/test_gold.tsv --lexicon data/base.dict   # 98.18% -> 99.40% measured
+tinyg2p eval --gold data/test_gold.tsv --suggest data/base.dict   # 98.18% -> 99.40% measured
 ```
 
 ```
@@ -251,6 +251,13 @@ where MFA is known to be wrong.
 `data/seed.dict` is the same idea restricted to the adjudicated held-out split:
 68 words whose readings have been reviewed by hand. Use it when you want only
 reviewed entries; `base.dict` when you want coverage.
+
+Both are loaded with `--suggest`, not `--lexicon`, and the difference is
+authority rather than format: a *suggestion* is a lexicon's reading for a word
+the model disagrees with, while `--lexicon` is somebody asserting that a word is
+called this and said like this. A suggestion answers only where nothing asserted
+has an answer, and `--explain` reports `suggestion` or `dictionary` so it is
+visible which one did. Your own names file, given with `--lexicon`, always wins.
 
 Regenerate either with `make miss-lexicon`. A word the gold marks wrong and
 records no alternative for is left out rather than guessed, which is why the

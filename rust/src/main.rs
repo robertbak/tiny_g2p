@@ -57,11 +57,18 @@ struct Globals {
     /// Load weights from a file instead of the embedded ones
     #[arg(long, value_name = "FILE", global = true)]
     blob: Option<PathBuf>,
-    /// A dictionary for borrowings and names: `word<TAB>phones`, or MFA's
-    /// dictionary exactly as it comes. For `miss-lexicon` this is the lexicon
-    /// to scan, not a dictionary to load
+    /// A dictionary you *assert*: these words are called this, and are said
+    /// like this. `word<TAB>phones`, or MFA's dictionary exactly as it comes.
+    /// Repeatable, and later files override earlier ones. Nothing outranks an
+    /// assertion. For `miss-lexicon` this is the lexicon to scan, not a
+    /// dictionary to load.
     #[arg(long, value_name = "FILE", global = true)]
-    lexicon: Option<PathBuf>,
+    lexicon: Vec<PathBuf>,
+    /// A dictionary of *suggestions* -- what `miss-lexicon` writes. Same
+    /// format, weaker authority: it answers only where nothing asserted, and
+    /// no curated acronym entry, has an answer.
+    #[arg(long, value_name = "FILE", global = true)]
+    suggest: Vec<PathBuf>,
 }
 
 #[derive(Subcommand)]
@@ -126,9 +133,16 @@ fn load(globals: &Globals) -> Result<G2P, String> {
         }
         None => G2P::embedded(mode(globals)).map_err(|e| e.to_string())?,
     };
-    if let Some(path) = &globals.lexicon {
+    // Assertions, then suggestions. The order between the two loops is not what
+    // decides anything -- they are separate levels of authority, applied by
+    // strength rather than by when they arrived.
+    for path in &globals.lexicon {
         let text = std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
         g2p.load_lexicon(&text);
+    }
+    for path in &globals.suggest {
+        let text = std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
+        g2p.load_suggestions(&text);
     }
     Ok(g2p)
 }
@@ -315,7 +329,7 @@ fn miss_lexicon(
     gold_path: Option<&Path>,
     out_path: Option<&Path>,
 ) -> Result<(), String> {
-    if globals.lexicon.is_none() && gold_path.is_none() {
+    if globals.lexicon.is_empty() && gold_path.is_none() {
         return Err("miss-lexicon needs --lexicon FILE, --gold FILE, or both".to_string());
     }
 
@@ -355,26 +369,31 @@ fn miss_lexicon(
     let mut unfixable_seen = 0usize;
     let source;
 
-    if let Some(path) = &globals.lexicon {
-        let text = std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
-        source = path.display().to_string();
-        for (word, reading) in tiny_g2p::parse_dictionary(&text) {
-            // Special tokens (`<unk>`, `[bracketed]`) are not words and cannot
-            // be phonemised; nothing wants them in a dictionary.
-            if word.contains(['<', '[', ' ']) {
-                continue;
-            }
-            scanned += 1;
-            let heard = g2p.phonemize(&word);
-            if !gold::notation_equal(&reading, &heard, &word) {
-                if unfixable.contains(&word) {
-                    unfixable_seen += 1;
+    if !globals.lexicon.is_empty() {
+        let mut sources: Vec<String> = Vec::new();
+        for path in &globals.lexicon {
+            let text =
+                std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
+            sources.push(path.display().to_string());
+            for (word, reading) in tiny_g2p::parse_dictionary(&text) {
+                // Special tokens (`<unk>`, `[bracketed]`) are not words and
+                // cannot be phonemised; nothing wants them in a dictionary.
+                if word.contains(['<', '[', ' ']) {
                     continue;
                 }
-                let emit = preferred.get(&word).cloned().unwrap_or(reading);
-                misses.insert(word, emit);
+                scanned += 1;
+                let heard = g2p.phonemize(&word);
+                if !gold::notation_equal(&reading, &heard, &word) {
+                    if unfixable.contains(&word) {
+                        unfixable_seen += 1;
+                        continue;
+                    }
+                    let emit = preferred.get(&word).cloned().unwrap_or(reading);
+                    misses.insert(word, emit);
+                }
             }
         }
+        source = sources.join(", ");
     } else {
         source = gold_path.map(|p| p.display().to_string()).unwrap_or_default();
         for row in &gold_rows {

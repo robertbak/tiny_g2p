@@ -41,7 +41,8 @@ tinyg2p info                    show what is compiled in
 | option | effect |
 |---|---|
 | `--int8` | replay the quantized artifact instead of the float weights |
-| `--lexicon FILE` | a dictionary for borrowings and names — `word<TAB>phones`, or MFA's dictionary exactly as it comes |
+| `--lexicon FILE` | a dictionary you **assert** — `word<TAB>phones`, or MFA's dictionary exactly as it comes. Repeatable; later files override earlier ones |
+| `--suggest FILE` | a dictionary of **suggestions** — what `miss-lexicon` writes. Same format, weaker: used only where nothing asserted has an answer |
 | `--blob FILE` | load weights from a file instead of the embedded ones |
 | `--explain` | *(predict)* say which path answered each word |
 | `--model-only` | *(predict)* bypass the exception path |
@@ -61,13 +62,40 @@ $ tinyg2p predict --explain bmw blair
 b ɛ m ɛ v u        initialism
 ```
 
-`--explain` prints where each reading came from — `model`, `dictionary`,
-`acronym table` or `initialism`. Borrowings and names do not follow Polish
-graphemics, so they are looked **up** rather than guessed; supply them with
-`--lexicon`, and the project's own dictionary is MFA's lexicon with Common Voice
-as a second opinion where the two readings differ. MFA's dictionary is accepted
-as it is — its per-reading probability columns are recognised and dropped, so
-`--lexicon polish_mfa.dict` works with no conversion step. Acronyms are the structural
+`--explain` prints where each reading came from — `dictionary`, `suggestion`,
+`acronym table`, `initialism` or `model`. Borrowings and names do not follow
+Polish graphemics, so they are looked **up** rather than guessed. MFA's
+dictionary is accepted as it is — its per-reading probability columns are
+recognised and dropped — so `--lexicon polish_mfa.dict` works with no
+conversion step.
+
+### Two kinds of dictionary, and two levels of authority
+
+They are the same format, read by the same parser. What differs is what the
+claim is worth:
+
+- **`--lexicon`** is somebody saying *this word is called this, and is said like
+  this*. That outranks everything, including a suggested reading and the
+  embedded acronym table.
+- **`--suggest`** is a reading derived from where a model disagrees with a
+  lexicon. It is good evidence — better than a guess — and it is not a person
+  saying so. It answers only where nothing more authoritative has an answer.
+
+The distinction is not decoration. An acronym-table entry and a generated entry
+are *alternative spellings*: a preference among readings. A user's list is a
+claim about the world, and when the two disagree the claim should win — and
+`--explain` should say which one did.
+
+So a names file of your own goes last and wins:
+
+```sh
+tinyg2p predict --explain --suggest data/base.dict --lexicon names.dict "Dziemianowicz-Bąk"
+Dziemianowicz-Bąk   dʑɛ mʲ a nɔ vʲ i tʂ bɔŋ k   (dictionary)
+```
+
+Keys are matched after the same normalisation the model applies, so a name
+typed with a decomposed diacritic (`a` + U+0328 for `ą`) matches the composed
+spelling rather than falling through to the model. Acronyms are the structural
 case: one label per character cannot spell `agd`, so there is a small embedded
 table and a vowel-less initialism rule beneath it.
 
@@ -108,8 +136,8 @@ tinyg2p miss-lexicon --gold data/test_gold.tsv --out seed.dict
 # corrected readings wherever it has adjudicated one (~1,900 words)
 tinyg2p miss-lexicon --lexicon polish_mfa.dict --gold data/test_gold.tsv --out base.dict
 
-# and then it is just a dictionary
-tinyg2p predict --lexicon base.dict ...
+# and then it is just a dictionary of suggestions
+tinyg2p predict --suggest base.dict ...
 ```
 
 MFA's dictionary is read as it comes — its per-reading probability columns are
