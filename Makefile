@@ -88,6 +88,12 @@ test: ## run the test suite
 predict: ## transcribe words: make predict W="Wrocław Szczebrzeszyn"
 	$(PY) tiny-g2p predict $(W)
 
+.PHONY: example
+example: ## what the tool does to real speech, from examples/
+	cd rust && cargo build --release
+	rust/target/release/tinyg2p predict --explain --lexicon examples/names.dict \
+		< examples/utterances.txt
+
 .PHONY: miss-lexicon
 miss-lexicon: ## regenerate data/base.dict and data/seed.dict (needs make lexicon)
 	cd rust && cargo build --release

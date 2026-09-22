@@ -24,6 +24,11 @@ repository = "https://github.com/robertbak/tiny_g2p"
 keywords = ["g2p", "phonemizer", "polish", "ipa", "cli"]
 categories = ["command-line-utilities", "text-processing"]
 
+#: The tests read `examples/` from the repository, which is outside the package,
+#: so they cannot run from a published copy. Same choice as the core's: the
+#: crate ships the binary, not the test fixtures.
+exclude = ["tests/*"]
+
 [[bin]]
 name = "tinyg2p"
 path = "src/main.rs"

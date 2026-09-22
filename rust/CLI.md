@@ -38,6 +38,12 @@ tinyg2p info                    show what is compiled in
 
 `--help` on the binary, or on any subcommand, prints the options it accepts.
 
+`examples/` in the repository has eight real utterances — seven references from
+the BIGOS validation splits, unpunctuated and carrying the speaker's
+disfluencies, the way an ASR hands them over — with their phones and the one
+asserted name among them. `make example` prints the lot; `examples/README.md`
+says where each line came from and what to look for in it.
+
 | option | effect |
 |---|---|
 | `--int8` | replay the quantized artifact instead of the float weights |

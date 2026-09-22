@@ -263,6 +263,24 @@ Regenerate either with `make miss-lexicon`. A word the gold marks wrong and
 records no alternative for is left out rather than guessed, which is why the
 files say how many were: 10 in the full scan, at the time of writing.
 
+### On real speech
+
+`examples/` is eight real utterances — seven references from the BIGOS
+validation splits, one line from `live_stt`'s test script — with their phones
+and one asserted name, and `expected.txt` is the exact output. `make example`
+prints it.
+
+The BIGOS lines are unpunctuated with the speaker's disfluencies left in, so
+they look like what an ASR produces rather than like written Polish: a filler
+arrives as `yyy` and is phonemised as `ɨ ɨ ɨ`, because a filler is characters
+like any other and dropping fillers is the post-processor's job. Word-final `ę`
+denasalises (`kartę` → `k a r t̪ ɛ`) while word-final `ą` stays nasal
+(`satysfakcją` → `… j ɔ̃`) — that is Polish, not a defect. And one line is
+answered by the dictionary rather than the model: `Dziemianowicz-Bąk`, whose
+hyphen the model reads as a break and inserts a vowel into.
+
+`examples/README.md` has the provenance of each line and what to look for.
+
 That binary also carries the **eval** path: `tinyg2p eval --gold
 data/test_gold.tsv` reproduces the table above -- measured *and*
 gold-corrected, per slice -- from the weights alone, in 0.5 s on one core,
