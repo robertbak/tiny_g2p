@@ -60,7 +60,9 @@ assert_eq!(g2p.explain("blair"), Some("dictionary"));
 I/O and takes no dependency to do it, so the caller decides where the file
 comes from. In this project that text is the adjudicated MFA/Common Voice
 lexicon: MFA's entry for the word, checked against CV's word list where the two
-readings differ.
+readings differ. MFA's dictionary is read as it comes — its per-reading
+probability columns are recognised and dropped — so there is no conversion step
+between the lexicon the project already has and the dictionary this route uses.
 
 ## Licences — two of them
 

@@ -30,7 +30,8 @@ USAGE:
 
 OPTIONS:
     --int8              replay the quantized artifact instead of the float weights
-    --lexicon FILE      word<TAB>phones dictionary for borrowings and names
+    --lexicon FILE      dictionary for borrowings and names: word<TAB>phones,
+                        or MFA's dictionary exactly as it comes
     --blob FILE         load weights from a file instead of the embedded ones
     --explain           (predict) say which path answered each word
     --model-only        (predict) bypass the exception path (parity testing)

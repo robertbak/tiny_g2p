@@ -29,6 +29,47 @@ use std::collections::HashMap;
 
 use crate::blob::Blob;
 
+/// One dictionary line into `(word, phones)`, lowercased; `None` to skip it.
+fn parse_line(line: &str) -> Option<(String, Vec<String>)> {
+    let (word, phones) = if line.contains('\t') {
+        let mut fields = line.split('\t').map(str::trim);
+        let word = fields.next()?.to_lowercase();
+        let phones = phones_from_fields(&fields.collect::<Vec<_>>());
+        (word, phones)
+    } else {
+        // No tab: the first token is the word, the rest are its phones.
+        let mut tokens = line.split_whitespace();
+        let word = tokens.next()?.to_lowercase();
+        (word, tokens.map(str::to_string).collect())
+    };
+    if word.is_empty() || phones.is_empty() {
+        return None;
+    }
+    Some((word, phones))
+}
+
+/// The phones among the tab-separated fields that follow the word.
+///
+/// MFA writes `word<TAB>p1<TAB>p2<TAB>p3<TAB>p4<TAB>phones`, where the four
+/// columns are per-reading probabilities. So when everything between the word
+/// and the last field parses as a number, that last field is the phone list;
+/// otherwise every remaining field is. Getting this wrong is not subtle in
+/// effect and is easy to miss in testing: MFA's probabilities became phones and
+/// the dictionary route answered `kot` with `0.99 0.49 2.75 1.1 k ɔ t̪`.
+fn phones_from_fields(rest: &[&str]) -> Vec<String> {
+    let Some((last, middle)) = rest.split_last() else {
+        return Vec::new();
+    };
+    let mfa_shaped =
+        !middle.is_empty() && middle.iter().all(|field| field.parse::<f32>().is_ok());
+    let tokens: Vec<&str> = if mfa_shaped {
+        last.split_whitespace().collect()
+    } else {
+        rest.iter().flat_map(|field| field.split_whitespace()).collect()
+    };
+    tokens.into_iter().map(str::to_string).collect()
+}
+
 /// Vowel letters: a word with none of them is an initialism.
 const VOWELS: &[char] = &['a', 'ą', 'e', 'ę', 'i', 'o', 'ó', 'u', 'y'];
 
@@ -62,17 +103,32 @@ impl Exceptions {
 
     /// Load a `word<TAB>phones` (or space-separated, whitespace-tolerant)
     /// dictionary. Later entries win.
+    /// Add words to the exception path from a dictionary, one per line.
+    ///
+    /// Three shapes work, because the project's own lexicon is the second one
+    /// and a parser that only took the first would answer MFA words with
+    /// `0.99 0.49 2.75 1.1` in front of their phones:
+    ///
+    /// ```text
+    /// blair<TAB>b l E r                     word, then its phones
+    /// blair b l E r                         the same, space-separated
+    /// kot<TAB>0.99<TAB>0.49<TAB>2.75<TAB>1.1<TAB>k ɔ t̪     MFA's dictionary
+    /// ```
+    ///
+    /// The rule is on the tab-separated fields after the word: when all of the
+    /// ones before the last parse as numbers — which is where MFA writes its
+    /// per-reading probabilities — the last field is the phone list, otherwise
+    /// every remaining field is. A line with no phones, or an empty word, is
+    /// skipped rather than stored, so a malformed file cannot make a word
+    /// unpronounceable.
     pub fn load_lexicon(&mut self, text: &str) {
         for line in text.lines() {
             let line = line.trim();
             if line.is_empty() || line.starts_with('#') {
                 continue;
             }
-            let mut parts = line.split_whitespace();
-            let Some(word) = parts.next() else { continue };
-            let phones: Vec<String> = parts.map(str::to_string).collect();
-            if !phones.is_empty() {
-                self.lexicon.insert(word.to_lowercase(), phones);
+            if let Some((word, phones)) = parse_line(line) {
+                self.lexicon.insert(word, phones);
             }
         }
     }
@@ -171,6 +227,36 @@ mod tests {
         assert_eq!(ex.reason("bmw"), Some("dictionary"));
         assert_eq!(ex.lookup("bmw").unwrap(), ["B", "M", "W"]);
         assert_eq!(ex.lookup("blair").unwrap(), ["b", "l", "E", "r"]);
+    }
+
+    /// MFA's dictionary is `word<TAB>4 probabilities<TAB>phones`. Fed directly,
+    /// those probabilities used to load as phones, so the dictionary route
+    /// confidently answered `kot` with `0.99 0.49 2.75 1.1 k ɔ t̪`.
+    #[test]
+    fn an_mfa_line_drops_its_probabilities() {
+        let mut ex = exceptions();
+        ex.load_lexicon("kot\t0.99\t0.49\t2.75\t1.1\tk ɔ t̪\n");
+        assert_eq!(ex.reason("kot"), Some("dictionary"));
+        assert_eq!(ex.lookup("kot").unwrap(), ["k", "ɔ", "t̪"]);
+    }
+
+    /// The drop is conditional: a middle field that is not a number means the
+    /// fields are phones, and none of them are discarded.
+    #[test]
+    fn a_tab_separated_phone_list_keeps_every_field() {
+        let mut ex = exceptions();
+        ex.load_lexicon("kot\tk\tɔ\tt̪\n");
+        assert_eq!(ex.lookup("kot").unwrap(), ["k", "ɔ", "t̪"]);
+    }
+
+    /// A line that names no phones is skipped rather than stored, so a
+    /// malformed dictionary cannot make a word look answered but empty.
+    #[test]
+    fn a_phoneless_line_is_skipped() {
+        let mut ex = exceptions();
+        ex.load_lexicon("kot\npusty\t\n# comment\n");
+        assert_eq!(ex.reason("kot"), None, "a bare word is not an entry");
+        assert_eq!(ex.reason("pusty"), None, "nor is a word with an empty field");
     }
 
     #[test]

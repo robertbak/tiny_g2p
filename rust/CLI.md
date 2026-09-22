@@ -38,7 +38,7 @@ tinyg2p info                    show what is compiled in
 | option | effect |
 |---|---|
 | `--int8` | replay the quantized artifact instead of the float weights |
-| `--lexicon FILE` | a `word<TAB>phones` dictionary for borrowings and names |
+| `--lexicon FILE` | a dictionary for borrowings and names — `word<TAB>phones`, or MFA's dictionary exactly as it comes |
 | `--blob FILE` | load weights from a file instead of the embedded ones |
 | `--explain` | *(predict)* say which path answered each word |
 | `--model-only` | *(predict)* bypass the exception path |
@@ -60,7 +60,9 @@ b ɛ m ɛ v u        initialism
 `acronym table` or `initialism`. Borrowings and names do not follow Polish
 graphemics, so they are looked **up** rather than guessed; supply them with
 `--lexicon`, and the project's own dictionary is MFA's lexicon with Common Voice
-as a second opinion where the two readings differ. Acronyms are the structural
+as a second opinion where the two readings differ. MFA's dictionary is accepted
+as it is — its per-reading probability columns are recognised and dropped, so
+`--lexicon polish_mfa.dict` works with no conversion step. Acronyms are the structural
 case: one label per character cannot spell `agd`, so there is a small embedded
 table and a vowel-less initialism rule beneath it.
 
