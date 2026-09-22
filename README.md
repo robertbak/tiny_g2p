@@ -305,3 +305,21 @@ them are excused by verdicts (`georgia`, `trance`, `krzywd`, `wczesniej`,
 `coo`). The other two, `curry` and `makes`, stay scored: the models mangle
 the `c` the lexicon reads as `k`, which is a real miss whatever the gate
 says.
+
+## Data and licences
+
+- The **code** is MIT (`rust/Cargo.toml`, `rust/core/Cargo.toml`).
+- The **model weights** are trained on the `polish_mfa` v2.0.0 lexicon —
+  McAuliffe & Sonderegger (2022), **CC BY 4.0**. Fetched from a pinned GitHub
+  release and verified against SHA-256 `0c9cc5c0…cad713`; not vendored into the
+  repo (`make lexicon`, which reuses `../pl_g2p`'s copy).
+
+The two are not the same licence, and it matters because the weights are a
+redistributable artifact: `rust/weights/tiny_g2p.bin` (145 KB) is embedded in
+the Rust binary and the wasm build, so anyone shipping those is redistributing
+something derived from CC BY 4.0 data and inherits the attribution. The code
+licence alone does not say so, which is why this section exists — `../pl_g2p`
+has had one for the lexicon it downloads, and this project had none for the
+weights it produces.
+
+`prg2p` (MIT) is used by `../phoneme_lab` for its baseline comparison only.
