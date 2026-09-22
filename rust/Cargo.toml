@@ -19,13 +19,21 @@ version = "0.1.0"
 edition = "2021"
 description = "Tiny per-character Polish G2P: no Python, no runtime, no dependencies"
 license = "MIT"
+readme = "CLI.md"
+repository = "https://github.com/robertbak/tiny_g2p"
+keywords = ["g2p", "phonemizer", "polish", "ipa", "cli"]
+categories = ["command-line-utilities", "text-processing"]
 
 [[bin]]
 name = "tinyg2p"
 path = "src/main.rs"
 
 [dependencies]
-tiny-g2p-core = { path = "core" }
+# Path for the workspace, version for the registry: cargo uses the path here and
+# requires the version to match, and rewrites it to the version alone when
+# packaging. So `tiny-g2p-core` must be published *before* this crate -- a
+# versioned dependency on an unpublished crate does not resolve.
+tiny-g2p-core = { path = "core", version = "0.1.0" }
 
 [profile.release]
 opt-level = 3
