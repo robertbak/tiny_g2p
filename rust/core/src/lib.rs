@@ -84,8 +84,27 @@ impl G2P {
     /// where the file comes from.
     ///
     /// Additions are additive and override the model for the words they name.
+    /// They also outrank everything else, including a [suggested
+    /// reading](G2P::load_suggestions) and the embedded acronym table: a
+    /// dictionary someone wrote is an assertion, and an assertion is not
+    /// weighed against evidence.
     pub fn load_lexicon(&mut self, text: &str) {
         self.exceptions.load_lexicon(text);
+    }
+
+    /// Add readings the caller *suggests* rather than asserts.
+    ///
+    /// Identical in format to [`G2P::load_lexicon`] and weaker in authority: a
+    /// suggestion answers for a word only where nothing asserted, and no
+    /// curated acronym entry, has an answer. This is what `tinyg2p
+    /// miss-lexicon` writes — a lexicon's readings for the words a model
+    /// disagrees with. That is good evidence; it is not the same as a person
+    /// saying "this is my name".
+    ///
+    /// `G2P::explain` distinguishes the two, reporting `dictionary` for an
+    /// assertion and `suggestion` for one of these.
+    pub fn load_suggestions(&mut self, text: &str) {
+        self.exceptions.load_suggestions(text);
     }
 
     /// The character window the taps cover (33). Words longer than this

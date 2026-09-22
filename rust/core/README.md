@@ -64,6 +64,22 @@ readings differ. MFA's dictionary is read as it comes — its per-reading
 probability columns are recognised and dropped — so there is no conversion step
 between the lexicon the project already has and the dictionary this route uses.
 
+There are two levels of authority, and `load_suggestions` is the weaker one:
+
+```rust
+g2p.load_suggestions("blair\tb l ɛ r\n");   // a dictionary's reading
+g2p.load_lexicon("blair\tblejr\n");        // someone saying how it is said
+assert_eq!(g2p.explain("blair"), Some("dictionary"));
+```
+
+A suggestion answers only where nothing asserted, and no curated acronym entry,
+has an answer. The distinction matters because the two are not the same kind of
+claim: an acronym table entry or a generated dictionary entry is an *alternative
+spelling*, a preference among readings derived from data, while a caller's own
+list is an assertion about the world. When they disagree the assertion wins, and
+`G2P::explain` reports which answered — `dictionary`, `suggestion`, `acronym
+table`, `initialism`, or nothing for the model.
+
 ## Licences — two of them
 
 The **code** is MIT (see `LICENSE`).
