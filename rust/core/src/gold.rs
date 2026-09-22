@@ -245,6 +245,22 @@ pub fn judge(row: &GoldRow, prediction: &[String]) -> Outcome {
     }
 }
 
+/// Whether two readings are the same pronunciation, notation excused.
+///
+/// This is the comparison scoring applies to a prediction against a reference:
+/// both sides through the MFA canonical form, which folds what two dictionaries
+/// spell differently -- dental marks, affricates split or joined, `ł` as `w` or
+/// `v`, an obligatory devoiced coda, a merged nasal vowel. A caller looking for
+/// the words a model disagrees with a lexicon needs exactly this, and needs it
+/// to be the rule scoring uses, so it is one definition rather than two.
+///
+/// `word` is needed because some of the canonicalisation is context-dependent
+/// -- whether a nasal vowel has an oral half split out depends on what follows.
+#[must_use]
+pub fn notation_equal(a: &[String], b: &[String], word: &str) -> bool {
+    a == b || canonicalize_mfa(a, word) == canonicalize_mfa(b, word)
+}
+
 fn closest(prediction: &[String], readings: &[Vec<String>]) -> (usize, usize) {
     let mut best: Option<(usize, usize)> = None;
     for reading in readings {
@@ -402,5 +418,20 @@ mod tests {
     #[should_panic(expected = "unexpected gold header")]
     fn a_foreign_tsv_is_rejected() {
         parse_gold("word\treferences\nkot\tk \u{254} t\n");
+    }
+
+    /// The comparison a lexicon scan needs: two readings of the same sound in
+    /// different notations are equal, and two different sounds are not.
+    #[test]
+    fn notation_differences_are_excused() {
+        let word = "kot";
+        let mfa = vec!["k".to_string(), "\u{254}".to_string(), "t\u{32a}".to_string()];
+        let plain = vec!["k".to_string(), "\u{254}".to_string(), "t".to_string()];
+        assert!(notation_equal(&mfa, &plain, word), "a dental mark is notation");
+        assert!(notation_equal(&mfa, &mfa, word), "identity, without canonicalising");
+
+        let other = vec!["p".to_string(), "\u{254}".to_string(), "t".to_string()];
+        assert!(!notation_equal(&mfa, &other, word), "k and p are different sounds");
+        assert!(!notation_equal(&mfa, &[], word));
     }
 }

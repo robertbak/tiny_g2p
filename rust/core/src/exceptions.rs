@@ -29,6 +29,23 @@ use std::collections::HashMap;
 
 use crate::blob::Blob;
 
+/// Read a dictionary, in any of the shapes [`Exceptions::load_lexicon`]
+/// accepts.
+///
+/// Returned as `(word, phones)` pairs in file order, lowercased, with the lines
+/// that name no phones left out. Public because the format is the project's — a
+/// caller that wants to scan a lexicon, or convert one, needs the same reading
+/// of it that the exception path uses, and a second parser would be a second
+/// answer.
+#[must_use]
+pub fn parse_dictionary(text: &str) -> Vec<(String, Vec<String>)> {
+    text.lines()
+        .map(str::trim)
+        .filter(|line| !line.is_empty() && !line.starts_with('#'))
+        .filter_map(parse_line)
+        .collect()
+}
+
 /// One dictionary line into `(word, phones)`, lowercased; `None` to skip it.
 fn parse_line(line: &str) -> Option<(String, Vec<String>)> {
     let (word, phones) = if line.contains('\t') {
@@ -122,14 +139,8 @@ impl Exceptions {
     /// skipped rather than stored, so a malformed file cannot make a word
     /// unpronounceable.
     pub fn load_lexicon(&mut self, text: &str) {
-        for line in text.lines() {
-            let line = line.trim();
-            if line.is_empty() || line.starts_with('#') {
-                continue;
-            }
-            if let Some((word, phones)) = parse_line(line) {
-                self.lexicon.insert(word, phones);
-            }
+        for (word, phones) in parse_dictionary(text) {
+            self.lexicon.insert(word, phones);
         }
     }
 
@@ -257,6 +268,24 @@ mod tests {
         ex.load_lexicon("kot\npusty\t\n# comment\n");
         assert_eq!(ex.reason("kot"), None, "a bare word is not an entry");
         assert_eq!(ex.reason("pusty"), None, "nor is a word with an empty field");
+    }
+
+    /// The shared reader, which `load_lexicon` is now a thin loop over -- so a
+    /// caller scanning or converting a lexicon sees the same parse.
+    #[test]
+    fn the_reader_yields_pairs_in_order() {
+        let entries = parse_dictionary(
+            "# a comment\n\nblair\tb l E r\nkot\t0.99\t0.49\t2.75\t1.1\tk ɔ t̪\n\nmorze m ɔ ʐ ɛ\nignored\n",
+        );
+        assert_eq!(
+            entries,
+            vec![
+                ("blair".to_string(), vec!["b".to_string(), "l".to_string(), "E".to_string(), "r".to_string()]),
+                ("kot".to_string(), vec!["k".to_string(), "ɔ".to_string(), "t̪".to_string()]),
+                ("morze".to_string(), vec!["m".to_string(), "ɔ".to_string(), "ʐ".to_string(), "ɛ".to_string()]),
+            ],
+            "comments and blanks skipped, MFA's probabilities dropped, a phoneless line left out"
+        );
     }
 
     #[test]
