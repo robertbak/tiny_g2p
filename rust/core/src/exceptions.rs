@@ -1,11 +1,20 @@
 //! The exception path: the words the model should not own.
 //!
-//! One label per character cannot spell `agd` as five phones, and no context
-//! window recovers `blair`. Those classes are routed around the model rather
-//! than trained into it, in this order:
+//! Two classes, for two different reasons:
 //!
-//! 1. **an explicit dictionary** (`--lexicon word<TAB>phones`), which is the
-//!    reliable route for borrowings and names;
+//! - **Borrowings and names** -- `blair`, `guacamole`, `illinois` -- do not
+//!   follow Polish graphemics, so a dictionary is the right mechanism rather
+//!   than a workaround for a weak model. The project holds one (MFA's lexicon,
+//!   with Common Voice as a second opinion where the two readings differ), and
+//!   this module is where it enters, at 1.
+//! - **Acronyms** are structural: one label per character cannot spell `agd` as
+//!   five phones, whatever the context window, so they are routed around the
+//!   model instead of trained into it, at 2 and 3.
+//!
+//! In this order:
+//!
+//! 1. **an explicit dictionary** (`--lexicon word<TAB>phones`), the route for
+//!    borrowings and names;
 //! 2. **the acronym table** in the blob -- words we hold a gold letter-by-letter
 //!    reading for, so the tool reproduces the corpus convention;
 //! 3. **the initialism rule**: a vowel-less word of two or more letters whose

@@ -36,10 +36,17 @@ Python reference, for both the float and the int8 weights.
   phones. The only failure in the crate is a corrupt weights blob, checked once
   at construction, which is why `G2P::embedded` is the only fallible call in
   the common path.
-- **Acronyms and unresolvable borrowings take a separate route** — a
-  `word<TAB>phones` dictionary, an embedded table, then an initialism rule —
-  because one label per character cannot spell `agd` and no context window
-  recovers `blair`. `G2P::explain` reports which path answered.
+- **Borrowings and names are looked up, not guessed.** `blair`, `guacamole`,
+  `illinois` are in the project's lexicon — MFA's Polish dictionary, with
+  Common Voice as a second opinion where the two disagree, adjudicated word by
+  word — and reach the model through `G2P::load_lexicon`. The crate provides
+  the mechanism; the dictionary is data, and it belongs to the project.
+- **Acronyms the model structurally cannot do.** One label per character cannot
+  spell `agd` as five phones, so there is an embedded table of words held to a
+  gold letter-by-letter reading, and below it a heuristic: a vowel-less word
+  whose letters all have names is spelled out (`bmw` → `b ɛ m ɛ v u`).
+- **Nothing here guesses at a pronunciation** — it either looks one up or
+  spells letters. `G2P::explain` reports which path answered.
 
 ## The exception path
 
@@ -51,7 +58,9 @@ assert_eq!(g2p.explain("blair"), Some("dictionary"));
 
 `load_lexicon` takes the dictionary's *text*, not a path — this crate does no
 I/O and takes no dependency to do it, so the caller decides where the file
-comes from.
+comes from. In this project that text is the adjudicated MFA/Common Voice
+lexicon: MFA's entry for the word, checked against CV's word list where the two
+readings differ.
 
 ## Licences — two of them
 
