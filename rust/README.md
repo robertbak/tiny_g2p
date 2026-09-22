@@ -1,7 +1,7 @@
 # tiny-g2p (Rust)
 
-The same model, with no Python in the loop: one static binary, one `.wasm`,
-or an ONNX graph. The core has **no native dependencies** — the weights are
+The same model, built three ways: one static binary, one `.wasm`,
+and one ONNX graph, all from the same core. The core has **no native dependencies** — the weights are
 `include_bytes!`d and the blob is parsed by hand — so `cargo build --release`
 produces a single executable and `wasm-pack` produces a single `.wasm`.
 
@@ -26,7 +26,7 @@ corrected  98.96% (6629/6699)  PER 0.18% (93/51750)
 ```bash
 cd rust
 
-cargo build --release                      # target/release/tinyg2p (680 KiB, no deps)
+cargo build --release                      # target/release/tinyg2p (1.0 MiB)
 cargo test --release --workspace           # 26 unit + 5 parity + 1 doc test
 
 wasm-pack build --release --target nodejs --out-name tiny_g2p -d ../pkg-nodejs wasm
@@ -50,7 +50,7 @@ tried crate-type ordering -- it is the mixing itself).
 
 | artifact | size | notes |
 |---|---|---|
-| `tinyg2p` binary | 680 KiB (592 KiB stripped) | static; the model is 142 KiB of that |
+| `tinyg2p` binary | 1.0 MiB (903 KiB stripped) | static; the model is 142 KiB of that, clap most of the rest |
 | `pkg-nodejs/tiny_g2p_bg.wasm` | 222 KiB (167 KiB gzipped) | float + int8 + exception path |
 | `tiny_g2p.onnx` | 131 KiB | the float graph, one input, one output |
 

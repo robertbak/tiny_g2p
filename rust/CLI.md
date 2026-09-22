@@ -1,6 +1,6 @@
 # tiny-g2p
 
-Polish **grapheme-to-phoneme** on the command line, with no Python in the loop.
+Polish **grapheme-to-phoneme** on the command line.
 
 ```console
 $ tinyg2p predict "Wrocław Szczebrzeszyn"
@@ -32,8 +32,11 @@ does not.
 ```
 tinyg2p predict [words...]      transcribe (reads stdin when no words are given)
 tinyg2p eval --gold FILE        score against an exported gold TSV
+tinyg2p miss-lexicon            emit a dictionary of the words it gets wrong
 tinyg2p info                    show what is compiled in
 ```
+
+`--help` on the binary, or on any subcommand, prints the options it accepts.
 
 | option | effect |
 |---|---|
@@ -43,6 +46,8 @@ tinyg2p info                    show what is compiled in
 | `--explain` | *(predict)* say which path answered each word |
 | `--model-only` | *(predict)* bypass the exception path |
 | `--json FILE` | *(eval)* also write the report as JSON |
+| `--gold FILE` | *(eval)* the gold TSV to score; *(miss-lexicon)* scan its words, and prefer its adjudicated reading wherever it covers one |
+| `--out FILE` | *(miss-lexicon)* write the dictionary here instead of stdout |
 
 Input is words, not sentences: whitespace separates them and every word gets one
 transcription, in order. Arguments, a quoted line, stdin and a whole file all
@@ -73,8 +78,9 @@ difference is visible rather than silently counted as an error.
 ## Speed and size
 
 `tinyg2p eval` scores 6,699 words in about half a second on one CPU core. The
-release binary is ~680 KiB static (592 KiB stripped), the model being 142 KiB of
-that.
+release binary is ~1.0 MiB (903 KiB stripped), the model being 142 KiB of
+that. `clap` is most of the difference from the model's own size, and is the
+only dependency in the project.
 
 ## Licences — two of them
 
@@ -85,6 +91,30 @@ lexicon — McAuliffe & Sonderegger (2022), **CC BY 4.0**. They are compiled int
 this binary, so installing it redistributes something derived from that data,
 and the attribution travels with it. The code's licence does not say that, which
 is why it is said here.
+
+## The exception dictionary
+
+`miss-lexicon` writes a `word<TAB>phones` dictionary for the words the model
+disagrees with a reference — so the exception path can fix exactly those instead
+of loading a whole lexicon. The difference is not small: MFA's dictionary is
+134,507 entries and about 85 MB resident, while its misses are around 1,900
+entries and a fraction of a megabyte.
+
+```sh
+# the curated seed: the adjudicated held-out split, ~70 words
+tinyg2p miss-lexicon --gold data/test_gold.tsv --out seed.dict
+
+# the complete scan: every word the lexicon knows, with the gold supplying
+# corrected readings wherever it has adjudicated one (~1,900 words)
+tinyg2p miss-lexicon --lexicon polish_mfa.dict --gold data/test_gold.tsv --out base.dict
+
+# and then it is just a dictionary
+tinyg2p predict --lexicon base.dict ...
+```
+
+MFA's dictionary is read as it comes — its per-reading probability columns are
+recognised and dropped — so no conversion step sits between the lexicon the
+project already has and the dictionary this route uses.
 
 ## The library
 

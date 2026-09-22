@@ -1,6 +1,6 @@
 # tiny-g2p-core
 
-A tiny Polish **grapheme-to-phoneme** model, with no Python in the loop.
+A tiny Polish **grapheme-to-phoneme** model.
 
 One small learned model labels every character of a word in parallel and emits
 its phones. The whole model is 142 KiB of embedded weights and arithmetic, so

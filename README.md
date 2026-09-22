@@ -52,8 +52,8 @@ tiny_g2p  <- you are here
 
 Nothing here is pip-installable until they are released — but the model itself
 is usable from Rust today: `tiny-g2p-core` is a self-contained crate (zero
-dependencies, the 142 KiB of weights embedded, no Python and no torch), and it
-is what this repository's exports feed.
+dependencies, the 142 KiB of weights embedded), and it is what this repository's
+exports feed.
 
 ```bash
 cd tiny_g2p
@@ -210,7 +210,7 @@ largely the out-of-scope class. It is kept as a recorded comparison number
 
 The model is a window MLP -- embedding, eleven taps, three small matmuls -- so
 it ports cleanly to anything. `rust/` carries the same weights as a **static
-binary with no dependencies**, a **`.wasm`** module for the browser, and an
+binary**, a **`.wasm`** module for the browser, and an
 **ONNX** graph; all three are bit-exact against the Python model on every one
 of the 6,725 golden words, and ONNX agrees with torch on every argmax.
 
@@ -223,7 +223,7 @@ target/release/tinyg2p predict "Szczebrzeszyn bmw"    # whitespace splits; one w
 
 | artifact | size | notes |
 |---|---|---|
-| `tinyg2p` binary | 680 KiB (592 stripped) | static, no runtime, weights embedded |
+| `tinyg2p` binary | 1.0 MiB (903 stripped) | static, weights embedded |
 | `.wasm` | 222 KiB (167 gzipped) | float + int8 + exception path |
 | ONNX | 131 KiB | for ONNX Runtime consumers |
 
