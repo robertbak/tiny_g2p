@@ -49,7 +49,7 @@ impl Phonemizer {
     /// Install a `word<TAB>phones` dictionary for borrowings and names.
     #[wasm_bindgen(js_name = loadLexicon)]
     pub fn load_lexicon(&mut self, text: &str) {
-        self.inner.exceptions_mut().load_lexicon(text);
+        self.inner.load_lexicon(text);
     }
 
     /// How a word will be answered: `"dictionary"`, `"acronym table"`,

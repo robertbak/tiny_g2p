@@ -57,15 +57,16 @@ pub fn normalize(input: &str) -> String {
 }
 
 /// The character vocabulary: token strings in, ids out.
-pub struct Encoder<'a> {
+///
+/// Built once from the blob's source vocabulary. Holds only what encoding
+/// needs — the special-token ids are read by the decoder, not here.
+pub struct Encoder {
     chars: HashMap<char, usize>,
-    pad_id: usize,
     unk_id: usize,
-    blob: &'a Blob,
 }
 
-impl<'a> Encoder<'a> {
-    pub fn new(blob: &'a Blob) -> Self {
+impl Encoder {
+    pub fn new(blob: &Blob) -> Self {
         let mut chars = HashMap::with_capacity(blob.src_itos.len());
         for (id, token) in blob.src_itos.iter().enumerate() {
             let mut it = token.chars();
@@ -73,15 +74,7 @@ impl<'a> Encoder<'a> {
                 chars.insert(ch, id); // single-character tokens only
             }
         }
-        Encoder { chars, pad_id: blob.pad_id, unk_id: blob.unk_id, blob }
-    }
-
-    pub fn pad_id(&self) -> usize {
-        self.pad_id
-    }
-
-    pub fn blob(&self) -> &Blob {
-        self.blob
+        Encoder { chars, unk_id: blob.unk_id }
     }
 
     /// One id per character of `word` (already normalised), UNK for anything
@@ -138,6 +131,5 @@ mod tests {
         assert_eq!(g2p.blob().src_itos[ids[1]], "o");
         assert_eq!(g2p.blob().src_itos[ids[2]], "t");
         assert_eq!(encoder.encode("\u{df}")[0], g2p.blob().unk_id);
-        assert_eq!(encoder.pad_id(), g2p.blob().pad_id);
     }
 }

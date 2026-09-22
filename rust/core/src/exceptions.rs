@@ -68,10 +68,6 @@ impl Exceptions {
         }
     }
 
-    pub fn lexicon_len(&self) -> usize {
-        self.lexicon.len()
-    }
-
     /// The reading for `word`, or `None` to let the model decide.
     pub fn lookup(&self, word: &str) -> Option<Vec<String>> {
         if let Some(reading) = self.lexicon.get(word) {
@@ -161,7 +157,8 @@ mod tests {
     fn a_dictionary_beats_everything() {
         let mut ex = exceptions();
         ex.load_lexicon("# comment\nbmw\tB M W\nblair b l E r\n");
-        assert_eq!(ex.lexicon_len(), 2);
+        // Both entries loaded and both outrank the acronym table -- asserted
+        // through `reason`/`lookup`, so the size accessor is not needed.
         assert_eq!(ex.reason("bmw"), Some("dictionary"));
         assert_eq!(ex.lookup("bmw").unwrap(), ["B", "M", "W"]);
         assert_eq!(ex.lookup("blair").unwrap(), ["b", "l", "E", "r"]);

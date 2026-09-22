@@ -315,7 +315,7 @@ says.
   repo (`make lexicon`, which reuses `../pl_g2p`'s copy).
 
 The two are not the same licence, and it matters because the weights are a
-redistributable artifact: `rust/weights/tiny_g2p.bin` (145 KB) is embedded in
+redistributable artifact: `rust/core/weights/tiny_g2p.bin` (145 KB) is embedded in
 the Rust binary and the wasm build, so anyone shipping those is redistributing
 something derived from CC BY 4.0 data and inherits the attribution. The code
 licence alone does not say so, which is why this section exists — `../pl_g2p`

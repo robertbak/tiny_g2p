@@ -29,7 +29,7 @@ dates are identical). Nothing about the code came from elsewhere.
 | [`../pl_g2p`](../pl_g2p) | this project's sibling | the dataset and splits (`from pl_g2p.data import …`), and the lexicon copy |
 
 The licence that matters for redistribution is the lexicon's: the weights in
-`rust/weights/tiny_g2p.bin` are derived from `polish_mfa`, so **CC BY 4.0
+`rust/core/weights/tiny_g2p.bin` are derived from `polish_mfa`, so **CC BY 4.0
 attribution travels with them**, and the code's own licence does not say so.
 
 ## Where the code goes

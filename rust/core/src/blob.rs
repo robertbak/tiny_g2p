@@ -6,14 +6,22 @@
 
 use std::collections::HashMap;
 
+/// File magic: the first four bytes of every blob.
 pub const MAGIC: &[u8; 4] = b"TG2P";
+/// Blob layout version this build reads. `parse` rejects any other value
+/// rather than misreading a newer layout.
 pub const VERSION: u32 = 1;
 
+/// Why a weights blob could not be loaded.
 #[derive(Debug)]
 pub enum BlobError {
+    /// The first four bytes are not [`MAGIC`].
     BadMagic,
+    /// A layout version other than [`VERSION`]; carries the version found.
     UnsupportedVersion(u32),
+    /// The data ended in the middle of a section.
     Truncated,
+    /// A length-prefixed string was not valid UTF-8.
     BadUtf8,
 }
 
@@ -33,24 +41,20 @@ impl std::fmt::Display for BlobError {
 impl std::error::Error for BlobError {}
 
 /// A float matrix, row-major, `rows` x `cols`.
+///
+/// Crate-internal: `row` indexes without a bounds check, so it must not be a
+/// public promise. Nothing outside needs a matrix, only [`Blob`] itself.
 #[derive(Debug, Clone)]
-pub struct Matrix {
+pub(crate) struct Matrix {
     pub rows: usize,
     pub cols: usize,
     pub data: Vec<f32>,
 }
 
-impl Matrix {
-    #[inline]
-    pub fn row(&self, r: usize) -> &[f32] {
-        &self.data[r * self.cols..(r + 1) * self.cols]
-    }
-}
-
 /// One quantized linear layer: per-output-channel weight scales, the activation
 /// scale it expects, and the scale/zero-point it produces.
 #[derive(Debug, Clone)]
-pub struct QuantLinear {
+pub(crate) struct QuantLinear {
     pub rows: usize,
     pub cols: usize,
     pub relu: bool,
@@ -63,7 +67,7 @@ pub struct QuantLinear {
 }
 
 #[derive(Debug, Clone)]
-pub struct FloatWeights {
+pub(crate) struct FloatWeights {
     pub embedding: Vec<f32>, // n_src * embed_dim
     pub mlp0: Matrix,
     pub mlp0_bias: Vec<f32>,
@@ -76,7 +80,7 @@ pub struct FloatWeights {
 }
 
 #[derive(Debug, Clone)]
-pub struct Int8Weights {
+pub(crate) struct Int8Weights {
     pub in_scale: f32,
     pub in_zero_point: i32,
     /// mlp0, mlp2, residual, then the phone head (no ReLU).
@@ -88,30 +92,58 @@ pub struct Int8Weights {
 /// Everything the runtime needs, one struct.
 #[derive(Debug, Clone)]
 pub struct Blob {
+    /// Source vocabulary size: one id per input character, PAD and UNK
+    /// included.
     pub n_src: usize,
+    /// Target vocabulary size: one id per output phone, PAD, UNK and BLANK
+    /// included.
     pub n_tgt: usize,
+    /// Number of articulatory manner classes; the label space of the
+    /// auxiliary manner head. Carried because the layout mirrors the
+    /// exporter, but the runtime never reads it.
     pub n_manners: usize,
+    /// Width of one character embedding row.
     pub embed_dim: usize,
+    /// Width of the first MLP layer.
     pub hidden_dim: usize,
+    /// Width of the context vector the residual sum and the phone head share.
     pub ctx_dim: usize,
+    /// Character offsets gathered around each position, e.g. `-2` reads two
+    /// characters to the left. Fixed offsets, so edge positions read PAD.
     pub taps: Vec<i32>,
+    /// Input characters by id: `src_itos[id]` is the character for `id`, with
+    /// `pad_id` and `unk_id` the reserved entries.
     pub src_itos: Vec<String>,
+    /// Output phones by id, with PAD, UNK and BLANK reserved; `blank_id` is
+    /// the label for a character that emits no phone.
     pub tgt_itos: Vec<String>,
+    /// Manner-class names by id, the label space of the auxiliary manner
+    /// head; carried but unused at inference.
     pub manner_itos: Vec<String>,
+    /// PAD id: what the taps read past a word's edge, whose embedding row is
+    /// trained to zero.
     pub pad_id: usize,
+    /// UNK id: the character id for input the vocabulary does not contain.
     pub unk_id: usize,
+    /// BLANK id: the phone label for a character that emits no phone.
     pub blank_id: usize,
     /// Letters whose merged nasal label may be split back (ą, ę).
     pub nasal_letters: Vec<String>,
+    /// Merged nasal vowel -> its oral half (`ɔ̃` -> `ɔ`, `ɛ̃` -> `ɛ`), so the
+    /// split can restore MFA's oral+nasal form.
     pub oral: HashMap<String, String>,
+    /// Raw MFA stops and affricates. A merged nasal vowel followed by one of
+    /// these is always an ą/ę merge and is split.
     pub stops: Vec<String>,
+    /// Follower stop -> the homorganic nasal MFA writes after the split
+    /// (`t̪` -> `n̪`, `k` -> `ŋ`).
     pub homorganic: HashMap<String, String>,
     /// Polish letter names, for spelling initialisms.
     pub letter_names: HashMap<String, String>,
     /// Words we hold a gold letter-by-letter reading for.
     pub acronyms: HashMap<String, String>,
-    pub float: FloatWeights,
-    pub int8: Int8Weights,
+    pub(crate) float: FloatWeights,
+    pub(crate) int8: Int8Weights,
 }
 
 impl Blob {
@@ -322,7 +354,7 @@ mod tests {
         assert_eq!(blob.n_tgt, 53);
         assert_eq!(blob.taps.len(), 11);
         assert_eq!(blob.int8.layers.len(), 4);
-        assert!(blob.int8.layers[3].relu == false, "the phone head is un-activated");
+        assert!(!blob.int8.layers[3].relu, "the phone head is un-activated");
         assert_eq!(blob.oral.get("ɔ\u{303}").map(String::as_str), Some("ɔ"));
     }
 

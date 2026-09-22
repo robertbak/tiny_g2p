@@ -66,9 +66,9 @@ adjudicate: ## measured vs gold-corrected accuracy (needs make xlex)
 .PHONY: export
 export: ## package the promoted model for the Python-free runtimes
 	$(PY) tiny-g2p export \
-		--blob rust/weights/tiny_g2p.bin \
+		--blob rust/core/weights/tiny_g2p.bin \
 		--gold data/test_gold.tsv \
-		--onnx rust/weights/tiny_g2p.onnx \
+		--onnx rust/core/weights/tiny_g2p.onnx \
 		$(foreach a,agd bmw cv dga mps nszz ntv pzpr rpo rtv tpn wku wtw,--acronym $(a))
 
 .PHONY: rust

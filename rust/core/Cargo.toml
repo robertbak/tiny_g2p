@@ -2,8 +2,18 @@
 name = "tiny-g2p-core"
 version = "0.1.0"
 edition = "2021"
-description = "The tiny Polish G2P model: blob, forward pass, exception path"
+description = "A tiny Polish grapheme-to-phoneme model: one small parallel classifier, zero dependencies, weights embedded"
 license = "MIT"
+readme = "README.md"
+repository = "https://github.com/robertbak/tiny_g2p"
+keywords = ["g2p", "phonemizer", "polish", "ipa", "pronunciation"]
+categories = ["text-processing", "science"]
+
+#: The crate ships the model, the code, and nothing else: the parity test and
+#: its 1.2 MB of golden vectors are a development check, and the ONNX graph is
+#: an export for other runtimes. Excluding them takes the package from 172 KiB
+#: compressed to roughly a tenth of that, and the weights stay in.
+exclude = ["tests/*", "weights/tiny_g2p.onnx"]
 
 #: The library keeps the short name for callers, the package name is namespaced.
 [lib]

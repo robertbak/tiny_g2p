@@ -32,7 +32,7 @@ cargo test --release --workspace           # 26 unit + 5 parity + 1 doc test
 wasm-pack build --release --target nodejs --out-name tiny_g2p -d ../pkg-nodejs wasm
 node smoke.mjs                             # the wasm surface, exercised
 
-cd .. && uv run tiny-g2p export --onnx rust/weights/tiny_g2p.onnx
+cd .. && uv run tiny-g2p export --onnx rust/core/weights/tiny_g2p.onnx
 ```
 
 Three crates, one workspace. They are separate because a single crate cannot
@@ -134,7 +134,7 @@ The binary embeds `weights/tiny_g2p.bin`, so **the export comes first**:
 
 ```bash
 uv run tiny-g2p export \
-  --blob rust/weights/tiny_g2p.bin \
+  --blob rust/core/weights/tiny_g2p.bin \
   --gold data/test_gold.tsv \
   --acronym agd --acronym bmw --acronym cv --acronym dga --acronym mps \
   --acronym nszz --acronym ntv --acronym pzpr --acronym rpo --acronym rtv \

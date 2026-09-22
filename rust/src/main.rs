@@ -109,7 +109,7 @@ fn load(opts: &Options) -> Result<G2P, String> {
     };
     if let Some(path) = &opts.lexicon {
         let text = std::fs::read_to_string(path).map_err(|e| format!("{path}: {e}"))?;
-        g2p.exceptions_mut().load_lexicon(&text);
+        g2p.load_lexicon(&text);
     }
     Ok(g2p)
 }

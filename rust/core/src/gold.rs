@@ -12,21 +12,40 @@
 
 use crate::canon::canonicalize_mfa;
 
+/// The gold TSV header, in order. `parse_gold` insists on exactly this
+/// header, and `GoldRow::parse` reads the body fields positionally.
 pub const COLUMNS: [&str; 9] = [
     "word", "slice", "refs", "candidates", "canon_mfa", "canon_cv", "mfa_ok",
     "cv_ok", "counted",
 ];
 
+/// One gold TSV row: a held-out word, MFA's references, the adjudicated
+/// candidate readings, and the verdict flags saying which of them count.
 #[derive(Debug, Clone)]
 pub struct GoldRow {
+    /// The orthographic word this row scores.
     pub word: String,
+    /// The held-out slice the word belongs to: `agreed`, `mfa-only` or
+    /// `disputed`.
     pub slice: String,
+    /// MFA's reference readings. These are the measured denominator, and the
+    /// only set `judge`'s measured distance is ever taken against.
     pub refs: Vec<Vec<String>>,
+    /// Readings a correction may match: MFA's own when the verdict allows
+    /// them, plus any the adjudicator added.
     pub candidates: Vec<Vec<String>>,
+    /// MFA readings in the shared canonical form. A match here excuses a
+    /// difference of notation -- the same reading written another way.
     pub canon_mfa: Vec<Vec<String>>,
+    /// CV readings in canonical form. A match here excuses a dictionary
+    /// difference the verdict accepts.
     pub canon_cv: Vec<Vec<String>>,
+    /// Whether the verdict accepts MFA's own reading as correct.
     pub mfa_ok: bool,
+    /// Whether the verdict accepts a prediction matching CV's reading.
     pub cv_ok: bool,
+    /// `false` for rows a verdict excludes from the phonetic denominator (a
+    /// "convention" call); `eval` skips them.
     pub counted: bool,
 }
 
@@ -59,6 +78,10 @@ fn split_readings(field: &str) -> Vec<Vec<String>> {
         .collect()
 }
 
+/// Parse the gold TSV, header included.
+///
+/// Panics if the header is not [`COLUMNS`]: a foreign TSV is a bug, not an
+/// empty run. Body lines with the wrong field count are silently skipped.
 pub fn parse_gold(text: &str) -> Vec<GoldRow> {
     let mut lines = text.lines();
     let header = lines.next().unwrap_or_default();
@@ -73,48 +96,78 @@ pub fn parse_gold(text: &str) -> Vec<GoldRow> {
 /// One word's outcome under both readings of "correct".
 #[derive(Debug, Clone, Copy, Default)]
 pub struct Outcome {
+    /// Raw equality with one of MFA's references.
     pub measured_exact: bool,
+    /// Correct once the verdict is applied: a raw hit, an accepted extra
+    /// reading, a notation match, or a CV match.
     pub corrected_exact: bool,
+    /// Levenshtein distance to the closest MFA reference.
     pub measured_distance: usize,
+    /// Length of that closest MFA reference: the measured PER denominator.
     pub measured_reference_length: usize,
+    /// Edit distance under the verdict: `0` when corrected, otherwise to the
+    /// closest accepted candidate.
     pub distance: usize,
+    /// Length of that candidate: the corrected PER denominator.
     pub reference_length: usize,
     /// `None`, `"extra"`, `"cv"`, `"notation"` or `"gold-bad"`.
     pub change: Option<&'static str>,
 }
 
+/// Summed outcomes over a set of words. The measured fields count only
+/// against MFA's references; the corrected fields follow the verdicts, so the
+/// two can disagree on the same prediction.
 #[derive(Debug, Default, Clone)]
 pub struct Report {
+    /// Counted rows folded in; excluded rows never reach here.
     pub rows: usize,
+    /// Rows exactly matching an MFA reference.
     pub measured_exact: usize,
+    /// Rows correct under their verdict.
     pub corrected_exact: usize,
+    /// Summed edit distance to MFA's references.
     pub measured_distance: usize,
+    /// Summed length of the closest MFA references.
     pub measured_reference_length: usize,
+    /// Summed edit distance under the verdicts.
     pub distance: usize,
+    /// Summed length of the accepted candidates.
     pub reference_length: usize,
+    /// Rows excused because they matched an adjudicated extra reading.
     pub excused_extra: usize,
+    /// Rows excused by a canonical match against CV's reading.
     pub excused_cv: usize,
+    /// Rows excused because the reading differed only in notation.
     pub excused_notation: usize,
+    /// Rows that matched a reference the verdict judges wrong ("gold-bad").
     pub penalized: usize,
 }
 
 impl Report {
+    /// `measured_exact / rows`, or zero for an empty report.
     pub fn measured_accuracy(&self) -> f64 {
         ratio(self.measured_exact, self.rows)
     }
 
+    /// `corrected_exact / rows`, or zero for an empty report.
     pub fn corrected_accuracy(&self) -> f64 {
         ratio(self.corrected_exact, self.rows)
     }
 
+    /// Measured phoneme error rate: `measured_distance /
+    /// measured_reference_length`, or zero when the denominator is zero.
     pub fn measured_per(&self) -> f64 {
         ratio(self.measured_distance, self.measured_reference_length)
     }
 
+    /// Corrected phoneme error rate: `distance / reference_length`, or zero
+    /// when the denominator is zero.
     pub fn per(&self) -> f64 {
         ratio(self.distance, self.reference_length)
     }
 
+    /// Fold one word's [`Outcome`] into the totals, counting it under the
+    /// excuse its `change` names.
     pub fn add(&mut self, outcome: Outcome) {
         self.rows += 1;
         self.measured_exact += outcome.measured_exact as usize;
@@ -132,6 +185,8 @@ impl Report {
         }
     }
 
+    /// All excused rows -- extra, CV and notation -- but not
+    /// [`Report::penalized`], which is a different kind of disagreement.
     pub fn excused(&self) -> usize {
         self.excused_extra + self.excused_cv + self.excused_notation
     }

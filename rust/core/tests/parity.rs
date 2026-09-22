@@ -66,7 +66,9 @@ fn awkward_inputs_survive_the_round_trip() {
     // is a homoglyph trap (plain `o` looks exactly like `ó`).
     let upper = "\u{141}\u{f3}d\u{17a}"; // Łódź
     let lower = "\u{142}\u{f3}d\u{17a}"; // łódź
-    assert_eq!(tiny_g2p::text::normalize(upper), tiny_g2p::text::normalize(lower));
+    // The observable form of "case folds": the phones are identical. Asserting
+    // `text::normalize` instead only restated an internal step, so it is gone
+    // and this crate keeps its normalisation private.
     assert_eq!(g2p.phonemize_model_only(upper), g2p.phonemize_model_only(lower));
     // A decomposed acute normalises onto the letter it modifies.
     assert_eq!(

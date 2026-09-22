@@ -20,14 +20,16 @@ use crate::blob::{Blob, Matrix, QuantLinear};
 /// The training window: `2 * max|tap| + 1` = 33 characters, which covers the
 /// longest word in the lexicon (32). It is **not** a limit on input -- the
 /// taps are fixed offsets, so a longer word still computes, it is simply
-/// extrapolating beyond anything the model saw. Callers can ask
-/// `Blob::window_len` and decide what to do; this crate transcribes and
-/// leaves the judgement to them.
-pub const WINDOW_LEN: usize = 33;
-
+/// extrapolating beyond anything the model saw. Ask [`Blob::window_len`] for
+/// the value this build actually carries; this crate transcribes and leaves
+/// the judgement to the caller.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Mode {
+    /// The trained checkpoint's own weights: the default, and the simpler
+    /// arithmetic.
     Float,
+    /// Replay the quantized int8 artifact exactly, so a deployment can prove
+    /// it reproduces the measured numbers.
     Int8,
 }
 
@@ -47,10 +49,6 @@ pub struct Model<'a> {
 impl<'a> Model<'a> {
     pub fn new(blob: &'a Blob, mode: Mode) -> Self {
         Model { blob, mode }
-    }
-
-    pub fn mode(&self) -> Mode {
-        self.mode
     }
 
     /// Per-character argmax over the phone head, in token ids. Infallible:
@@ -197,7 +195,7 @@ fn quantize(x: &[f32], scale: f32, zero_point: i32) -> Vec<u8> {
 /// -- which is what `torch.relu` does to a quantized tensor.
 fn quant_linear(layer: &QuantLinear, x: &QTensor) -> QTensor {
     let mut out = vec![0u8; layer.rows];
-    for r in 0..layer.rows {
+    for (r, slot) in out.iter_mut().enumerate() {
         let w = &layer.weight[r * layer.cols..(r + 1) * layer.cols];
         let mut acc: i32 = 0;
         for (i, wq) in w.iter().enumerate() {
@@ -215,7 +213,7 @@ fn quant_linear(layer: &QuantLinear, x: &QTensor) -> QTensor {
                 byte = floor;
             }
         }
-        out[r] = byte;
+        *slot = byte;
     }
     QTensor { data: out, scale: layer.out_scale, zero_point: layer.out_zero_point }
 }
