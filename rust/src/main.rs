@@ -57,16 +57,21 @@ struct Globals {
     /// Load weights from a file instead of the embedded ones
     #[arg(long, value_name = "FILE", global = true)]
     blob: Option<PathBuf>,
-    /// A dictionary you *assert*: these words are called this, and are said
-    /// like this. `word<TAB>phones`, or MFA's dictionary exactly as it comes.
-    /// Repeatable, and later files override earlier ones. Nothing outranks an
-    /// assertion. For `miss-lexicon` this is the lexicon to scan, not a
-    /// dictionary to load.
+    /// A dictionary you assert: how these words are said, because you say so
+    ///
+    /// One word per line, as word<TAB>phones -- or MFA's dictionary exactly as
+    /// it comes, probabilities and all. Repeatable; later files override
+    /// earlier ones. Nothing outranks an assertion: not a suggested reading,
+    /// not the built-in acronym table.
     #[arg(long, value_name = "FILE", global = true)]
     lexicon: Vec<PathBuf>,
-    /// A dictionary of *suggestions* -- what `miss-lexicon` writes. Same
-    /// format, weaker authority: it answers only where nothing asserted, and
-    /// no curated acronym entry, has an answer.
+    /// A dictionary of suggestions: readings for the words the model gets
+    /// wrong
+    ///
+    /// Same format as --lexicon, and weaker: a suggestion is the reading some
+    /// dictionary gives, which is good evidence and not the same as you saying
+    /// so. It answers only where nothing asserted has an answer. This is what
+    /// miss-lexicon writes.
     #[arg(long, value_name = "FILE", global = true)]
     suggest: Vec<PathBuf>,
 }
@@ -94,6 +99,15 @@ enum Command {
         json: Option<PathBuf>,
     },
     /// Emit a dictionary of the words the model gets wrong
+    ///
+    /// Scans a lexicon for words the model disagrees with, and writes them as
+    /// word<TAB>phones with the reading the model should have given. Load the
+    /// result with --suggest.
+    ///
+    /// Here --lexicon is the reference to scan, not a dictionary that gets
+    /// loaded: a word that could answer itself would match, and the scan would
+    /// find nothing. --gold adds adjudicated readings, preferred wherever it
+    /// has one.
     #[command(name = "miss-lexicon")]
     MissLexicon {
         /// A gold TSV, whose adjudicated readings are preferred wherever it
