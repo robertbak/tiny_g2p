@@ -350,9 +350,13 @@ says.
 - The **code** is MIT here and in the sibling `tiny-g2p` repository, where the
   Rust half lives (`Cargo.toml`, `core/Cargo.toml`).
 - The **model weights** are trained on the `polish_mfa` v2.0.0 lexicon —
-  McAuliffe & Sonderegger (2022), **CC BY 4.0**. Fetched from a pinned GitHub
-  release and verified against SHA-256 `0c9cc5c0…cad713`; not vendored into the
-  repo (`make lexicon`, which reuses `../pl_g2p`'s copy).
+  McAuliffe & Sonderegger (2022),
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), taken from the
+  [MFA models](https://github.com/MontrealCorpusTools/mfa-models) release and
+  verified against SHA-256 `0c9cc5c0…cad713`. The lexicon is fetched rather than
+  vendored here (`make lexicon`, which reuses `../pl_g2p`'s copy); the weights
+  trained from it are a derivative, and they are what the sibling `tiny-g2p`
+  repository ships.
 
 The two are not the same licence, and it matters because the weights are a
 redistributable artifact: they are embedded in the Rust binary and the wasm
