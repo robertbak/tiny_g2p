@@ -37,6 +37,24 @@ kot           3×32              RF = 33 chars               k ɔ t
 
 ## Quick start
 
+**This repository is one of three, and expects the other two beside it.**
+`tiny_g2p` imports `pl_g2p`'s dataset module and splits
+(`from pl_g2p.data import build_examples, split_words`) and declares both
+siblings as path dependencies: `pl-g2p = { path = "../pl_g2p" }` and
+`phoneme-lab = { path = "../phoneme_lab" }`. Neither is published yet, so clone
+all three into one directory before running `make setup`:
+
+```
+<somewhere>/pl_g2p
+tiny_g2p  <- you are here
+<somewhere>/phoneme_lab
+```
+
+Nothing here is pip-installable until they are released — but the model itself
+is usable from Rust today: `tiny-g2p-core` is a self-contained crate (zero
+dependencies, the 142 KiB of weights embedded, no Python and no torch), and it
+is what this repository's exports feed.
+
 ```bash
 cd tiny_g2p
 make setup                     # uv sync + lexicon (reuses pl_g2p's copy)
