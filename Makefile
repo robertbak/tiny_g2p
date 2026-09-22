@@ -88,6 +88,16 @@ test: ## run the test suite
 predict: ## transcribe words: make predict W="Wrocław Szczebrzeszyn"
 	$(PY) tiny-g2p predict $(W)
 
+.PHONY: miss-lexicon
+miss-lexicon: ## regenerate data/base.dict and data/seed.dict (needs make lexicon)
+	cd rust && cargo build --release
+	rust/target/release/tinyg2p miss-lexicon --gold data/test_gold.tsv --out data/seed.dict
+	@lex=$$( [ -f data/lexicons/polish_mfa.dict ] && echo data/lexicons/polish_mfa.dict \
+		  || echo ../pl_g2p/data/lexicons/polish_mfa.dict ); \
+	  echo "scanning $$lex"; \
+	  rust/target/release/tinyg2p miss-lexicon --lexicon $$lex \
+	    --gold data/test_gold.tsv --out data/base.dict
+
 .PHONY: clean
 clean: ## remove the venv, runs, promoted state and downloaded lexicon
 	rm -rf .venv runs active data/lexicons failure_bank .pytest_cache

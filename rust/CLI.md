@@ -116,6 +116,12 @@ MFA's dictionary is read as it comes — its per-reading probability columns are
 recognised and dropped — so no conversion step sits between the lexicon the
 project already has and the dictionary this route uses.
 
+The repository ships both, so the generation step is optional: `data/base.dict`
+(the full scan, 1,875 words) and `data/seed.dict` (the 68 words the held-out
+split has adjudicated by hand). Regenerate them with `make miss-lexicon`.
+Loading `data/base.dict` takes the model from 98.18% to 99.40% measured
+accuracy on that split, and from 98.96% to 99.97% corrected.
+
 ## The library
 
 This is the CLI for [`tiny-g2p-core`](https://crates.io/crates/tiny-g2p-core),

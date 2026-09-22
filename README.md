@@ -227,6 +227,35 @@ target/release/tinyg2p predict "Szczebrzeszyn bmw"    # whitespace splits; one w
 | `.wasm` | 222 KiB (167 gzipped) | float + int8 + exception path |
 | ONNX | 131 KiB | for ONNX Runtime consumers |
 
+### The exception dictionary
+
+The model is right about 98.2% of words; the ones it misses are known, and
+`data/base.dict` is those words with the reading they should have had. It is a
+56 KB `word<TAB>phones` dictionary, which the binary takes directly:
+
+```bash
+tinyg2p eval --gold data/test_gold.tsv --lexicon data/base.dict   # 98.18% -> 99.40% measured
+```
+
+```
+              measured            corrected        PER      PERcorr
+no dictionary   98.18%              98.96%         0.32%     0.18%
+data/base.dict  99.40%              99.97%         0.09%     0.01%
+```
+
+That is the trade the exception path is for: **56 KB and a fraction of a
+megabyte resident, against 7 MB and 85 MB for loading MFA's whole dictionary**
+— which would also override the model on all 134,507 words, including the ones
+where MFA is known to be wrong.
+
+`data/seed.dict` is the same idea restricted to the adjudicated held-out split:
+68 words whose readings have been reviewed by hand. Use it when you want only
+reviewed entries; `base.dict` when you want coverage.
+
+Regenerate either with `make miss-lexicon`. A word the gold marks wrong and
+records no alternative for is left out rather than guessed, which is why the
+files say how many were: 10 in the full scan, at the time of writing.
+
 That binary also carries the **eval** path: `tinyg2p eval --gold
 data/test_gold.tsv` reproduces the table above -- measured *and*
 gold-corrected, per slice -- from the weights alone, in 0.5 s on one core,
